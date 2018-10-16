@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      jwcrandall
+HostName                       linux03.cflab.seas.gwu.edu
+ProcessIdentifier              21288
+ProcessCreationTime_UTC        1525011565
+ProcessCreationTime_Readable   Sun Apr 29 10:19:25 2018 EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/seas/jwcrandall/cadence/6218_Final_Project/Neural_Amp/layout/layout.oa.cdslck
+TimeEditLocked                 Sun Apr 29 10:19:50 2018 EDT

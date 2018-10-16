@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      gusk27
+HostName                       linux05.cflab.seas.gwu.edu
+ProcessIdentifier              11678
+ProcessCreationTime_UTC        1525123187
+ProcessCreationTime_Readable   Mon Apr 30 17:19:47 2018 EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/seas/gusk27/cadence/6218_Final_Project/OTA_tb/schematic/sch.oa.cdslck
+TimeEditLocked                 Mon Apr 30 19:24:22 2018 EDT
