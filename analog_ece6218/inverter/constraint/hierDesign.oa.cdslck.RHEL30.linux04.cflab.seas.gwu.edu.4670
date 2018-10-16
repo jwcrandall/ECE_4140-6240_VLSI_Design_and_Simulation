@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      jwcrandall
+HostName                       linux04.cflab.seas.gwu.edu
+ProcessIdentifier              4670
+ProcessCreationTime_UTC        1520298924
+ProcessCreationTime_Readable   Mon Mar  5 20:15:24 2018 EST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/seas/jwcrandall/cadence/analog_ece6218/inverter/constraint/hierDesign.oa.cdslck
+TimeEditLocked                 Mon Mar  5 20:18:27 2018 EST
