@@ -1,0 +1,11 @@
+
+// Library name: Digial
+// Cell name: DominoAndGate_tb
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=3.3
+VB (B 0) vsource type=pulse val0=0 val1=3.3 period=320n width=160n
+VA (A 0) vsource type=pulse val0=0 val1=3.3 period=160n width=80n
+Vphi (phi 0) vsource type=pulse val0=0 val1=3.3 period=40n rise=50p \
+        width=20n
+CX (X 0) capacitor c=1p m=1
+I12 (B A X phi) DominoAndGate

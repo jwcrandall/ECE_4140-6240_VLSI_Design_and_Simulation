@@ -1,0 +1,11 @@
+
+// Library name: Digial
+// Cell name: nand2_tb
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+V2 (B 0) vsource type=pulse val0=5 val1=0 period=50u rise=500f fall=500f \
+        width=25u
+V1 (A 0) vsource type=pulse val0=5 val1=0 period=100u rise=500f fall=500f \
+        width=50u
+I5 (A B OUT) nand2
+C0 (OUT 0) capacitor c=10p m=1

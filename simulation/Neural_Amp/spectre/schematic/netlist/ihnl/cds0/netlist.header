@@ -1,0 +1,5 @@
+
+// Library name: 6218_Final_Project
+// Cell name: OTA
+// View name: schematic
+subckt OTA Vin Vout Vref inh_inh_bn

@@ -1,0 +1,14 @@
+CADENCE IHNL01070
+$model
+Digial/hw1_1_inverter/schematic hw1_1_inverter
+Digial/hw1_1_c_inverter/schematic hw1_1_c_inverter
+Digial/hw1_1_inverter_tb/schematic hw1_1_inverter_tb
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+p5vonly p5vonly
+w w
+$endparam

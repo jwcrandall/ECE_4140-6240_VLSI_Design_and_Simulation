@@ -1,0 +1,8 @@
+
+// Library name: Digial
+// Cell name: inv_tb
+// View name: schematic
+V1 (vin 0) vsource type=dc
+V0 (vdd! 0) vsource type=dc dc=5
+C0 (vout 0) capacitor c=10p m=1
+I5 (vin vout) inv

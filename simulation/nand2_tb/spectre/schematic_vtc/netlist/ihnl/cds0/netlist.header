@@ -1,0 +1,5 @@
+
+// Library name: Digial
+// Cell name: nand2
+// View name: schematic
+subckt nand2 A B OUT

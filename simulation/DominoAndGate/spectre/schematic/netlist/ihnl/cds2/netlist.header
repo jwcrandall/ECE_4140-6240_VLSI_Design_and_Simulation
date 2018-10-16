@@ -1,0 +1,5 @@
+
+// Library name: Digial
+// Cell name: inv_min
+// View name: schematic
+subckt inv_min VIN VOUT

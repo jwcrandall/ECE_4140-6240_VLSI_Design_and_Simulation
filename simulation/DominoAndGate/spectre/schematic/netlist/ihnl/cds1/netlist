@@ -1,0 +1,19 @@
+
+// Library name: Digial
+// Cell name: DominoAndGate
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=3.3
+N3 (net015 phi 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+N2 (W B net014 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u pd=6u \
+        m=1 region=sat
+N1 (net014 A net015 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+Vphi (phi 0) vsource type=pulse val0=0 val1=3.3 period=40n rise=50p \
+        width=20n
+VB (B 0) vsource type=pulse val0=0 val1=3.3 period=320n width=160n
+VA (A 0) vsource type=pulse val0=0 val1=3.3 period=160n width=80n
+P0 (W phi vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+CX (X 0) capacitor c=1p m=1
+I11 (W X) inv_min

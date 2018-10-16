@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+analog_ece6218/OTA/schematic OTA
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+p5vonly p5vonly
+$endparam

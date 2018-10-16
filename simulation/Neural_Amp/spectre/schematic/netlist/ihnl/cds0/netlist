@@ -1,0 +1,30 @@
+    M3 (net2 net2 0 gnd!) ami16N w=12.0u l=44.8u as=4.8e-11 ad=4.8e-11 \
+        ps=32.0u pd=32.0u m=1 region=sat
+    Mcasn (Vout net023 net12 gnd!) ami16N w=12.0u l=3.2u as=4.8e-11 \
+        ad=4.8e-11 ps=32.0u pd=32.0u m=1 region=sat
+    M6 (net12 net10 0 gnd!) ami16N w=12.0u l=44.8u as=4.8e-11 ad=4.8e-11 \
+        ps=32.0u pd=32.0u m=1 region=sat
+    M5 (net1 net2 0 gnd!) ami16N w=12.0u l=44.8u as=4.8e-11 ad=4.8e-11 \
+        ps=32.0u pd=32.0u m=1 region=sat
+    M4 (net10 net10 0 gnd!) ami16N w=12.0u l=44.8u as=4.8e-11 ad=4.8e-11 \
+        ps=32.0u pd=32.0u m=1 region=sat
+    M7 (net1 net1 vdd! vdd!) ami16P w=6.4u l=12.8u as=2.56e-11 ad=2.56e-11 \
+        ps=20.8u pd=20.8u m=1 region=sat
+    M1 (net2 Vin net9 vdd!) ami16P w=800.0000u l=4u as=3.2e-09 ad=3.2e-09 \
+        ps=1.608m pd=1.608m m=1 region=subth
+    M10 (net9 net14 vdd! vdd!) ami16P w=20u l=20u as=8e-11 ad=8e-11 \
+        ps=48.0u pd=48.0u m=1 region=sat
+    M9 (net14 net14 vdd! vdd!) ami16P w=20u l=20u as=8e-11 ad=8e-11 \
+        ps=48.0u pd=48.0u m=1 region=sat
+    Mcasp (Vout net021 net13 vdd!) ami16P w=6.4u l=3.2u as=2.56e-11 \
+        ad=2.56e-11 ps=20.8u pd=20.8u m=1 region=sat
+    M2 (net10 Vref net9 vdd!) ami16P w=800.0000u l=4u as=3.2e-09 \
+        ad=3.2e-09 ps=1.608m pd=1.608m m=1 region=subth
+    M8 (net13 net1 vdd! vdd!) ami16P w=6.4u l=12.8u as=2.56e-11 \
+        ad=2.56e-11 ps=20.8u pd=20.8u m=1 region=sat
+    V8 (vdd! 0) vsource type=dc dc=5
+    V3 (net021 0) vsource type=dc dc=2.75
+    V2 (net023 0) vsource type=dc dc=1.54
+    I2 (net14 0) isource type=dc dc=8u m=1
+ends OTA
+// End of subcircuit definition.

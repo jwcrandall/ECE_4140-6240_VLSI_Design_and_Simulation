@@ -1,0 +1,13 @@
+definitionFiles nil
+allIncludedPaths ((t "/apps/design_kits/ibm_kits/IBM_PDK/cmrf7sf/V1.8.0.6ML/Spectre/models"))
+EVcdFile ""
+stimulusFile nil
+allVectorFiles nil
+allStimulusFiles nil
+hlcheck "off"
+allDefinitionFiles nil
+EVcdInfoFile ""
+includePath "/apps/design_kits/ibm_kits/IBM_PDK/cmrf7sf/V1.8.0.6ML/Spectre/models"
+VcdFile ""
+VectorFile nil
+VcdInfoFile ""

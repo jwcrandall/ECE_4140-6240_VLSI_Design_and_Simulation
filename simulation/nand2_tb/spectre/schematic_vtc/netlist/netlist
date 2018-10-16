@@ -1,0 +1,23 @@
+
+// Library name: Digial
+// Cell name: nand2
+// View name: schematic
+subckt nand2 A B OUT
+    P1 (OUT B vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P0 (OUT A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N2 (net07 B 0 0) ami06N w=2.4u l=600n as=3.6e-12 ad=3.6e-12 ps=7.8u \
+        pd=7.8u m=1 region=sat
+    N0 (OUT A net07 0) ami06N w=2.4u l=600n as=3.6e-12 ad=3.6e-12 ps=7.8u \
+        pd=7.8u m=1 region=sat
+ends nand2
+// End of subcircuit definition.
+
+// Library name: Digial
+// Cell name: nand2_tb
+// View name: schematic_vtc
+V1 (IN 0) vsource type=dc dc=0
+V0 (vdd! 0) vsource type=dc dc=5
+I5 (IN IN OUT) nand2
+C0 (OUT 0) capacitor c=10p m=1

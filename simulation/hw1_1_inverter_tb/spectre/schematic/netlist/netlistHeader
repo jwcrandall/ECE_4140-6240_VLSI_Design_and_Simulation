@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct 11 20:40:06 2018
+// Design library name: Digial
+// Design cell name: hw1_1_inverter_tb
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

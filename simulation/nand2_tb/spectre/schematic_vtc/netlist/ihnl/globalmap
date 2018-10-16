@@ -1,0 +1,14 @@
+CADENCE IHNL11140
+$model
+Digial/nand2/schematic nand2
+Digial/nand2_tb/schematic_vtc nand2_tb
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+w_n w_n
+w_p w_p
+p5vonly p5vonly
+$endparam

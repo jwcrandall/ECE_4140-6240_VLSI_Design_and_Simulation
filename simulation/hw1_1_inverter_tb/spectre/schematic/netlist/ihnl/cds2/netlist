@@ -1,0 +1,6 @@
+    P0 (VOUT VIN vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    N0 (VOUT VIN 0 0) ami06N w=1.5 l=600n as=2.25e-06 ad=2.25e-06 ps=3 \
+        pd=3 m=1 region=sat
+ends hw1_1_c_inverter
+// End of subcircuit definition.

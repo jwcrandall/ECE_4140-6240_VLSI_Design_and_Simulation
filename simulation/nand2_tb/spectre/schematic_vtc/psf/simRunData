@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Digial\" \"nand2_tb\" \"schematic_vtc\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Sep 25 17:35:00 2018"
+"title" ""
+"analysisList" "()"
+END

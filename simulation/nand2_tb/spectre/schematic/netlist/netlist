@@ -1,0 +1,26 @@
+
+// Library name: Digial
+// Cell name: nand2
+// View name: schematic
+subckt nand2 A B OUT
+    P1 (OUT B vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P0 (OUT A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N2 (net07 B 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N0 (OUT A net07 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends nand2
+// End of subcircuit definition.
+
+// Library name: Digial
+// Cell name: nand2_tb
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+V2 (B 0) vsource type=pulse val0=5 val1=0 period=50u rise=500f fall=500f \
+        width=25u
+V1 (A 0) vsource type=pulse val0=5 val1=0 period=100u rise=500f fall=500f \
+        width=50u
+I5 (A B OUT) nand2
+C0 (OUT 0) capacitor c=10p m=1

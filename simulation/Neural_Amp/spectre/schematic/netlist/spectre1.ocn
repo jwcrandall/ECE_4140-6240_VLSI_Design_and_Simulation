@@ -1,0 +1,16 @@
+simulator( 'spectre )
+design(	 "/home/seas/jwcrandall/cadence/simulation/Neural_Amp/spectre/schematic/netlist/netlist")
+resultsDir( "/home/seas/jwcrandall/cadence/simulation/Neural_Amp/spectre/schematic" )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami16N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami16P.m" "")
+)
+analysis('dc ?saveOppoint t  )
+desVar(	  "p5vonly" 0	)
+envOption(
+	'analysisOrder  list("dc") 
+)
+temp( 27 ) 
+run()

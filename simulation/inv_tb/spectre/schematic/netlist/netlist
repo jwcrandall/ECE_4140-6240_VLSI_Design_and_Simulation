@@ -1,0 +1,19 @@
+
+// Library name: Digial
+// Cell name: inv
+// View name: schematic
+subckt inv VIN VOUT
+    P0 (VOUT VIN vdd! vdd!) ami06P w=1.95 l=600n as=2.925e-06 ad=2.925e-06 \
+        ps=3.9 pd=3.9 m=1 region=sat
+    N0 (VOUT VIN 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends inv
+// End of subcircuit definition.
+
+// Library name: Digial
+// Cell name: inv_tb
+// View name: schematic
+V1 (vin 0) vsource type=dc
+V0 (vdd! 0) vsource type=dc dc=5
+C0 (vout 0) capacitor c=10p m=1
+I5 (vin vout) inv

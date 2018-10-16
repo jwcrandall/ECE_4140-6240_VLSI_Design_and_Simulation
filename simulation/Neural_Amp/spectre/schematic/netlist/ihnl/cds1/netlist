@@ -1,0 +1,15 @@
+
+// Library name: 6218_Final_Project
+// Cell name: Neural_Amp
+// View name: schematic
+P3 (net015 net015 net9 net9) ami16P w=4.05u l=4.05u as=1.62e-11 \
+        ad=1.62e-11 ps=16.1u pd=16.1u m=1 region=sat
+P1 (net2 net2 net015 net015) ami16P w=4.05u l=4.05u as=1.62e-11 \
+        ad=1.62e-11 ps=16.1u pd=16.1u m=1 region=sat
+CL (net9 net017) capacitor c=4p m=1
+C22 (net2 net9) capacitor c=8p m=1
+C11 (net05 net2) capacitor c=900p m=1
+V0 (net05 net01) vsource type=sine mag=10m
+I4 (net2 net9 net01 0) OTA
+V2 (net017 0) vsource type=dc dc=2.5
+V1 (net01 0) vsource type=dc dc=2.5

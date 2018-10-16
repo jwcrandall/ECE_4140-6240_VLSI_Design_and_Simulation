@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+Digial/inv_min/schematic inv_min
+Digial/DominoAndGate/schematic DominoAndGate
+Digial/inv/schematic inv
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+p5vonly p5vonly
+$endparam

@@ -1,0 +1,8 @@
+
+// Library name: Digial
+// Cell name: nand2_tb
+// View name: schematic_vtc
+V1 (IN 0) vsource type=dc dc=0
+V0 (vdd! 0) vsource type=dc dc=5
+I5 (IN IN OUT) nand2
+C0 (OUT 0) capacitor c=10p m=1

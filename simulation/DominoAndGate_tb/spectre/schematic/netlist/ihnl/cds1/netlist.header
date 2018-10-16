@@ -1,0 +1,5 @@
+
+// Library name: Digial
+// Cell name: DominoAndGate
+// View name: schematic
+subckt DominoAndGate A B X phi

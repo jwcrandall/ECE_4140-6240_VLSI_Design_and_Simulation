@@ -1,0 +1,36 @@
+###
+### Cadence basic libs
+###
+DEFINE analogLib $CDSDIR/tools/dfII/etc/cdslib/artist/analogLib
+
+###
+### Assura libs
+###
+DEFINE avTech    $CDSROOT/assura/tools/assura/etc/avtech/avTech
+
+###
+### ADS/RFDE libs
+###
+DEFINE	adsLib	 $HPEESOF_DIR/cdslibs/adsLib
+
+###
+### NCSU kit libs
+###
+INCLUDE $DESIGNKITS/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
+
+###
+### IBM kit libs
+###
+# 7RF
+DEFINE cmrf7sf $DESIGNKITS/ibm_kits/IBM_PDK/cmrf7sf/relML/cdslib/cmrf7sf
+DEFINE esd7rf  $DESIGNKITS/ibm_kits/IBM_PDK/cmrf7sf/relML/cdslib/esd7rf
+
+# 8HP
+DEFINE bicmos8hp      $DESIGNKITS/ibm_kits/IBM_PDK/bicmos8hp/relHP/cdslib/bicmos8hp
+DEFINE esd8hp         $DESIGNKITS/ibm_kits/IBM_PDK/bicmos8hp/relHP/cdslib/esd8hp
+DEFINE ibm_cmos8hp_sc $DESIGNKITS/ibm_kits/IBM_IP/ibm_cmos8hp/std_cell/sc/v.20110511/cdslib/oa/ibm_cmos8hp_sc
+
+###
+### My libs
+###
+DEFINE Digial /home/seas/jwcrandall/cadence/Digial

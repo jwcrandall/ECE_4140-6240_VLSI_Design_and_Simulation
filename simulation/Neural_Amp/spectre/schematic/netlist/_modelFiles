@@ -1,0 +1,4 @@
+include "/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m"
+include "/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m"
+include "/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami16N.m"
+include "/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami16P.m"

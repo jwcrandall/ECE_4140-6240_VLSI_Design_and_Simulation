@@ -1,0 +1,9 @@
+
+// Library name: Digial
+// Cell name: hw1_1_inverter_tb
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+V1 (vin 0) vsource type=pulse dc=5 val0=0 val1=5 period=50u delay=0 \
+        rise=500f fall=500f width=25u
+C0 (vout 0) capacitor c=4p m=1
+I7 (vin vout) hw1_1_c_inverter

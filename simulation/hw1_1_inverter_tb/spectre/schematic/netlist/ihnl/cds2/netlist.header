@@ -1,0 +1,5 @@
+
+// Library name: Digial
+// Cell name: hw1_1_c_inverter
+// View name: schematic
+subckt hw1_1_c_inverter VIN VOUT

@@ -1,0 +1,3 @@
+projectDir = '"./simulation"
+designInfo = '("Digial" "nand2_tb" "schematic_vtc" "spectre")
+descriptionText = "None"

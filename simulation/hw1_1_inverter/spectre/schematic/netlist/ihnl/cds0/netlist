@@ -1,0 +1,8 @@
+
+// Library name: Digial
+// Cell name: hw1_1_inverter
+// View name: schematic
+P0 (VOUT VIN vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+N0 (VOUT VIN 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u pd=6u \
+        m=1 region=sat

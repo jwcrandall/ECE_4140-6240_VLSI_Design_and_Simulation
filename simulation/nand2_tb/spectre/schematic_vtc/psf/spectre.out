@@ -1,0 +1,248 @@
+
+Spectre (R) Circuit Simulator
+Version 17.1.0.160.isr2 64bit -- 26 Jan 2018
+Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: jwcrandall   Host: linux32.cflab.seas.gwu.edu   HostID: A4803D8B   PID: 9365
+Memory  available: 30.2922 GB  physical: 33.5891 GB
+Linux   : CentOS release 6.10 (Final)
+CPU Type: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+All processors running at 3492.2 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 (  4 ),  1 (  5 ),  2 (  6 ),  3 (  7 )
+        
+System load averages (1min, 5min, 15min) : 2.9 %, 1.6 %, 0.8 %
+Hyperthreading is enabled
+
+
+Simulating `input.scs' on linux32.cflab.seas.gwu.edu at 5:35:01 PM, Tue Sep 25, 2018 (process id: 9365).
+Current working directory: /home/seas/jwcrandall/cadence/simulation/nand2_tb/spectre/schematic_vtc/netlist
+Command line:
+    /apps/vlsi_2018/cadence/SPECTRE171/tools/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre2_4785_11 -format psfxl -raw ../psf  \
+        -I/apps/design_kits/ibm_kits/IBM_PDK/cmrf7sf/V1.8.0.6ML/Spectre/models  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 9365
+
+Loading /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/seas/jwcrandall/cadence/simulation/nand2_tb/spectre/schematic_vtc/netlist/input.scs
+Reading file:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Time for NDB Parsing: CPU = 126.98 ms, elapsed = 230.746 ms.
+Time accumulated: CPU = 148.976 ms, elapsed = 230.752 ms.
+Peak resident memory used = 49 Mbytes.
+
+Reading link:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 14.998 ms, elapsed = 18.8949 ms.
+Time accumulated: CPU = 163.974 ms, elapsed = 249.75 ms.
+Peak resident memory used = 55.6 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+
+
+Time for EDB Visiting: CPU = 1 ms, elapsed = 498.056 us.
+Time accumulated: CPU = 164.974 ms, elapsed = 250.35 ms.
+Peak resident memory used = 56.1 Mbytes.
+
+
+Global user options:
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.001
+               tnom = 25
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 4
+             iprobe 3     
+            bsim3v3 4     
+          capacitor 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 6     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 2 ms, elapsed = 3.407 ms.
+Time accumulated: CPU = 166.974 ms, elapsed = 253.847 ms.
+Peak resident memory used = 57.6 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre2_4785_11, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+
+Opening the PSF file ../psf/dc.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 25 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at dc = 0 V during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I5.net07) = 44.7988 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 100 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I5.net07) = 304.674 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 200 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I5.net07) = 1.08517 V
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 300 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I5.net07) = 6.02691 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 400 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I5.net07) = 544.025 uV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+
+Maximum value achieved for any signal of each quantity: 
+V: V(IN) = 5 V
+I: I(V0:p) = 10.11 pA
+DC simulation time: CPU = 8.999 ms, elapsed = 13.1319 ms.
+Total time required for dc analysis `dc': CPU = 8.999 ms, elapsed = 13.1638 ms.
+Time accumulated: CPU = 179.971 ms, elapsed = 302.601 ms.
+Peak resident memory used = 59 Mbytes.
+
+
+Notice from spectre.
+    1 notice suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Spectre received SIGTERM sent from PID: 9348 with UID: 236266.
+
+Error found by spectre.
+    ERROR (SPECTRE-25): Killed by user.
+
+
+Aggregate audit (5:38:04 PM, Tue Sep 25, 2018):
+Time used: CPU = 223 ms, elapsed = 182 s (3m  2.5s), util. = 122e-03%.
+Time spent in licensing: elapsed = 86.1 ms.
+Peak memory used = 59.8 Mbytes.
+Simulation started at: 5:35:01 PM, Tue Sep 25, 2018, ended at: 5:38:04 PM, Tue Sep 25, 2018, with elapsed time (wall clock): 182 s (3m  2.5s).
+spectre completes with 1 error, 2 warnings, and 6 notices.
+spectre terminated prematurely due to fatal error.

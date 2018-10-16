@@ -1,0 +1,110 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 11.1.0.425.isr10 32bit -- 24 May 2012
+Copyright (C) 1989-2012 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Protected by U.S. Patents: 
+        5,610,847; 5,790,436; 5,812,431; 5,859,785; 5,949,992; 5,987,238; 
+        6,088,523; 6,101,323; 6,151,698; 6,181,754; 6,260,176; 6,278,964; 
+        6,349,272; 6,374,390; 6,493,849; 6,504,885; 6,618,837; 6,636,839; 
+        6,778,025; 6,832,358; 6,851,097; 6,928,626; 7,024,652; 7,035,782; 
+        7,085,700; 7,143,021; 7,493,240; 7,571,401.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: jwcrandall   Host: linux02.cflab.seas.gwu.edu   HostID: A4801F8B   PID: 8357
+Memory  available: 30.3476 GB  physical: 33.5891 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+          Processor PhysicalID CoreID Frequency
+              0         0        0     3491.7
+              1         0        1     3491.7
+              2         0        2     3491.7
+              3         0        3     3491.7
+              4         0        0     3491.7
+              5         0        1     3491.7
+              6         0        2     3491.7
+              7         0        3     3491.7
+
+
+Simulating `input.scs' on linux02.cflab.seas.gwu.edu at 9:43:24 PM, Fri Apr 27, 2018 (process id: 8357).
+Current working directory: /home/seas/jwcrandall/cadence/simulation/Neural_Amp/spectre/schematic/netlist.
+Command line:
+    /apps/cadence/mmsim/tools.lnx86/spectre/bin/32bit/spectre input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre1_5629_1 -format psfxl -raw ../psf  \
+        -I/apps/design_kits/ibm_kits/IBM_PDK/cmrf7sf/V1.8.0.6ML/Spectre/models  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 8357
+
+Loading /apps/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /apps/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /apps/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /apps/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+
+Time for NDB Parsing: CPU = 82.987 ms, elapsed = 709.385 ms.
+Time accumulated: CPU = 82.987 ms, elapsed = 709.385 ms.
+Peak resident memory used = 27.4 Mbytes.
+
+
+Time for Elaboration: CPU = 14.998 ms, elapsed = 45.722 ms.
+Time accumulated: CPU = 98.984 ms, elapsed = 755.279 ms.
+Peak resident memory used = 29.5 Mbytes.
+
+
+Time for EDB Visiting: CPU = 0 s, elapsed = 391.006 us.
+Time accumulated: CPU = 98.984 ms, elapsed = 755.797 ms.
+Peak resident memory used = 29.8 Mbytes.
+
+
+Warning from spectre during heuristic topology check - set topcheck=fixall to fix all floating nodes.
+    WARNING (SPECTRE-7): No DC path from node `I4.gnd!' to ground.
+
+
+Circuit inventory:
+              nodes 17
+            bsim3v3 14    
+          capacitor 3     
+            isource 1     
+            vsource 6     
+
+
+Time for parsing: CPU = 2 ms, elapsed = 2.527 ms.
+Time accumulated: CPU = 100.984 ms, elapsed = 758.429 ms.
+Peak resident memory used = 30.6 Mbytes.
+
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre1_5629_1, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 25 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 61 iterations.
+Total time required for dc analysis `dcOp': CPU = 2.999 ms, elapsed = 23.21 ms.
+Time accumulated: CPU = 104.983 ms, elapsed = 801.513 ms.
+Peak resident memory used = 31.3 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (9:59:32 PM, Fri Apr 27, 2018):
+Time used: CPU = 159 ms, elapsed = 968 s (16m  8.3s), util. = 16.4e-03%.
+Time spent in licensing: elapsed = 285 ms.
+Peak memory used = 31.7 Mbytes.
+Simulation started at: 9:43:24 PM, Fri Apr 27, 2018, ended at: 9:59:32 PM, Fri Apr 27, 2018, with elapsed time (wall clock): 968 s (16m  8.3s).
+spectre completes with 0 errors, 2 warnings, and 0 notices.

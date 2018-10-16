@@ -1,0 +1,33 @@
+
+// Library name: analog_ece6218
+// Cell name: OTA
+// View name: schematic
+M9 (net26 net26 net09 vdd!) ami06P w=19.95u l=19.95u as=2.9925e-11 \
+        ad=2.9925e-11 ps=42.9u pd=42.9u m=1 region=sat
+M10 (net28 net26 net09 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+M7 (net23 net23 net09 vdd!) ami06P w=6.45u l=12.75u as=9.675e-12 \
+        ad=9.675e-12 ps=15.9u pd=15.9u m=1 region=sat
+M8 (net32 net23 net09 vdd!) ami06P w=6.45u l=12.75u as=9.675e-12 \
+        ad=9.675e-12 ps=15.9u pd=15.9u m=1 region=sat
+VcascP (Vout net019 net32 vdd!) ami06P w=6.45u l=3.15u as=9.675e-12 \
+        ad=9.675e-12 ps=15.9u pd=15.9u m=1 region=sat
+M2 (net29 v\+ net28 vdd!) ami06P w=799.95u l=4.05u as=1.19993e-09 \
+        ad=1.19993e-09 ps=1.6029m pd=1.6029m m=1 region=sat
+M1 (net25 v\- net28 vdd!) ami06P w=799.95u l=4.05u as=1.19993e-09 \
+        ad=1.19993e-09 ps=1.6029m pd=1.6029m m=1 region=sat
+VcascN (Vout net018 net33 gnd!) ami06N w=12.0u l=3.15u as=1.8e-11 \
+        ad=1.8e-11 ps=27.0u pd=27.0u m=1 region=sat
+M6 (net33 net29 net017 gnd!) ami06N w=12.0u l=44.85u as=1.8e-11 ad=1.8e-11 \
+        ps=27.0u pd=27.0u m=1 region=sat
+M4 (net29 net29 net017 gnd!) ami06N w=12.0u l=44.85u as=1.8e-11 ad=1.8e-11 \
+        ps=27.0u pd=27.0u m=1 region=sat
+M3 (net25 net25 net017 gnd!) ami06N w=12.0u l=44.85u as=1.8e-11 ad=1.8e-11 \
+        ps=27.0u pd=27.0u m=1 region=sat
+M5 (net23 net25 net017 gnd!) ami06N w=12.0u l=44.85u as=1.8e-11 ad=1.8e-11 \
+        ps=27.0u pd=27.0u m=1 region=sat
+Ibias (net26 net017) isource type=dc dc=8.0uA m=1
+VSS (net017 0) vsource type=dc dc=-2.5
+V2 (net018 0) vsource type=dc dc=1
+V1 (net019 0) vsource type=dc dc=1.2
+VDD (net09 0) vsource type=dc dc=2.5
