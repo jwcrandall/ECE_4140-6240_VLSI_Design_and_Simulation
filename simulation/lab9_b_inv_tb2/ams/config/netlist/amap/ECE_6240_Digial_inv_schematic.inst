@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"VINv" "(FUNCTION or(mappedRoot(\".2@index\") mappedRoot(\".VIN\")))v"
+"VINv" ".VINv"
+"VINv" ".\\2 v"
+"VOUTv" "(FUNCTION or(mappedRoot(\".1@index\") mappedRoot(\".VOUT\")))v"
+"VOUTv" ".VOUTv"
+"VOUTv" ".\\1 v"
+"N0n" "NCSU_Analog_Parts_nmos4_spectre"
+"P0n" "NCSU_Analog_Parts_pmos4_spectre"

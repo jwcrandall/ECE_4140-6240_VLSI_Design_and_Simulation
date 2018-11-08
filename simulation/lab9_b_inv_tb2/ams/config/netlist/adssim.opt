@@ -1,0 +1,5 @@
+
+--datasetDestinationPath  /home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/data/lab9_b_inv_tb2.ds
+--datasetPath /home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/lab9_b_inv_tb2.ds
+-mpssession rfde  -mpshost linux16.cflab.seas.gwu.edu
+--processEndOfSim

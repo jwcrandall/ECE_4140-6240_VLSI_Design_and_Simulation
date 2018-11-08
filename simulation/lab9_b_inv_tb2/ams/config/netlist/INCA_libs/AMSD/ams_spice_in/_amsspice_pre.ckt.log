@@ -1,0 +1,55 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 803.isr18 64bit -- 25 Jul 2017
+Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: jwcrandall   Host: linux16.cflab.seas.gwu.edu   HostID: A4802D8B   PID: 13047
+Memory  available: 29.3697 GB  physical: 33.5891 GB
+Linux   : CentOS release 6.10 (Final)
+CPU Type: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+All processors running at 3491.7 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 (  4 ),  1 (  5 ),  2 (  6 ),  3 (  7 )
+        
+System load averages (1min, 5min, 15min) : 1.0 %, 0.5 %, 0.6 %
+Hyperthreading is enabled
+
+
+Simulating `./INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt' on linux16.cflab.seas.gwu.edu at 4:51:56 PM, Tue Oct 30, 2018 (process id: 13047).
+Current working directory: /home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=
+Command line:
+    amsprimtool ./INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt  \
+        -noraw -va,amsspice_pre -ahdllibdir  \
+        INCA_libs/AMSD/ams_spice_in/ahdlSimDB =log  \
+        ./INCA_libs/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
+        -I/home/seas/jwcrandall/cadence/ -token  \
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080CF5C9E5D13BA59FEB270F31D11B6639FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2E579BC6462C829D4EB3DDA0850FB3080A83DEEB8537F10B0AA21E32A349A71DEBE79B77B66D56881FE6CA06A7ECB2A80A83DED3C50FB10B0A83DED3C50FB10B0F3E5295694914B680000427C
+
+Loading /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/INCA_libs/AMSD/ams_spice_in/.amsspice_pre.ckt
+Reading file:  /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/spiceModels.scs
+Reading file:  /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Reading file:  /home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/amsControlSpectre.scs
+Time for NDB Parsing: CPU = 45.992 ms, elapsed = 92.5951 ms.
+Time accumulated: CPU = 73.987 ms, elapsed = 92.6001 ms.
+Peak resident memory used = 45.6 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (55.6 %)      4 (11.1 %)      5 (11.1 %)      6 (12.5 %)
+        Other   
+Reading link:  /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.vams

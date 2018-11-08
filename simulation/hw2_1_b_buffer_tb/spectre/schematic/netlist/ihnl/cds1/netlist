@@ -1,0 +1,4 @@
+    I1 (A net1) hw1_1_c_inverter
+    I0 (net1 Out) hw1_1_c_inverter
+ends hw2_1_a_buffer
+// End of subcircuit definition.

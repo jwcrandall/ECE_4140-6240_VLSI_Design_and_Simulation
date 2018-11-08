@@ -1,0 +1,51 @@
+(envOpts edenSnapShotView) ""
+(envOpts runOpts) "Batch (normal)"
+(envOpts edenSnapShotCell) ""
+(envOpts edenRunOpts) "GUI"
+(envOpts edenRunNetlistOnly) (t nil)
+(envOpts connectRulesPath) ""
+(envOpts edenCrView) ""
+(envOpts pllPlugin) ""
+(envOpts edenCrCell) ""
+(envOpts edenCrLib) ""
+(envOpts edenSnapShotLib) ""
+(envOpts paramRangeCheckFile) ""
+(envOpts compileCRsForPlugin) "doNotCompile"
+(envOpts disableRunModeInDP) nil
+(envOpts vcoType) ""
+(envOpts pllWizardinfo) ""
+(envOpts edenHostMode) "Local"
+(envOpts netlisterMode) "Cellview-based"
+(envOpts edenSubmissionStr) ""
+(envOpts edenRemoteHost) ""
+(envOpts compileVAAsVAMS) (nil)
+(envOpts createCompleteDesignInfoFile) nil
+(envOpts SpecialHandleForDigLibFiles) nil
+(envOpts restartFlag) (nil)
+(envOpts noIrunInfoMsg) nil
+(envOpts saveTimes) ""
+(envOpts invocationStyle) "ncvlog, ncelab, ncsim"
+(envOpts SpecialHandleForDigLibDirs) nil
+(envOpts snapshot) ""
+(envOpts sst2usecolon) nil
+(envOpts solver) "Spectre"
+(envOpts rule) "ConnRules_18V_full_fast"
+(envOpts cleanSnapShot) (nil)
+(envOpts edenGlobalLib) ""
+(envOpts edenWaveformTool) "SimVision"
+(envOpts runCompOnly) (t nil)
+(envOpts edenSaveExistingDirectories) t
+(envOpts edenGlobalView) ""
+(envOpts builtinuser) nil
+(envOpts enableArclength) nil
+(envOpts edenGlobalCell) "cds_globals"
+(envOpts runElabOnly) (t nil)
+(envOpts selectRules) "Built-in"
+(envOpts SpecialHandleForDigitalBlock) nil
+(envOpts saveTimeInterval) ""
+(envOpts cmd64bit) nil
+(envOpts compatMode) "spectre"
+(envOpts snapshotPrefix) ""
+(envOpts saveStopTime) ""
+(envOpts runSimOnly) (t)
+(envOpts saveStartTime) ""

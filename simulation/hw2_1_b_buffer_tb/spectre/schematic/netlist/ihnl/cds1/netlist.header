@@ -1,0 +1,5 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw2_1_a_buffer
+// View name: schematic
+subckt hw2_1_a_buffer A Out

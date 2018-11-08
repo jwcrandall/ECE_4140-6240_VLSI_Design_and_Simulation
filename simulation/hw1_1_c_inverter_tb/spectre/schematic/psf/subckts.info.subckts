@@ -1,0 +1,24 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "11.1.0.425.isr10"
+"date" "6:14:11 PM, Tue Oct 16, 2018"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"hw1_1_c_inverter" "subckt" (
+""
+"VIN VOUT vdd! 0"
+)
+END

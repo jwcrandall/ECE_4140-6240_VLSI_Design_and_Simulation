@@ -8,51 +8,75 @@ Compiling Diva LVS rules...
 
     Net-list summary for /home/seas/jwcrandall/cadence/LVS/layout/netlist
        count
-        6               nets
+        11              nets
         5               terminals
-        2               pmos
-        2               nmos
+        8               pmos
+        8               nmos
 
     Net-list summary for /home/seas/jwcrandall/cadence/LVS/schematic/netlist
        count
-        6               nets
+        12              nets
         5               terminals
-        2               pmos
-        2               nmos
+        8               pmos
+        8               nmos
 
 
     Terminal correspondence points
-    N4        N7        A
-    N3        N3        B
-    N2        N6        OUT
-    N1        N0        gnd!
-    N5        N1        vdd!
+    N9        N4        A
+    N8        N3        B
+    N7        N2        Out
+    N6        N0        gnd!
+    N10       N1        vdd!
 
 Devices in the netlist but not in the rules:
         pcapacitor
 Devices in the rules but not in the netlist:
         cap nfet pfet nmos4 pmos4
 
-The net-lists match.
+    Ill-defined correspondence points.
+
+	N6	N0  Accepted because one is a subset of the other
+	N7	N2  Purged because neither is a subset of the other
+	N10	N1  Accepted because one is a subset of the other
+	N8	N3  Accepted because one is a subset of the other
+	N7	N2  Purged because neither is a subset of the other
+	N10	N1  Accepted because one is a subset of the other
+	N6	N0  Accepted because one is a subset of the other
+
+
+        Device summary for layout
+                   bad  total
+            pmos     4      8
+            nmos     4      8
+
+
+        Device summary for schematic
+                   bad  total
+            pmos     4      8
+            nmos     4      8
+
+1 net-list ambiguity was resolved by random selection.
+
+The net-lists failed to match.
 
                              layout  schematic
                                 instances
-        un-matched              0       0      
+        un-matched              8       8      
         rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  4       4      
-        total                   4       4      
+        active                  16      16     
+        total                   16      16     
 
                                   nets
-        un-matched              0       0      
+        un-matched              4       5      
         merged                  0       0      
         pruned                  0       0      
-        active                  6       6      
-        total                   6       6      
+        active                  11      12     
+        total                   11      12     
 
                                 terminals
-        un-matched              0       0      
+        un-matched              1       1      
         matched but
         different type          0       0      
         total                   5       5      
@@ -61,12 +85,40 @@ The net-lists match.
 Probe files from /home/seas/jwcrandall/cadence/LVS/schematic
 
 devbad.out:
+I /I2/N0
+? Device does not cross-match.
+I /I2/N1
+? Device does not cross-match.
+I /I3/N0
+? Device does not cross-match.
+I /I3/N1
+? Device does not cross-match.
+I /I2/P0
+? Device does not cross-match.
+I /I2/P1
+? Device does not cross-match.
+I /I3/P0
+? Device does not cross-match.
+I /I3/P1
+? Device does not cross-match.
 
 netbad.out:
+N /net8
+? Net does not cross-match. It has 4 connections.
+N /net9
+? Net does not cross-match. It has 4 connections.
+N /Out
+? Net does not cross-match. It has 3 connections.
+N /I2/net14
+? Net does not cross-match. It has 2 connections.
+N /I3/net14
+? Net does not cross-match. It has 2 connections.
 
 mergenet.out:
 
 termbad.out:
+T -1  Out /Out
+? Terminal Out in the schematic failed to match any terminal in the layout.
 
 prunenet.out:
 
@@ -78,12 +130,38 @@ audit.out:
 Probe files from /home/seas/jwcrandall/cadence/LVS/layout
 
 devbad.out:
+I /+5
+? Device does not cross-match.
+I /+4
+? Device does not cross-match.
+I /+6
+? Device does not cross-match.
+I /+7
+? Device does not cross-match.
+I /+13
+? Device does not cross-match.
+I /+15
+? Device does not cross-match.
+I /+14
+? Device does not cross-match.
+I /+12
+? Device does not cross-match.
 
 netbad.out:
+N /9
+? Net does not cross-match. It has 2 connections.
+N /Out
+? Net does not cross-match. It has 6 connections.
+N /10
+? Net does not cross-match. It has 2 connections.
+N /11
+? Net does not cross-match. It has 2 connections.
 
 mergenet.out:
 
 termbad.out:
+T -1  Out /Out
+? Terminal Out in the layout failed to match any terminal in the schematic.
 
 prunenet.out:
 

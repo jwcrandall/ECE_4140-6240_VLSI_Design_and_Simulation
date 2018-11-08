@@ -1,0 +1,6 @@
+"I2" ((("ECE_6240_Digial" "lab9_b_inv_tb_vdriver" "functional" "functional") ("ECE_6240_Digial" "lab9_b_inv_tb2" "schematic" "schematic")))
+"V0" ((("NCSU_Analog_Parts" "vdc" "spectre" "spectre") ("ECE_6240_Digial" "lab9_b_inv_tb2" "schematic" "schematic")))
+"P0" ((("NCSU_Analog_Parts" "pmos4" "spectre" "spectre") ("ECE_6240_Digial" "inv" "schematic" "schematic")))
+"N0" ((("NCSU_Analog_Parts" "nmos4" "spectre" "spectre") ("ECE_6240_Digial" "inv" "schematic" "schematic")))
+"C0" ((("NCSU_Analog_Parts" "cap" "spectre" "spectre") ("ECE_6240_Digial" "lab9_b_inv_tb2" "schematic" "schematic")))
+"I3" ((("ECE_6240_Digial" "inv" "schematic" "schematic") ("ECE_6240_Digial" "lab9_b_inv_tb2" "schematic" "schematic")))

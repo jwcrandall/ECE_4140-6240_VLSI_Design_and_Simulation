@@ -1,0 +1,37 @@
+
+-UNBUFFERED 
+-cdslib ./cds.lib 
+-errormax 50 
+-status 
+-nowarn DLNOHV 
+-nowarn DLCLAP 
+-v93 
+-incdir ${IC_INVOKE_DIR}/
+-ade 
+-timescale 1ns/1ns 
+-vtimescale 1ns/1ns 
+-discipline logic 
+-delay_mode None 
+-novitalaccl 
+-access r 
+-noparamerr 
+-amspartinfo ../psf/partition.info -rnm_partinfo 
+-modelincdir ${IC_INVOKE_DIR}/
+./spiceModels.scs 
+./amsControlSpectre.scs 
+-input ./probe.tcl 
+-run -exit 
+-ncsimargs "+amsrawdir ../psf" 
+ -simcompatible_ams spectre 
+-name ECE_6240_Digial.lab9_b_inv_tb2:config 
+-amsconnrules ConnRules_5V_full_fast 
++define+CDS_SELECT_CRS 
++define+CONNRULES_5V_FULL_FAST  
+-allowredefinition 
+-amsbind 
+-top ECE_6240_Digial.lab9_b_inv_tb2:schematic 
+-top cds_globals 
+./netlist.vams 
+-f ./textInputs
+./cds_globals.vams 
+-l ../psf/irun.log 

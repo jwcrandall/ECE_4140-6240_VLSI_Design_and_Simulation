@@ -1,0 +1,23 @@
+simulator( 'spectre )
+design(	 "/home/seas/jwcrandall/cadence/simulation/hw1_3_CMOS_2_Input_NAND_tb/spectre/schematic/netlist/netlist")
+resultsDir( "/home/seas/jwcrandall/cadence/simulation/hw1_3_CMOS_2_Input_NAND_tb/spectre/schematic" )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+)
+analysis('tran ?stop "150u"  )
+desVar(	  "p5vonly" 0	)
+envOption(
+	'analysisOrder  list("tran") 
+)
+temp( 27 ) 
+run()
+selectResult( 'tran )
+plot(getData("/A") getData("/B") getData("/Out") )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+)
+run()
+selectResult( 'tran )
+plot(getData("/A") getData("/B") getData("/Out") )

@@ -1,0 +1,19 @@
+// Library - ECE_6240_Digial, Cell - lab9_b_inv_tb2, View - schematic
+// LAST TIME SAVED: Oct 30 15:41:57 2018
+// NETLIST TIME: Oct 30 16:41:50 2018
+`timescale 1ns / 1ns 
+
+`worklib ECE_6240_Digial
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="ECE_6240_Digial", dfII_cell="lab9_b_inv_tb2", dfII_view="schematic", worklib_name="ECE_6240_Digial", view_name="schematic", last_save_time="Oct 30 15:41:57 2018" *)
+
+module lab9_b_inv_tb2 ();
+
+
+lab9_b_inv_tb_vdriver I2 ( .test_data(VIN));
+
+inv I3 ( .VOUT(VOUT), .VIN(VIN));
+
+endmodule

@@ -1,0 +1,29 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw1_1_c_inverter
+// View name: schematic
+subckt hw1_1_c_inverter VIN VOUT
+    P0 (VOUT VIN vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    N0 (VOUT VIN 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends hw1_1_c_inverter
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digial
+// Cell name: hw2_1_a_buffer
+// View name: schematic
+subckt hw2_1_a_buffer A Out
+    I1 (A net1) hw1_1_c_inverter
+    I0 (net1 Out) hw1_1_c_inverter
+ends hw2_1_a_buffer
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digial
+// Cell name: hw2_1_b_buffer_tb
+// View name: schematic
+I0 (A Out) hw2_1_a_buffer
+V0 (vdd! 0) vsource type=dc dc=5
+V1 (A 0) vsource type=pulse val0=0 val1=5 period=50u delay=0 rise=500f \
+        fall=500f width=25u
+C0 (Out 0) capacitor c=4p m=1

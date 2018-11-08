@@ -1,0 +1,146 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 11.1.0.425.isr10 32bit -- 24 May 2012
+Copyright (C) 1989-2012 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Protected by U.S. Patents: 
+        5,610,847; 5,790,436; 5,812,431; 5,859,785; 5,949,992; 5,987,238; 
+        6,088,523; 6,101,323; 6,151,698; 6,181,754; 6,260,176; 6,278,964; 
+        6,349,272; 6,374,390; 6,493,849; 6,504,885; 6,618,837; 6,636,839; 
+        6,778,025; 6,832,358; 6,851,097; 6,928,626; 7,024,652; 7,035,782; 
+        7,085,700; 7,143,021; 7,493,240; 7,571,401.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: jwcrandall   Host: linux02.cflab.seas.gwu.edu   HostID: A4801F8B   PID: 20094
+Memory  available: 28.9465 GB  physical: 33.5891 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+          Processor PhysicalID CoreID Frequency
+              0         0        0     3492.2
+              1         0        1     3492.2
+              2         0        2     3492.2
+              3         0        3     3492.2
+              4         0        0     3492.2
+              5         0        1     3492.2
+              6         0        2     3492.2
+              7         0        3     3492.2
+
+
+Simulating `input.scs' on linux02.cflab.seas.gwu.edu at 10:53:19 AM, Thur Oct 18, 2018 (process id: 20094).
+Current working directory: /home/seas/jwcrandall/cadence/simulation/hw1_3_CMOS_3_Input_NOR_tb/spectre/schematic/netlist.
+Command line:
+    /apps/cadence/mmsim/tools.lnx86/spectre/bin/32bit/spectre input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre0_19591_1 -format psfxl -raw ../psf  \
+        -I/apps/design_kits/ibm_kits/IBM_PDK/cmrf7sf/V1.8.0.6ML/Spectre/models  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 20094
+
+Loading /apps/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /apps/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /apps/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /apps/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+
+Time for NDB Parsing: CPU = 46.992 ms, elapsed = 114.042 ms.
+Time accumulated: CPU = 46.992 ms, elapsed = 114.042 ms.
+Peak resident memory used = 27.3 Mbytes.
+
+
+Time for Elaboration: CPU = 13.998 ms, elapsed = 17.231 ms.
+Time accumulated: CPU = 60.99 ms, elapsed = 131.522 ms.
+Peak resident memory used = 29.5 Mbytes.
+
+
+Time for EDB Visiting: CPU = 0 s, elapsed = 316.858 us.
+Time accumulated: CPU = 60.99 ms, elapsed = 131.949 ms.
+Peak resident memory used = 29.8 Mbytes.
+
+
+Circuit inventory:
+              nodes 7
+            bsim3v3 6     
+          capacitor 1     
+            vsource 4     
+
+
+Time for parsing: CPU = 2 ms, elapsed = 11.0531 ms.
+Time accumulated: CPU = 62.99 ms, elapsed = 143.1 ms.
+Peak resident memory used = 30.5 Mbytes.
+
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre0_19591_1, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 250 us)
+*************************************************
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 250 us
+    step = 250 ns
+    maxstep = 5 us
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 25 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+    tran: time = 8.416 us    (3.37 %), step = 3.106 us     (1.24 %)
+    tran: time = 21.67 us    (8.67 %), step = 3.329 us     (1.33 %)
+    tran: time = 33.98 us    (13.6 %), step = 4.492 us      (1.8 %)
+    tran: time = 43.98 us    (17.6 %), step = 5 us            (2 %)
+    tran: time = 58.19 us    (23.3 %), step = 4.093 us     (1.64 %)
+    tran: time = 71.59 us    (28.6 %), step = 3.407 us     (1.36 %)
+    tran: time = 85.87 us    (34.3 %), step = 5 us            (2 %)
+    tran: time = 95.87 us    (38.3 %), step = 5 us            (2 %)
+    tran: time = 108.8 us    (43.5 %), step = 3.075 us     (1.23 %)
+    tran: time = 118.8 us    (47.5 %), step = 5 us            (2 %)
+    tran: time = 133.7 us    (53.5 %), step = 4.33 us      (1.73 %)
+    tran: time = 146.8 us    (58.7 %), step = 3.17 us      (1.27 %)
+    tran: time = 158.4 us    (63.4 %), step = 3.021 us     (1.21 %)
+    tran: time = 171.6 us    (68.6 %), step = 3.418 us     (1.37 %)
+    tran: time = 182.1 us    (72.8 %), step = 3.185 us     (1.27 %)
+    tran: time = 196 us      (78.4 %), step = 3.975 us     (1.59 %)
+    tran: time = 207.1 us    (82.8 %), step = 2.603 us     (1.04 %)
+    tran: time = 221.2 us    (88.5 %), step = 5 us            (2 %)
+    tran: time = 234 us      (93.6 %), step = 4.493 us      (1.8 %)
+    tran: time = 244 us      (97.6 %), step = 5 us            (2 %)
+Number of accepted tran steps =             531
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 495.195 us.
+Intrinsic tran analysis time:    CPU = 19.997 ms, elapsed = 25.2759 ms.
+Total time required for tran analysis `tran': CPU = 21.996 ms, elapsed = 31.5039 ms.
+Time accumulated: CPU = 86.985 ms, elapsed = 420.508 ms.
+Peak resident memory used = 32 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (10:58:16 AM, Thur Oct 18, 2018):
+Time used: CPU = 121 ms, elapsed = 298 s (4m  57.5s), util. = 40.7e-03%.
+Time spent in licensing: elapsed = 63.4 ms.
+Peak memory used = 32.2 Mbytes.
+Simulation started at: 10:53:19 AM, Thur Oct 18, 2018, ended at: 10:58:16 AM, Thur Oct 18, 2018, with elapsed time (wall clock): 298 s (4m  57.5s).
+spectre completes with 0 errors, 1 warning, and 1 notice.

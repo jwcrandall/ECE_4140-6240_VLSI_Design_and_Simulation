@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+ECE_6240_Digial/hw1_3_CMOS_2_Input_NAND_tb/schematic hw1_3_CMOS_2_Input_NAND_tb
+ECE_6240_Digial/hw1_3_CMOS_2_Input_NAND/schematic hw1_3_CMOS_2_Input_NAND
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+p5vonly p5vonly
+$endparam

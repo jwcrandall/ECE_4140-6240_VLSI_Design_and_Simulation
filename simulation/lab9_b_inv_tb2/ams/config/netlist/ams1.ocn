@@ -1,0 +1,46 @@
+simulator( 'ams )
+design(	 "/home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/netlist")
+resultsDir( "/home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config" )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+)
+analysis('tran ?stop "150u"  )
+desVar(	  "p5vonly" 0	)
+option(	'tnom  "25" 
+)
+save( 'v "/VIN" "/VOUT" )
+temp( 27 ) 
+run()
+selectResult( 'tran )
+plot(getData("/VIN") getData("/VOUT") )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+)
+option( ?categ 'elaborator
+	'loadVPI  "" 
+)
+run()
+selectResult( 'tran )
+plot(getData("/VIN") getData("/VOUT") )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+)
+option( ?categ 'elaborator
+	'loadVPI  "" 
+)
+run()
+selectResult( 'tran )
+plot(getData("/VIN") getData("/VOUT") )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+)
+option( ?categ 'elaborator
+	'loadVPI  "" 
+)
+run()
+selectResult( 'tran )
+plot(getData("/VIN") getData("/VOUT") )

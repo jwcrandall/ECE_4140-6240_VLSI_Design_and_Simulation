@@ -1,0 +1,6 @@
+
+lab9_b_inv_tb_vdriver I2 ( .test_data(VIN));
+
+inv I3 ( .VOUT(VOUT), .VIN(VIN));
+
+endmodule

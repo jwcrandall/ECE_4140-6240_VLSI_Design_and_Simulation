@@ -1,0 +1,4 @@
+/home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/spiceModels.scs
+/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+/home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/amsControlSpectre.scs

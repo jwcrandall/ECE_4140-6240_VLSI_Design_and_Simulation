@@ -1,0 +1,6 @@
+("NCSU_Analog_Parts" "vdc" "spectre" "spectre") "USED"
+("NCSU_Analog_Parts" "nmos4" "spectre" "spectre") "USED"
+("NCSU_Analog_Parts" "pmos4" "spectre" "spectre") "USED"
+("NCSU_Analog_Parts" "cap" "spectre" "spectre") "USED"
+("ECE_6240_Digial" "lab9_b_inv_tb_vdriver" "functional" "functional") "USED"
+("ECE_6240_Digial" "inv" "schematic" "schematic") "USED"

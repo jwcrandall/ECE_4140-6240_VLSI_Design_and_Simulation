@@ -1,0 +1,6 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: inv
+// View name: schematic
+// Inherited view list: schematic
+subckt inv

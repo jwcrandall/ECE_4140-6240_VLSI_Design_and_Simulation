@@ -3,3 +3,6 @@ Version 11.1.0.425.isr10 32bit -- 24 May 2012
 Simulating `input.scs' on shell.seas.gwu.edu at 8:45:17 PM, Thur Oct 11, 2018 (process id: 114663).
 H = mpsImport( "spectre" "ipi" "v0.0" ?session "spectre4_68654_12" )
 H->sclSetResultDir( "../psf" )
+H->sclRun( "all" )
+sclCkt0x2b8280d0 = H->sclGetCircuit(  "" )
+H->sclQuit(  )

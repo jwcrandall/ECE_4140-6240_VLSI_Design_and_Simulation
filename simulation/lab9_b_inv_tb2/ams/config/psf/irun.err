@@ -1,0 +1,296 @@
+irun(64): 15.20-s045: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+file: /home/seas/jwcrandall/cadence/ECE_6240_Digial/lab9_b_inv_tb_vdriver/functional/verilog.v
+ncvlog: *W,SPDUSD: Include directory /home/seas/jwcrandall/cadence/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+ncvlog: Memory Usage - 21.3M program + 28.4M data = 49.7M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 36.1% cpu)
+
+		Caching library 'worklib' ....... Done
+		Caching library 'ECE_6240_Digial' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		lab9_b_inv_tb2
+		cds_globals
+	Discipline resolution Pass...
+	Doing auto-insertion of connection elements...
+	Connect Rules applied are:
+		ConnRules_5V_full_fast
+	Building instance overlay tables: .................... Done
+	Using implicit TMP libraries; associated with library ECE_6240_Digial
+	Generating native compiled code:
+		ECE_6240_Digial.lab9_b_inv_tb_vdriver:functional <0x3f0c754c>
+			streams:   2, words:   843
+		connectLib.L2E_2:module <0x41e5e979>
+			streams:   4, words:  8792
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 5      22
+		Registers:               9     127
+		Scalar wires:            3       -
+		Vectored wires:          1       -
+		Always blocks:           3      56
+		Initial blocks:          2      25
+		Cont. assignments:       1      21
+		Interconnect:            4       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: ECE_6240_Digial.lab9_b_inv_tb2:config
+ncelab: Memory Usage - 49.8M program + 53.3M data = 103.1M total (Peak 236.8M)
+ncelab: CPU Usage - 0.1s system + 0.0s user = 0.1s total (0.4s, 22.8% cpu)
+Loading snapshot ECE_6240_Digial.lab9_b_inv_tb2:config .................... Done
+Simulating in AMS-SIE mode...
+	Starting analog simulation engine...
+AMSD: Using spectre solver with arguments: -ahdllibdir INCA_libs/AMSD/ahdlSimDB.
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.803.isr18 64bit -- 25 Jul 2017
+Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
+        Cadence Design Systems, Inc. All others are the property of their
+        respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: jwcrandall   Host: linux16.cflab.seas.gwu.edu   HostID: A4802D8B   PID:
+        13036
+Memory  available: 29.2583 GB  physical: 33.5891 GB
+Linux   : CentOS release 6.10 (Final)
+CPU Type: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+All processors running at 3491.7 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 (  4 ),  1 (  5 ),  2 (  6 ),  3 (  7 )
+        
+System load averages (1min, 5min, 15min) : 0.9 %, 0.5 %, 0.6 %
+Hyperthreading is enabled
+
+
+Analog Kernel using -ANALOGCONTROL  ./spiceModels.scs.
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/spiceModels.scs
+Compiling ahdlcmi module library.
+Finished compilation in 1.53 s (elapsed).
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file: 
+        /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/amsControlSpectre.scs
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/.amsbind.scs
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/spectre.cfg
+Time for NDB Parsing: CPU = 110.984 ms, elapsed = 2.71548 s.
+Time accumulated: CPU = 267.959 ms, elapsed = 2.71548 s.
+Peak resident memory used = 84.9 Mbytes.
+
+ncsim> source /apps/vlsi_2018/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> # This is the NC-SIM(R) probe command file
+ncsim> # used in the AMS-ADE integration.
+ncsim> 
+ncsim> 
+ncsim> #
+ncsim> # Database settings
+ncsim> #
+ncsim> if { [info exists ::env(AMS_RESULTS_DIR) ] } { set AMS_RESULTS_DIR $env(AMS_RESULTS_DIR)} else {set AMS_RESULTS_DIR "../psf"}
+../psf
+ncsim> database -open ams_database -into ${AMS_RESULTS_DIR} -default
+Created default SHM database ams_database
+ncsim> 
+ncsim> #
+ncsim> # Probe settings
+ncsim> #
+ncsim> probe -create -emptyok -database ams_database {lab9_b_inv_tb2.VIN}
+Created probe 1
+ncsim> probe -create -emptyok -database ams_database {lab9_b_inv_tb2.VOUT}
+Created probe 2
+ncsim> 
+ncsim> run
+
+The CPU load for active processors is :
+        Spectre  0 (25.2 %)      1 (9.6 %)       2 (8.0 %)       3 (5.5 %)
+                 4 (10.6 %)      5 (8.6 %)       6 (23.1 %)      7 (3.9 %)
+        Other   
+Reading link: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 82.987 ms, elapsed = 453.218 ms.
+Time accumulated: CPU = 350.946 ms, elapsed = 3.16889 s.
+Peak resident memory used = 106 Mbytes.
+
+Time for EDB Visiting: CPU = 0 s, elapsed = 478.983 us.
+Time accumulated: CPU = 350.946 ms, elapsed = 3.16951 s.
+Peak resident memory used = 106 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2441): lab9_b_inv_tb2.I3.P0: Instance length width or area
+        does not fit the given lmax-lmin, wmax-wmin or areamax-areamin range
+        for the model 'ami06P'.
+
+Global user options:
+      addflowsuffix = yes
+        dotprobefmt = hier
+               temp = 27
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+             pivrel = 0.001
+     checklimitdest = psf
+             rawfmt = sst2
+               save = selected
+               tnom = 25
+              scale = 1
+             scalem = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 6
+            bsim3v3 2     
+          capacitor 1     
+connectLib__L2E_2__module__0x10000001_behavioral 1     
+            vsource 1     
+
+Analysis and control statement inventory:
+               info 4     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 2     
+
+Time for parsing: CPU = 2.999 ms, elapsed = 46.1111 ms.
+Time accumulated: CPU = 353.945 ms, elapsed = 3.21575 s.
+Peak resident memory used = 107 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 150 us)
+*************************************************
+DC simulation time: CPU = 1 ms, elapsed = 4.12202 ms.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 150 us
+    step = 150 ns
+    maxstep = 3 us
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 25 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (voltage)
+
+    tran: time = 4.65 us      (3.1 %), step = 2.4 us        (1.6 %)
+    tran: time = 11.26 us    (7.51 %), step = 58.54 ns      (39 m%)
+    tran: time = 19.85 us    (13.2 %), step = 3 us            (2 %)
+    tran: time = 27.58 us    (18.4 %), step = 1.55 us      (1.03 %)
+    tran: time = 34.18 us    (22.8 %), step = 698.9 ns     (466 m%)
+    tran: time = 41.25 us    (27.5 %), step = 236.4 ns     (158 m%)
+    tran: time = 50 us       (33.3 %), step = 2.418 us     (1.61 %)
+    tran: time = 56.93 us      (38 %), step = 1.72 us      (1.15 %)
+    tran: time = 64.13 us    (42.8 %), step = 643.3 ns     (429 m%)
+    tran: time = 71.26 us    (47.5 %), step = 58.65 ns    (39.1 m%)
+    tran: time = 79.93 us    (53.3 %), step = 3 us            (2 %)
+    tran: time = 87.58 us    (58.4 %), step = 1.551 us     (1.03 %)
+    tran: time = 94.18 us    (62.8 %), step = 698.9 ns     (466 m%)
+    tran: time = 101.3 us    (67.5 %), step = 236.4 ns     (158 m%)
+    tran: time = 110 us      (73.3 %), step = 2.418 us     (1.61 %)
+    tran: time = 116.9 us      (78 %), step = 1.72 us      (1.15 %)
+    tran: time = 124.1 us    (82.8 %), step = 643.3 ns     (429 m%)
+    tran: time = 131.3 us    (87.5 %), step = 58.65 ns    (39.1 m%)
+    tran: time = 139.9 us    (93.3 %), step = 3 us            (2 %)
+    tran: time = 147.6 us    (98.4 %), step = 1.551 us     (1.03 %)
+Simulation complete via $finish(1) at time 150 US + 0
+/home/seas/jwcrandall/cadence/ECE_6240_Digial/lab9_b_inv_tb_vdriver/functional/verilog.v:12     #15 $finish;
+ncsim> exit
+    tran: time = 150 us       (100 %), step = 2.418 us     (1.61 %)
+`AutoStop = yes'. Analysis finished at 150 us s.
+
+Number of accepted tran steps =             504
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (25.6 %)      1 (9.6 %)       2 (8.0 %)       3 (5.3 %)
+                 4 (10.6 %)      5 (8.3 %)       6 (22.3 %)      7 (3.7 %)
+        Other   
+Initial condition solution time: CPU = 1 ms, elapsed = 4.16899 ms.
+
+**** AMSD: Mixed-Signal Activity Statistics ****
+Number of A-to-D events:                       0
+  Number of A-to-D events in IEs:              0
+Number of D-to-A events:                      17
+  Number of D-to-A events in IEs:             17
+Number of VHDL-AMS Breaks:                     0
+
+Intrinsic tran analysis time:    CPU = 29.995 ms, elapsed = 36.381 ms.
+Total time required for tran analysis `tran': CPU = 31.995 ms, elapsed = 43.035
+        ms.
+Time accumulated: CPU = 386.94 ms, elapsed = 3.26114 s.
+Peak resident memory used = 112 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+
+Aggregate audit (4:52:07 PM, Tue Oct 30, 2018):
+Time used: CPU = 410 ms, elapsed = 3.3 s, util. = 12.4%.
+Time spent in licensing: elapsed = 291 ms, percentage of total = 8.84%.
+Peak memory used = 112 Mbytes.
+Simulation started at: 4:52:03 PM, Tue Oct 30, 2018, ended at: 4:52:07 PM, Tue
+        Oct 30, 2018, with elapsed time (wall clock): 3.3 s.
+spectre completes with 0 errors, 1 warning, and 0 notices.
+ncsim: Memory Usage - 38.6M program + 462.4M data = 501.0M total (501.0M Peak)
+ncsim: CPU Usage - 1.2s system + 1.3s user = 2.5s total (5.2s, 47.3% cpu)

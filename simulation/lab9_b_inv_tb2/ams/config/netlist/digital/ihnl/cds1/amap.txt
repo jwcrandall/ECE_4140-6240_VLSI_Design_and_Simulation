@@ -1,0 +1,8 @@
+netMap,*lab9_b_inv_tb2,*gnd!,*cds_globals.\gnd! 
+netMap,*lab9_b_inv_tb2,*vdd!,*cds_globals.\vdd! 
+instMap,*lab9_b_inv_tb2,*I2,*I2
+instMaster,*lab9_b_inv_tb2,*I2,*ECE_6240_Digial_lab9_b_inv_tb_vdriver_functional
+instMap,*lab9_b_inv_tb2,*I3,*I3
+instMaster,*lab9_b_inv_tb2,*I3,*ECE_6240_Digial_inv_schematic
+cellMap,*lab9_b_inv_tb2,*lab9_b_inv_tb2,*ECE_6240_Digial,*schematic
+topMap,*lab9_b_inv_tb2

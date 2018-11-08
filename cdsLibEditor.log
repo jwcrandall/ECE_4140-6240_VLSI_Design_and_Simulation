@@ -1,23 +1,25 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 12/05/2017 23:54 (sjfhw305) $
 \o Sub version:		sub-version  s061 
-\o Arguments:		-cdslib /home/seas/jwcrandall/cadence/cds.lib -mpssession virtuoso10092 -mpshost linux17.cflab.seas.gwu.edu 
-\o Working Directory:	linux17.cflab.seas.gwu.edu:/home/seas/jwcrandall/cadence
+\o Arguments:		-cdslib /home/seas/jwcrandall/cadence/cds.lib -mpssession virtuoso6725 -mpshost linux16.cflab.seas.gwu.edu 
+\o Working Directory:	linux16.cflab.seas.gwu.edu:/home/seas/jwcrandall/cadence
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
 \o Qt version: 		4.8.5
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "analogLib"
-\a nrResizeWindow(cdsLibEditor list(0 25 500 400))
+\a nrResizeWindow(cdsLibEditor list(87 496 500 400))
 \a cdsLibEditor->editAddLibButton->value = t
 \a newLibraryDialog->filePathComboBox->value = "/home/seas/jwcrandall/cadence"
 \a newLibraryDialog->useMappedName->value = nil
 \a nrSetWindowVisibility(newLibraryDialog "show")
 \a nrSetCurrentWindow(newLibraryDialog)
-\a nrResizeWindow(newLibraryDialog list(0 25 531 513))
-\a newLibraryDialog->libraryListBox->value = "Digial"
+\a nrResizeWindow(newLibraryDialog list(72 482 531 513))
+\a newLibraryDialog->libraryListBox->value = "test"
 \a newLibraryDialog->useMappedName->value = t
-\a newLibraryDialog->libraryName->value = "Digial"
+\a newLibraryDialog->libraryName->value = "test"
+\a newLibraryDialog->libraryListBox->value = "ECE_6240_Digial"
+\a newLibraryDialog->libraryName->value = "ECE_6240_Digial"
 \a newLibraryDialog->okButton->value = t
 \a newLibraryDialog->libraryListBox->value = nil
 \a newLibraryDialog->useMappedName->value = nil
@@ -25,23 +27,82 @@
 \a nrListItemAction(cdsLibEditor->mainTable 20 0)
 \o Active cell: 20 0 ""
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 11 1)
-\o Active cell: 11 1 "$CDK_DIR/lib/NCSU_TechLib_tsmc03"
+\a cdsLibEditor->editAddLibButton->value = t
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(72 482 531 513))
+\a newLibraryDialog->libraryListBox->value = "6218_Final_Project"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "6218_Final_Project"
+\a newLibraryDialog->libraryListBox->value = "analog_ece6218"
+\a newLibraryDialog->libraryName->value = "analog_ece6218"
+\a newLibraryDialog->libraryListBox->value = "6218_Final_Project"
+\a newLibraryDialog->libraryName->value = "6218_Final_Project"
+\a newLibraryDialog->okButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 20 0 "6218_Final_Project")
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 21 0)
+\o Active cell: 21 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(72 482 531 513))
+\a newLibraryDialog->libraryListBox->value = "analog_ece6218"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "analog_ece6218"
+\a newLibraryDialog->okButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 21 0 "analog_ece6218")
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 22 0)
+\o Active cell: 22 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 1 1)
+\o Active cell: 1 1 "$CDSROOT/assura/tools/assura/etc/avtech/avTech"
+\a nrListItemRename(cdsLibEditor->mainTable, 1 1 "$CDSROOT/ASSURA41/tools/assura/etc/avtech/avTech")
+\a nrListItemAction(cdsLibEditor->mainTable 2 0)
+\o Active cell: 2 0 "adsLib"
+\a nrListItemAction(cdsLibEditor->mainTable 3 0)
+\o Active cell: 3 0 "basic"
+\a nrListItemAction(cdsLibEditor->mainTable 2 0)
+\o Active cell: 2 0 "adsLib"
 \a cdsLibEditor->fileSaveButton->value = t
-\a nrListItemRename(cdsLibEditor->mainTable, 11 1 "$CDSROOT/ASSURA41/tools/assura/etc/avtech/avTech")
-\o WARNING (CLE-211): Library NCSU_TechLib_tsmc03 was defined in include file "$DESIGNKITS/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib".\nIn order to make the change, it was necessary to undefine the library and\nredefine it locally.
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 22 0)
+\o Active cell: 22 0 ""
+\a cdsLibEditor->viewFullPathsButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 22 0 "connectLib")
+\a nrListItemAction(cdsLibEditor->mainTable 22 1)
+\o Active cell: 22 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 22 1 "/apps/vlsi_2018/cadence/INCISIVE152/tools/affirma_ams/etc/connect_lib/connectLib")
+\a nrListItemAction(cdsLibEditor->mainTable 23 0)
+\o Active cell: 23 0 ""
+\a cdsLibEditor->fileSaveButton->value = t
+\o ERROR (CLE-151): File was not saved.\n\n"/home/seas/jwcrandall/cadence/cds.lib" has been modified since it was read. \n\nUse "Save As" to save your changes to a different file. 
 \a nrSetWindowVisibility(errorDialog "show")
 \a nrSetCurrentWindow(errorDialog)
-\a nrResizeWindow(errorDialog list(0 136 635 134))
+\a nrResizeWindow(errorDialog list(102 597 471 164))
 \a errorDialog->errorOkButton->value = t
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 10 1)
-\o Active cell: 10 1 "$CDK_DIR/lib/NCSU_TechLib_tsmc02d"
+\a cdsLibEditor->fileSaveAsButton->value = t
+\a saveAsGroupDialog->saveAsLibDefsCheckBox->value = nil
+\a saveAsGroupDialog->unionUsageRadioB->value = nil
+\a nrSetWindowVisibility(saveAsGroupDialog "show")
+\a nrSetCurrentWindow(saveAsGroupDialog)
+\a nrResizeWindow(saveAsGroupDialog list(74 537 526 345))
+\a saveAsGroupDialog->okButton->value = t
+\o QUESTION (CLE-140): Caution\n\n"/home/seas/jwcrandall/cadence/cds.lib" already exists. \n\nDo you want to overwrite this file? 
+\a nrSetWindowVisibility(genericDialog "show")
+\a nrSetCurrentWindow(genericDialog)
+\a nrResizeWindow(genericDialog list(158 597 358 164))
+\a genericDialog->genericYesButton->value = t
+\a nrSetCurrentWindow(saveAsGroupDialog)
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->fileSaveButton->value = t
 \a cdsLibEditor->fileExitButton->value = t
-\o QUESTION (CLE-205): You have made changes which have not been saved. \n\nWould you like to save your changes? 
-\a nrSetWindowVisibility(needSaveDialog "show")
-\a nrResizeWindow(needSaveDialog list(66 136 369 136))
-\a nrSetCurrentWindow(needSaveDialog)
-\a needSaveDialog->yesButton->value = t
 \a nrSetWindowVisibility(cdsLibEditor "hide")
 \a exit(0)

@@ -1,0 +1,6 @@
+("NCSU_Analog_Parts" "vdc" "spectre" spectreSrcPrim) t
+("NCSU_Analog_Parts" "nmos4" "spectre" nil) t
+("NCSU_Analog_Parts" "pmos4" "spectre" nil) t
+("NCSU_Analog_Parts" "cap" "spectre" nil) t
+("ECE_6240_Digial" "lab9_b_inv_tb_vdriver" "functional" nil) nil
+("ECE_6240_Digial" "inv" "schematic" nil) nil

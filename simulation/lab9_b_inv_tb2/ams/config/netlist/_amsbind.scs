@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config ECE_6240_Digial.lab9_b_inv_tb2:config
+// Created On: Oct 30 16:41:56 2018
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="ECE_6240_Digial.lab9_b_inv_tb2:schematic"
+
+	config cell="ami06N" view="analogtext"
+	config cell="capacitor" view="analogtext"
+	config cell="ami06P" view="analogtext"
+	config cell="vsource" view="analogtext"
+	config cell="inv" lib="ECE_6240_Digial" view="schematic"
+	config cell="lab9_b_inv_tb_vdriver" lib="ECE_6240_Digial" view="functional"
+
+ }

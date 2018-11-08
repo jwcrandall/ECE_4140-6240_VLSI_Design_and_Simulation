@@ -1,0 +1,3 @@
+netMap,*inv,*gnd!,*cds_globals.\gnd! 
+netMap,*inv,*vdd!,*cds_globals.\vdd! 
+cellMap,*inv,*inv,*ECE_6240_Digial,*schematic

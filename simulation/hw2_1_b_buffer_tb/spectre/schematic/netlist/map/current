@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "hw2_1_b_buffer_tb"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/seas/jwcrandall/cadence/simulation/hw2_1_b_buffer_tb/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "ECE_6240_Digial/hw1_1_c_inverter/schematic" "hw1_1_c_inverter" )
+( "ECE_6240_Digial/hw2_1_b_buffer_tb/schematic" "hw2_1_b_buffer_tb" )
+( "ECE_6240_Digial/hw2_1_a_buffer/schematic" "hw2_1_a_buffer" )
+ )
+( "hw2_1_b_buffer_tb" "ihnl/cds2/map" )
+( "hw1_1_c_inverter" "ihnl/cds0/map" )
+( "hw2_1_a_buffer" "ihnl/cds1/map" )
+ )

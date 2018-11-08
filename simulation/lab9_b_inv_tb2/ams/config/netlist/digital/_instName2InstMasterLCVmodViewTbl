@@ -1,0 +1,2 @@
+("lab9_b_inv_tb2" "V0") ("NCSU_Analog_Parts" "vdc" "spectre" "spectre" "ECE_6240_Digial" "lab9_b_inv_tb2" "schematic")
+("lab9_b_inv_tb2" "I2") ("ECE_6240_Digial" "lab9_b_inv_tb_vdriver" "functional" "functional" "ECE_6240_Digial" "lab9_b_inv_tb2" "schematic")

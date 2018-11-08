@@ -1,0 +1,7 @@
+designtop="ECE_6240_Digial.lab9_b_inv_tb2:schematic"
+cell="ami06N" view="analogtext" 
+cell="capacitor" view="analogtext" 
+cell="ami06P" view="analogtext" 
+cell="vsource" view="analogtext" 
+cell="inv" lib="ECE_6240_Digial" view="schematic" 
+cell="lab9_b_inv_tb_vdriver" lib="ECE_6240_Digial" view="functional" 

@@ -1,0 +1,39 @@
+#!/bin/ksh
+
+
+function convertReturnValue
+{
+   typeset rtnVal=$1
+   if [[ -z $AMS_RESULTS_DIR ]]
+   then
+       typeset AMS_RESULTS_DIR="../psf"
+   fi
+   typeset logFileName="${AMS_RESULTS_DIR}/logFile"
+   if [[ "$1" = 1 && -s "$logFileName" ]]
+   then
+       rtnVal=$2
+   fi
+   # Supply the value back to the caller.
+   return $rtnVal
+}
+
+# Set location variables
+
+if [[ -z $AMS_CIC_HIER ]]; then
+   export    AMS_CIC_HIER=/apps/vlsi_2018/cadence/IC617
+fi
+
+if [[ -z $AMS_IUS_HIER ]]; then
+   export    AMS_IUS_HIER=/apps/vlsi_2018/cadence/INCISIVE152
+fi
+
+if [[ -z $IC_INVOKE_DIR ]]; then
+   export    IC_INVOKE_DIR=/home/seas/jwcrandall/cadence
+fi
+
+export TESTBENCH_TOPCELL="lab9_b_inv_tb2"
+irun -f irunArgs 
+
+
+convertReturnValue $? 0
+

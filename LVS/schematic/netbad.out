@@ -1,0 +1,10 @@
+N /net8
+? Net does not cross-match. It has 4 connections.
+N /net9
+? Net does not cross-match. It has 4 connections.
+N /Out
+? Net does not cross-match. It has 3 connections.
+N /I2/net14
+? Net does not cross-match. It has 2 connections.
+N /I3/net14
+? Net does not cross-match. It has 2 connections.

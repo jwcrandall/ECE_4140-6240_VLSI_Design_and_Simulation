@@ -1,1 +1,38 @@
 simulator( 'spectre )
+design(	 "/home/seas/jwcrandall/cadence/simulation/hw1_1_c_inverter_tb/spectre/schematic/netlist/netlist")
+resultsDir( "/home/seas/jwcrandall/cadence/simulation/hw1_1_c_inverter_tb/spectre/schematic" )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+)
+analysis('dc ?dev "/V0"  ?param "dc"  ?start "0"  
+		?stop "5"  )
+desVar(	  "p5vonly" 0	)
+envOption(
+	'analysisOrder  list("dc") 
+)
+temp( 27 ) 
+run()
+selectResult( 'dc )
+plot(getData("/vout") getData("/vin") )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+)
+run()
+selectResult( 'dc )
+plot(getData("/vout") getData("/vin") )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+)
+run()
+selectResult( 'dc )
+plot(getData("/vout") getData("/vin") )
+modelFile( 
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" "")
+    '("/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" "")
+)
+run()
+selectResult( 'dc )
+plot(getData("/vout") getData("/vin") )

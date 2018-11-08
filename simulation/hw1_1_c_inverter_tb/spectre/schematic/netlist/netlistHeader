@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct 16 18:14:11 2018
+// Design library name: ECE_6240_Digial
+// Design cell name: hw1_1_c_inverter_tb
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

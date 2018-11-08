@@ -1,4 +1,4 @@
-# File Created by Joseph Crandall at Tue Sep  4 15:58:04 2018
+# File Created by Joseph Crandall at Tue Oct 30 16:40:51 2018
 # assisted by CdsLibEditor
 ###
 ### Cadence basic libs
@@ -8,7 +8,7 @@ DEFINE analogLib $CDSDIR/tools/dfII/etc/cdslib/artist/analogLib
 ###
 ### Assura libs
 ###
-DEFINE avTech $CDSROOT/assura/tools/assura/etc/avtech/avTech
+DEFINE avTech $CDSROOT/ASSURA41/tools/assura/etc/avtech/avTech
 
 ###
 ### ADS/RFDE libs
@@ -19,7 +19,6 @@ DEFINE adsLib $HPEESOF_DIR/cdslibs/adsLib
 ### NCSU kit libs
 ###
 INCLUDE $DESIGNKITS/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
-UNDEFINE NCSU_TechLib_tsmc03
 
 ###
 ### IBM kit libs
@@ -36,5 +35,7 @@ DEFINE ibm_cmos8hp_sc $DESIGNKITS/ibm_kits/IBM_IP/ibm_cmos8hp/std_cell/sc/v.2011
 ###
 ### My libs
 ###
-DEFINE Digial Digial
-DEFINE NCSU_TechLib_tsmc03 $CDSROOT/ASSURA41/tools/assura/etc/avtech/avTech
+DEFINE ECE_6240_Digial ECE_6240_Digial
+DEFINE 6218_Final_Project 6218_Final_Project
+DEFINE analog_ece6218 analog_ece6218
+DEFINE connectLib /apps/vlsi_2018/cadence/INCISIVE152/tools/affirma_ams/etc/connect_lib/connectLib

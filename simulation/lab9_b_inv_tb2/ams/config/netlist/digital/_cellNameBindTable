@@ -1,0 +1,6 @@
+("NCSU_Analog_Parts" "vdc" "spectre") "vsource"
+("NCSU_Analog_Parts" "nmos4" "spectre") "ami06N"
+("NCSU_Analog_Parts" "pmos4" "spectre") "ami06P"
+("NCSU_Analog_Parts" "cap" "spectre") "capacitor"
+("ECE_6240_Digial" "lab9_b_inv_tb_vdriver" "functional") "lab9_b_inv_tb_vdriver"
+("ECE_6240_Digial" "inv" "schematic") "inv"

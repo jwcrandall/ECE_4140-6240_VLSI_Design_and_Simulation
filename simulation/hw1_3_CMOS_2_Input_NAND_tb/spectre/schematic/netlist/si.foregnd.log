@@ -1,0 +1,11 @@
+Begin Incremental Netlisting Oct 18 11:42:22 2018
+WARNING (OSSHNL-176): Property bag for the cell 'hw1_3_CMOS_2_Input_NAND_tb' in
+library 'ECE_6240_Digial', has been modified or added
+since the last netlisting
+session. Therefore, re-netlisting this cell view and
+all cell views where this
+cell is instantiated.
+
+End netlisting Oct 18 11:42:22 2018
+Begin Incremental Netlisting Oct 18 11:43:47 2018
+End netlisting Oct 18 11:43:47 2018

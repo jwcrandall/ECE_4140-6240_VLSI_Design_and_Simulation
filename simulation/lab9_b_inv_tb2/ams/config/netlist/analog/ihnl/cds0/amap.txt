@@ -1,0 +1,9 @@
+cellMap,*inv,*inv,*ECE_6240_Digial,*schematic
+netMap,*inv,*gnd!,*0
+netMap,*inv,*vdd!,*vdd!
+instMap,*inv,*P0,*P0
+instMaster,*inv,*P0,*NCSU_Analog_Parts_pmos4_spectre,*ami06P
+instMap,*inv,*N0,*N0
+instMaster,*inv,*N0,*NCSU_Analog_Parts_nmos4_spectre,*ami06N
+portMap,*inv,*VIN,*VIN
+portMap,*inv,*VOUT,*VOUT

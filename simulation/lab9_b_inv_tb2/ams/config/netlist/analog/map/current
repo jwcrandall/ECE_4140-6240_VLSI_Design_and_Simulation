@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "lab9_b_inv_tb2"
+  repList "spectre spice verilog verilogams behavioral functional systemverilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/seas/jwcrandall/cadence/simulation/lab9_b_inv_tb2/ams/config/netlist/analog"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "ECE_6240_Digial/inv/schematic" "inv" )
+( "ECE_6240_Digial/lab9_b_inv_tb2/schematic" "lab9_b_inv_tb2" )
+ )
+( "lab9_b_inv_tb2" "ihnl/cds1/map" )
+( "inv" "ihnl/cds0/map" )
+ )

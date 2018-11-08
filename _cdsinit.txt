@@ -1,0 +1,66 @@
+;;;
+;;; GWU .cdsinit file
+;;;  loads ADS, IBM 7RF, IBM 8HP, and NCSU .cdsinit, .cdsenv, and display.drf files
+;;;  last updated: 10/2011 - tjf
+
+
+;;;
+;;; FILES TO LOAD 
+;;;
+adsFILE     = strcat(getShellEnvVar("HPEESOF_DIR") "/idf/config/.cdsinit")
+
+ibm7rfFILE1 = strcat(getShellEnvVar("DESIGNKITS")  "/ibm_kits/IBM_PDK/cmrf7sf/relML/cdslib/examples/.cdsenv")
+ibm7rfFILE2 = strcat(getShellEnvVar("DESIGNKITS")  "/ibm_kits/IBM_PDK/cmrf7sf/relML/cdslib/examples/.cdsinit")
+ibm7rfFILE3 = strcat(getShellEnvVar("DESIGNKITS")  "/ibm_kits/IBM_PDK/cmrf7sf/relML/cdslib/cmrf7sf/display.drf")
+
+ibm8hpFILE1 = strcat(getShellEnvVar("DESIGNKITS")  "/ibm_kits/IBM_PDK/bicmos8hp/relHP/cdslib/examples/.cdsenv")
+ibm8hpFILE2 = strcat(getShellEnvVar("DESIGNKITS")  "/ibm_kits/IBM_PDK/bicmos8hp/relHP/cdslib/examples/.cdsinit")
+ibm8hpFILE3 = strcat(getShellEnvVar("DESIGNKITS")  "/ibm_kits/IBM_PDK/bicmos8hp/relHP/cdslib/bicmos8hp/display.drf")
+
+ncsuFILE1   = strcat(getShellEnvVar("DESIGNKITS")  "/ncsu-cdk-1.6.0.beta/cdssetup/cdsenv")
+ncsuFILE2   = strcat(getShellEnvVar("DESIGNKITS")  "/ncsu-cdk-1.6.0.beta/cdssetup/cdsinit")
+ncsuFILE3   = strcat(getShellEnvVar("DESIGNKITS")  "/ncsu-cdk-1.6.0.beta/cdssetup/display.drf")
+
+
+;;;
+;;; TEST FILES EXISTENCE, THEN LOAD
+;;;
+
+if(isFile(adsFILE) then
+          printf("### - Loading ADS .cdsinit file\n") 
+          loadi(adsFILE)
+         )
+
+if( isFile(ibm7rfFILE1) && isFile(ibm7rfFILE2) then
+          printf("### - Loading IBM 7RF files\n")
+          loadi(ibm7rfFILE2)
+          envLoadFile(ibm7rfFILE1)
+          drLoadDrf(ibm7rfFILE3 nil)
+         )
+
+if( isFile(ibm8hpFILE1) && isFile(ibm8hpFILE2) then
+          printf("### - Loading IBM 8HP files\n")
+          loadi(ibm8hpFILE2)
+          envLoadFile(ibm8hpFILE1)
+          drLoadDrf(ibm8hpFILE3 nil)
+         )
+
+if(isFile(ncsuFILE1) && isFile(ncsuFILE2) then
+          printf("### - Loading NCSU files\n")
+          loadi(ncsuFILE2)
+          envLoadFile(ncsuFILE1)
+          drLoadDrf(ncsuFILE3 nil)
+         )
+
+;;;
+;;; LOAD DISPLAY.DRF FILES LAST
+;;;
+if( isFile(ibm7rfFILE3) then
+          printf("### - Loading IBM 7RF display.drf files\n")
+          drLoadDrf(ibm7rfFILE3 nil)
+         )
+
+if( isFile(ibm8hpFILE3) then
+          printf("### - Loading IBM 8HP display.drf files\n")
+	  drLoadDrf(ibm8hpFILE3 nil)
+         )

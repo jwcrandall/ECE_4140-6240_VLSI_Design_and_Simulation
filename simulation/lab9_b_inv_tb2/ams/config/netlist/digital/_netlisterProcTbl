@@ -1,0 +1,5 @@
+("NCSU_Analog_Parts" "vdc" "spectre") spectreSrcPrim
+("NCSU_Analog_Parts" "nmos4" "spectre") nil
+("NCSU_Analog_Parts" "pmos4" "spectre") nil
+("NCSU_Analog_Parts" "cap" "spectre") nil
+("ECE_6240_Digial" "inv" "schematic") nil

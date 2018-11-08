@@ -1,0 +1,10 @@
+cellMap,*lab9_b_inv_tb2,*lab9_b_inv_tb2,*null,*null
+topMap,*lab9_b_inv_tb2
+netMap,*lab9_b_inv_tb2,*gnd!,*0
+netMap,*lab9_b_inv_tb2,*vdd!,*vdd!
+instMap,*lab9_b_inv_tb2,*V0,*V0
+instMaster,*lab9_b_inv_tb2,*V0,*NCSU_Analog_Parts_vdc_spectre,*vsource
+instMap,*lab9_b_inv_tb2,*I3,*I3
+instMaster,*lab9_b_inv_tb2,*I3,*ECE_6240_Digial_inv_schematic,*inv
+instMap,*lab9_b_inv_tb2,*C0,*C0
+instMaster,*lab9_b_inv_tb2,*C0,*NCSU_Analog_Parts_cap_spectre,*capacitor

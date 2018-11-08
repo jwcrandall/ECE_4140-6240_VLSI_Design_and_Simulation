@@ -230,3 +230,10 @@ outputParameter: writing output parameter values to rawfile.
 designParamVals: writing netlist parameters to rawfile.
 primitives: writing primitives to rawfile.
 subckts: writing subcircuits to rawfile.
+
+Aggregate audit (5:00:13 PM, Tue Oct 16, 2018):
+Time used: CPU = 9.06 s, elapsed = 418 ks (4d 20h 14m), util. = 2.17e-03%.
+Time spent in licensing: elapsed = 62.5 ms.
+Peak memory used = 32.1 Mbytes.
+Simulation started at: 8:45:17 PM, Thur Oct 11, 2018, ended at: 5:00:13 PM, Tue Oct 16, 2018, with elapsed time (wall clock): 418 ks (4d 20h 14m).
+spectre completes with 0 errors, 14 warnings, and 15 notices.

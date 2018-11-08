@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  ECE_6240_Digial 
+cell: lab9_b_inv_tb2 
+view: config 
+topCellLib: ECE_6240_Digial 

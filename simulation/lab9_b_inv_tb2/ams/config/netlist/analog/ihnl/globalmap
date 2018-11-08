@@ -1,0 +1,12 @@
+CADENCE IHNL04120
+$model
+ECE_6240_Digial/inv/schematic ECE_6240_Digial/inv/schematic/schematic/ECE_6240_Digial_lab9_b_inv_tb2_config/0 inv
+ECE_6240_Digial/lab9_b_inv_tb2/schematic ECE_6240_Digial/lab9_b_inv_tb2/schematic/schematic/ECE_6240_Digial_lab9_b_inv_tb2_config/1 lab9_b_inv_tb2
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+p5vonly p5vonly
+$endparam

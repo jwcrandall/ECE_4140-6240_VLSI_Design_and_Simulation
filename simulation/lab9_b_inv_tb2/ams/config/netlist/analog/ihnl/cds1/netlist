@@ -1,0 +1,8 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: lab9_b_inv_tb2
+// View name: schematic
+// Inherited view list: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+I3 inv
+C0 (VOUT 0) capacitor c=1p m=1
