@@ -1,0 +1,16 @@
+Begin Incremental Netlisting Nov 13 17:39:14 2018
+WARNING (OSSHNL-176): Property bag for the cell 'hw2_2_XNOR' in library
+'ECE_6240_Digial', has been modified or added
+since the last netlisting session.
+Therefore, re-netlisting this cell view and
+all cell views where this cell is
+instantiated.
+
+WARNING (OSSHNL-176): Property bag for the cell 'hw2_2_XNOR_tb' in library
+'ECE_6240_Digial', has been modified or added
+since the last netlisting session.
+Therefore, re-netlisting this cell view and
+all cell views where this cell is
+instantiated.
+
+End netlisting Nov 13 17:39:14 2018

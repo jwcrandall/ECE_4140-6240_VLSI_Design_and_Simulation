@@ -1,0 +1,7 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw3_1_adder_1bit
+// View name: schematic
+// Inherited view list: spectre spice pspice verilog verilogams behavioral
+//functional systemVerilog schematic veriloga vhdl vhdlams wreal
+subckt hw3_1_adder_1bit A B Cin Cout Sum

@@ -1,0 +1,82 @@
+ahdlcmicompile: Compiling ahdlcmi in INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/ for Linux-64 with optimize using gcc on Sun Nov 18 17:03:56 EST 2018 [5.0]
+ahdlcmicompile: Generating makefile
+PATH:  /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cdsgcc/gcc/4.1-x86_64/install/bin:/apps/vlsi_2018/cadence/INCISIVE152/tools/bin/64bit:/apps/vlsi_2018/cadence/IC617/bin:/apps/vlsi_2018/cadence/IC617/tools/bin:/apps/vlsi_2018/cadence/IC617/tools/bin/64bit:/apps/vlsi_2018/cadence/IC617/share/oa/bin:.:/apps/ads/ads2014_01/bin:/apps/vlsi_2018/synopsys/primetime/N-2017.12-SP1/bin:/apps/vlsi_2018/synopsys/formality/N-2017.09-SP3/bin:/apps/vlsi_2018/synopsys/synthesis/O-2018.06-SP1/synthesis/O-2018.06-SP1/bin:/apps/vlsi_2018/synopsys/tetramax/L-2016.03-SP5-5/bin:/apps/vlsi_2018/synopsys/synthesis/O-2018.06-SP1/bin:/apps/vlsi_2018/cadence/CONFRML171/tools/bin:/apps/vlsi_2018/cadence/CONFRML171/tools/dfII/bin:/apps/vlsi_2018/cadence/EXT181/tools/bin:/apps/vlsi_2018/cadence/EXT181/tools/dfII/bin:/apps/vlsi_2018/cadence/SPECTRE171/tools/bin:/apps/vlsi_2018/cadence/SPECTRE171/tools/dfII/bin:/apps/vlsi_2018/cadence/ASSURA41/tools/bin:/apps/vlsi_2018/cadence/ASSURA41/tools/assura/bin:/apps/vlsi_2018/cadence/ASSURA41/bin:/apps/vlsi_2018/cadence/ETS131/tools/bin:/apps/vlsi_2018/cadence/ets/tools/dfII/bin:/apps/vlsi_2018/cadence/EDI142/tools/fe/bin:/apps/vlsi_2018/cadence/EDI142/tools.lnx86/dfII/bin:/apps/vlsi_2018/cadence/INCISIVE152/tools/bin:/apps/vlsi_2018/cadence/INCISIVE152/tools/dfII/bin/64bit:.:/apps/vlsi_2018/cadence/IC617/tools/dfII/bin:.:/apps/ads/ads2014_01/bin:/apps/synopsys/primetime/bin:/apps/synopsys/formality/bin:/apps/synopsys/synthesis/linux/syn/bin:/apps/synopsys/synthesis/bin:/apps/cadence/conform/tools/bin:/apps/cadence/conform/tools/dfII/bin:/apps/cadence/ext/tools/bin:/apps/cadence/ext/tools/dfII/bin:/apps/cadence/mmsim/tools/bin:/apps/cadence/mmsim/tools/dfII/bin:/apps/cadence/assura/tools/bin:/apps/cadence/assura/tools/assura/bin:/apps/cadence/assura/bin:/apps/cadence/ets/tools/bin:/apps/cadence/ets/tools/dfII/bin:/apps/cadence/soc/tools/bin:/apps/cadence/soc/tools/dfII/bin:/apps/cadence/ius/tools/bin:/apps/cadence/ius/tools/dfII/bin:/apps/cadence/ic/tools/bin:/apps/cadence/ic/tools/dfII/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/apps/matlab/matlab/bin:/opt/ansys_inc/v145/fluent/bin:/opt/ansys_inc/v145/ansys/bin:/apps/silvaco/silvaco/bin:/apps/anaconda/anaconda3/bin:/apps/sonnet/sonnet/bin:~vlsi/course_all/vnc_scripts:~vlsi/course_ece128/scripts:/apps/sonnet/sonnet/bin:~vlsi/course_all/vnc_scripts:~vlsi/course_ece128/scripts
+LD_LIBRARY_PATH:  /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cdsgcc/gcc/4.1-x86_64/install/lib:/apps/vlsi_2018/cadence/INCISIVE152/tools/lib/64bit:/apps/vlsi_2018/cadence/INCISIVE152/tools/lib/64bit/SuSE:/apps/vlsi_2018/cadence/IC617/tools/lib:/apps/vlsi_2018/cadence/IC617/share/oa/lib/linux_rhel50_gcc48x_64/opt:/apps/vlsi_2018/cadence/IC617/tools/Qt/64bit/lib:/apps/vlsi_2018/cadence/IC617/tools/dfII/lib/64bit:/apps/vlsi_2018/cadence/IC617/tools/sev/lib/64bit:/apps/vlsi_2018/cadence/IC617/tools/lib/64bit:/apps/vlsi_2018/cadence/IC617/tools/hdf5/lib/64bit:/apps/vlsi_2018/cadence/IC617/tools/lz4/lib/64bit:/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/lib/64bit
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/bin/gnumake -j8 -f GNUmakefile
+Cleaning ./obj/optimize/5.0
+rm -f -rf ./obj/optimize/5.0
+Compiling C file connectLib__E2L_2__module__0x10000001_behavioral_func.c (optimize)
+Compiling C file connectLib__E2L_2__module__0x10000001_behavioral_DcFuncDerLoad.c (optimize)
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include -c connectLib__E2L_2__module__0x10000001_behavioral_func.c -o obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_func.o || rm -f -f obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_func.o
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include -c connectLib__E2L_2__module__0x10000001_behavioral_DcFuncDerLoad.c -o obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_DcFuncDerLoad.o || rm -f -f obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_DcFuncDerLoad.o
+Compiling C file connectLib__E2L_2__module__0x10000001_behavioral_TranFuncDerLoad.c (optimize)
+Compiling C file connectLib__E2L_2__module__0x10000001_behavioral_DcFuncLoad.c (optimize)
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include -c connectLib__E2L_2__module__0x10000001_behavioral_DcFuncLoad.c -o obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_DcFuncLoad.o || rm -f -f obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_DcFuncLoad.o
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include -c connectLib__E2L_2__module__0x10000001_behavioral_TranFuncDerLoad.c -o obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_TranFuncDerLoad.o || rm -f -f obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_TranFuncDerLoad.o
+Compiling C file connectLib__E2L_2__module__0x10000001_behavioral_TranFuncLoad.c (optimize)
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include -c connectLib__E2L_2__module__0x10000001_behavioral_TranFuncLoad.c -o obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_TranFuncLoad.o || rm -f -f obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_TranFuncLoad.o
+Compiling C file connectLib__E2L_2__module__0x10000001_behavioral_cmi_c.c (optimize)
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include -I/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cmi/include -c connectLib__E2L_2__module__0x10000001_behavioral_cmi_c.c -o obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_cmi_c.o || rm -f -f obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_cmi_c.o
+<stdin>: In function 'connectLib__E2L_2__module__0x10000001_behavioral_pDC_Load':
+<stdin>:693:1044: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2419:37: note: expected 'void *' but argument is of type 'long int'
+     ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                     ^
+<stdin>: In function 'connectLib__E2L_2__module__0x10000001_behavioral_pCompare':
+<stdin>:747:1412: warning: assignment makes integer from pointer without a cast [enabled by default]
+<stdin>:747:1166: warning: passing argument 1 of 'memcpy' makes pointer from integer without a cast [enabled by default]
+In file included from /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:81,
+                 from <stdin>:24:
+/usr/include/string.h:44:14: note: expected 'void * __restrict__' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest,
+              ^
+<stdin>:747:1166: warning: passing argument 2 of 'memcpy' makes pointer from integer without a cast [enabled by default]
+In file included from /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:81,
+                 from <stdin>:24:
+/usr/include/string.h:44:14: note: expected 'const void * __restrict__' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest,
+              ^
+<stdin>:747:1649: warning: assignment makes integer from pointer without a cast [enabled by default]
+<stdin>: In function 'connectLib__E2L_2__module__0x10000001_behavioral_pGetMatrixPointers':
+<stdin>:753:1852: warning: assignment makes integer from pointer without a cast [enabled by default]
+rm -f -rf connectLib__E2L_2__module__0x10000001_behavioral_DcFuncLoad.c
+<stdin>: In function 'connectLib__E2L_2__module__0x10000001_behavioral_pAnalTranLoad':
+<stdin>:795:2176: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2419:37: note: expected 'void *' but argument is of type 'long int'
+     ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                     ^
+rm -f -rf connectLib__E2L_2__module__0x10000001_behavioral_TranFuncDerLoad.c
+<stdin>: In function 'connectLib__E2L_2__module__0x10000001_behavioral_pSaveRestart':
+<stdin>:821:647: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1203:43: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+     ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                           ^
+<stdin>: In function 'connectLib__E2L_2__module__0x10000001_behavioral_pSaveRestartInst':
+<stdin>:824:649: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1203:43: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+     ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                           ^
+<stdin>: In function 'connectLib__E2L_2__module__0x10000001_behavioral_InitAll':
+<stdin>:376:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:377:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:385:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:386:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:394:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:395:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:403:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:404:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:412:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:413:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:421:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+<stdin>:422:2: warning: floating constant exceeds range of 'double' [-Woverflow]
+rm -f -rf connectLib__E2L_2__module__0x10000001_behavioral_TranFuncLoad.c
+rm -f -rf connectLib__E2L_2__module__0x10000001_behavioral_DcFuncDerLoad.c
+rm -f -rf connectLib__E2L_2__module__0x10000001_behavioral_func.c
+rm -f -rf connectLib__E2L_2__module__0x10000001_behavioral_cmi_c.c
+/apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc -shared -O3 -m64 -fPIC -o obj/optimize/5.0/libahdlcmi_connectLib__E2L_2__module__0x10000001_behavioral.so ./obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_func.o ./obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_DcFuncDerLoad.o ./obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_DcFuncLoad.o ./obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_TranFuncDerLoad.o ./obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_TranFuncLoad.o ./obj/optimize/5.0/connectLib__E2L_2__module__0x10000001_behavioral_cmi_c.o  -Wl,-rpath,/usr/lib -Wl,-rpath,/lib -s 

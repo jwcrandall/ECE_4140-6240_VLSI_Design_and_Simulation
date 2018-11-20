@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "17.1.0.160.isr2"
+"date" "4:54:05 PM, Tue Nov 13, 2018"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+END

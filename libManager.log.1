@@ -1,21 +1,71 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 12/05/2017 23:53 (sjfhw305) $
 \o Sub version:		sub-version  s061 
-\o Arguments:		-mpssession virtuoso7437 -mpshost shell.seas.gwu.edu 
-\o Working Directory:	shell.seas.gwu.edu:/home/seas/jwcrandall/cadence
+\o Arguments:		-mpssession virtuoso4927 -mpshost linux03.cflab.seas.gwu.edu 
+\o Working Directory:	linux03.cflab.seas.gwu.edu:/home/seas/jwcrandall/cadence
 \o 64-bit offsets
 \o Qt version: 		4.8.5
 \o Log file is "/home/seas/jwcrandall/cadence/libManager.log.1".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(523 54 947 563))
+\o Loading customization file "/apps/design_kits/ncsu-cdk-1.6.0.beta/cdssetup/cdsLibMgr.il"
+\o Loading NCSU Library Manager customizations...done.
+\a nrResizeWindow(cdsLibManager list(1060 900 942 410))
 \o changeWorkingDir("/home/seas/jwcrandall/cadence") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
-\o Loading customization file "/apps/design_kits/ncsu-cdk-1.6.0.beta/cdssetup/cdsLibMgr.il"
-\o Loading NCSU Library Manager customizations...done.
+\w Warning: The directory: '/home/seas/jwcrandall/cadence/analog_ece6218' does not exist
+\w 	but was defined in libFile '/home/seas/jwcrandall/cadence/cds.lib' for Lib 'analog_ece6218'.
+\w Warning: The directory: '/home/seas/jwcrandall/cadence/6218_Final_Project' does not exist
+\w 	but was defined in libFile '/home/seas/jwcrandall/cadence/cds.lib' for Lib '6218_Final_Project'.
+\o WARNING (CLM-105): Library Manager custom operations are inactive without a DFII session present.
+\o QUESTION (CLM-106): Actions have been specified in your "cdsLibMgr.il" \ncustomization file. \n\nLibrary Manager custom operations can't be active \nwithout a DFII environment present. You must restart \nthe Library Manager tool from the DFII CIW Tools \nmenu to enable your custom actions. \n\n    A partial list of DFII session tools include: \n        virtuoso,\n        icde, icds, icfb, icms, layout, layoutPlus, msfb \n    and so on.\n\nYou may continue using this tool without benefit of \nyour custom actions by clicking on the "Yes" button. \n\nTo not see this message again, click on the "No" button \nand then save your ".cdsenv" defaults file. 
+\a nrSetWindowVisibility(genericDialog "show")
 \o Library Manager customization server connected.
-\w Warning: The directory: '/apps/vlsi_2018/cadence/assura/tools/assura/etc/avtech/avTech' does not exist
-\w 	but was defined in libFile '/home/seas/jwcrandall/cadence/cds.lib' for Lib 'avTech'.
+\a nrResizeWindow(genericDialog list(1354 944 354 359))
+\a nrSetCurrentWindow(genericDialog)
+\a genericDialog->genericYesButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(48 774 942 410))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ECE_6240_Digial"
+\a cdsLibManager->libLineEdit->value = "ECE_6240_Digial"
+\a cdsLibManager->cellListBox->value = "hw2_2_XNOR"
+\a cdsLibManager->cellLineEdit->value = "hw2_2_XNOR"
+\a cdsLibManager->cellListBox->value = "hw2_2_XOR_tb"
+\a cdsLibManager->cellLineEdit->value = "hw2_2_XOR_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "hw2_2_XOR"
+\a cdsLibManager->cellLineEdit->value = "hw2_2_XOR"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/seas/jwcrandall/cadence/analog_ece6218' does not exist
+\w 	but was defined in libFile '/home/seas/jwcrandall/cadence/cds.lib' for Lib 'analog_ece6218'.
+\w Warning: The directory: '/home/seas/jwcrandall/cadence/6218_Final_Project' does not exist
+\w 	but was defined in libFile '/home/seas/jwcrandall/cadence/cds.lib' for Lib '6218_Final_Project'.
+\a cdsLibManager->libListBox->value = "ECE_6240_Digial"
+\a cdsLibManager->libLineEdit->value = "ECE_6240_Digial"
+\a cdsLibManager->cellListBox->value = "hw2_2_XOR"
+\a cdsLibManager->cellLineEdit->value = "hw2_2_XOR"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->fileExitButton->value = t
 \o libManager is exiting.

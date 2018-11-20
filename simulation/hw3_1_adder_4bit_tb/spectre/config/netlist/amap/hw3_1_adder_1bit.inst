@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"I30n I28n I27n I18n I16n I15n I14n I13n I12n I11n I10n I2n I1n I0n" "hw1_1_c_inverter"
+"I6n I5n I4n I3n" "hw1_3_CMOS_3_Input_NAND"
+"I9n I8n I7n" "hw1_3_CMOS_2_Input_NAND"
+"I17n" "hw1_3_CMOS_3_Input_NOR"
+"I29n I26n I25n" "hw1_3_CMOS_2_Input_NOR"
+"Av" ":1v"
+"Bv" ":2v"
+"Cinv" ":3v"
+"Coutv" ":4v"
+"Sumv" ":5v"

@@ -1,0 +1,421 @@
+
+Spectre (R) Circuit Simulator
+Version 17.1.0.160.isr2 64bit -- 26 Jan 2018
+Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: jwcrandall   Host: linux03.cflab.seas.gwu.edu   HostID: A480208B   PID: 8968
+Memory  available: 29.6045 GB  physical: 33.5891 GB
+Linux   : CentOS release 6.10 (Final)
+CPU Type: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+All processors running at 3492.2 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 (  4 ),  1 (  5 ),  2 (  6 ),  3 (  7 )
+        
+System load averages (1min, 5min, 15min) : 1.4 %, 0.9 %, 0.1 %
+Hyperthreading is enabled
+
+
+Simulating `input.scs' on linux03.cflab.seas.gwu.edu at 4:52:08 PM, Tue Nov 13, 2018 (process id: 8968).
+Current working directory: /home/seas/jwcrandall/cadence/simulation/hw2_2_XOR/spectre/extracted/netlist
+Command line:
+    /apps/vlsi_2018/cadence/SPECTRE171/tools/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre2_5949_6 -format psfxl -raw ../psf  \
+        -I/apps/design_kits/ibm_kits/IBM_PDK/cmrf7sf/V1.8.0.6ML/Spectre/models  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 8968
+
+Loading /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/seas/jwcrandall/cadence/simulation/hw2_2_XOR/spectre/extracted/netlist/input.scs
+Reading file:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Reading file:  /home/seas/jwcrandall/cadence/simulation/hw2_2_XOR/spectre/extracted/netlist/stimuli/test.txt
+Time for NDB Parsing: CPU = 135.979 ms, elapsed = 228.699 ms.
+Time accumulated: CPU = 155.975 ms, elapsed = 228.703 ms.
+Peak resident memory used = 50.9 Mbytes.
+
+Reading link:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /apps/vlsi_2018/cadence/SPECTRE171/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 13.998 ms, elapsed = 19.305 ms.
+Time accumulated: CPU = 169.973 ms, elapsed = 248.117 ms.
+Peak resident memory used = 57.5 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+
+
+Time for EDB Visiting: CPU = 1 ms, elapsed = 700.951 us.
+Time accumulated: CPU = 170.973 ms, elapsed = 248.921 ms.
+Peak resident memory used = 58.1 Mbytes.
+
+
+Global user options:
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.001
+               tnom = 25
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 11
+            bsim3v3 16    
+          capacitor 34    
+            vsource 3     
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2 ms, elapsed = 3.0899 ms.
+Time accumulated: CPU = 172.973 ms, elapsed = 252.103 ms.
+Peak resident memory used = 59.5 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre2_5949_6, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 200 us)
+*************************************************
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 200 us
+    step = 200 ns
+    maxstep = 4 us
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 25 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   11      (voltage)
+
+    tran: time = 5.088 us    (2.54 %), step = 1.856 us     (928 m%)
+    tran: time = 16.02 us    (8.01 %), step = 4 us            (2 %)
+    tran: time = 25 us       (12.5 %), step = 2.489 us     (1.24 %)
+    tran: time = 36.67 us    (18.3 %), step = 4 us            (2 %)
+    tran: time = 47.34 us    (23.7 %), step = 2.663 us     (1.33 %)
+    tran: time = 56.97 us    (28.5 %), step = 2.54 us      (1.27 %)
+    tran: time = 68.6 us     (34.3 %), step = 4 us            (2 %)
+    tran: time = 75 us       (37.5 %), step = 3.2 us        (1.6 %)
+    tran: time = 85.64 us    (42.8 %), step = 3.328 us     (1.66 %)
+    tran: time = 96.82 us    (48.4 %), step = 3.178 us     (1.59 %)
+    tran: time = 106.6 us    (53.3 %), step = 2.429 us     (1.21 %)
+    tran: time = 118.4 us    (59.2 %), step = 4 us            (2 %)
+    tran: time = 125 us      (62.5 %), step = 3.307 us     (1.65 %)
+    tran: time = 136.7 us    (68.3 %), step = 4 us            (2 %)
+    tran: time = 147.3 us    (73.7 %), step = 2.673 us     (1.34 %)
+    tran: time = 157 us      (78.5 %), step = 2.539 us     (1.27 %)
+    tran: time = 168.6 us    (84.3 %), step = 4 us            (2 %)
+    tran: time = 175 us      (87.5 %), step = 3.205 us      (1.6 %)
+    tran: time = 185.7 us    (92.9 %), step = 3.356 us     (1.68 %)
+    tran: time = 196.9 us    (98.4 %), step = 3.133 us     (1.57 %)
+Number of accepted tran steps =             495
+
+Maximum value achieved for any signal of each quantity: 
+V: V(A) = 5 V
+I: I(vdd:p) = 144.1 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (62.9 %)      1 (14.3 %)      2 (2.9 %)       4 (19.4 %)
+                 5 (2.9 %)       6 (2.8 %)      
+        Other   
+Initial condition solution time: CPU = 0 s, elapsed = 1.66988 ms.
+Intrinsic tran analysis time:    CPU = 37.994 ms, elapsed = 61.816 ms.
+Total time required for tran analysis `tran': CPU = 40.994 ms, elapsed = 78.635 ms.
+Time accumulated: CPU = 219.966 ms, elapsed = 413.753 ms.
+Peak resident memory used = 61.8 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 200 us)
+*************************************************
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 200 us
+    step = 200 ns
+    maxstep = 4 us
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 25 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   11      (voltage)
+
+    tran: time = 5.088 us    (2.54 %), step = 1.856 us     (928 m%)
+    tran: time = 16.02 us    (8.01 %), step = 4 us            (2 %)
+    tran: time = 25 us       (12.5 %), step = 2.489 us     (1.24 %)
+    tran: time = 36.67 us    (18.3 %), step = 4 us            (2 %)
+    tran: time = 47.34 us    (23.7 %), step = 2.663 us     (1.33 %)
+    tran: time = 56.97 us    (28.5 %), step = 2.54 us      (1.27 %)
+    tran: time = 68.6 us     (34.3 %), step = 4 us            (2 %)
+    tran: time = 75 us       (37.5 %), step = 3.2 us        (1.6 %)
+    tran: time = 85.64 us    (42.8 %), step = 3.328 us     (1.66 %)
+    tran: time = 96.82 us    (48.4 %), step = 3.178 us     (1.59 %)
+    tran: time = 106.6 us    (53.3 %), step = 2.429 us     (1.21 %)
+    tran: time = 118.4 us    (59.2 %), step = 4 us            (2 %)
+    tran: time = 125 us      (62.5 %), step = 3.307 us     (1.65 %)
+    tran: time = 136.7 us    (68.3 %), step = 4 us            (2 %)
+    tran: time = 147.3 us    (73.7 %), step = 2.673 us     (1.34 %)
+    tran: time = 157 us      (78.5 %), step = 2.539 us     (1.27 %)
+    tran: time = 168.6 us    (84.3 %), step = 4 us            (2 %)
+    tran: time = 175 us      (87.5 %), step = 3.205 us      (1.6 %)
+    tran: time = 185.7 us    (92.9 %), step = 3.356 us     (1.68 %)
+    tran: time = 196.9 us    (98.4 %), step = 3.133 us     (1.57 %)
+Number of accepted tran steps =             495
+
+Maximum value achieved for any signal of each quantity: 
+V: V(A) = 5 V
+I: I(vdd:p) = 144.1 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (3.9 %)       1 (2.1 %)      
+        Other   
+Initial condition solution time: CPU = 1 ms, elapsed = 1.17111 ms.
+Intrinsic tran analysis time:    CPU = 38.994 ms, elapsed = 46.941 ms.
+Total time required for tran analysis `tran': CPU = 40.994 ms, elapsed = 59.999 ms.
+Time accumulated: CPU = 306.952 ms, elapsed = 74.2067 s (1m  14.2s).
+Peak resident memory used = 62.5 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 200 us)
+*************************************************
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 200 us
+    step = 200 ns
+    maxstep = 4 us
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 25 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   11      (voltage)
+
+    tran: time = 5.088 us    (2.54 %), step = 1.856 us     (928 m%)
+    tran: time = 16.02 us    (8.01 %), step = 4 us            (2 %)
+    tran: time = 25 us       (12.5 %), step = 2.489 us     (1.24 %)
+    tran: time = 36.67 us    (18.3 %), step = 4 us            (2 %)
+    tran: time = 47.34 us    (23.7 %), step = 2.663 us     (1.33 %)
+    tran: time = 56.97 us    (28.5 %), step = 2.54 us      (1.27 %)
+    tran: time = 68.6 us     (34.3 %), step = 4 us            (2 %)
+    tran: time = 75 us       (37.5 %), step = 3.2 us        (1.6 %)
+    tran: time = 85.64 us    (42.8 %), step = 3.328 us     (1.66 %)
+    tran: time = 96.82 us    (48.4 %), step = 3.178 us     (1.59 %)
+    tran: time = 106.6 us    (53.3 %), step = 2.429 us     (1.21 %)
+    tran: time = 118.4 us    (59.2 %), step = 4 us            (2 %)
+    tran: time = 125 us      (62.5 %), step = 3.307 us     (1.65 %)
+    tran: time = 136.7 us    (68.3 %), step = 4 us            (2 %)
+    tran: time = 147.3 us    (73.7 %), step = 2.673 us     (1.34 %)
+    tran: time = 157 us      (78.5 %), step = 2.539 us     (1.27 %)
+    tran: time = 168.6 us    (84.3 %), step = 4 us            (2 %)
+    tran: time = 175 us      (87.5 %), step = 3.205 us      (1.6 %)
+    tran: time = 185.7 us    (92.9 %), step = 3.356 us     (1.68 %)
+    tran: time = 196.9 us    (98.4 %), step = 3.133 us     (1.57 %)
+Number of accepted tran steps =             495
+
+Maximum value achieved for any signal of each quantity: 
+V: V(A) = 5 V
+I: I(vdd:p) = 144.1 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (4.0 %)       1 (1.9 %)      
+        Other   
+Initial condition solution time: CPU = 1 ms, elapsed = 1.14107 ms.
+Intrinsic tran analysis time:    CPU = 37.995 ms, elapsed = 69.839 ms.
+Total time required for tran analysis `tran': CPU = 39.995 ms, elapsed = 82.2659 ms.
+Time accumulated: CPU = 391.939 ms, elapsed = 116.508 s (1m  56.5s).
+Peak resident memory used = 62.9 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (4:54:40 PM, Tue Nov 13, 2018):
+Time used: CPU = 434 ms, elapsed = 151 s (2m  31.3s), util. = 287e-03%.
+Time spent in licensing: elapsed = 91.4 ms.
+Peak memory used = 63.7 Mbytes.
+Simulation started at: 4:52:08 PM, Tue Nov 13, 2018, ended at: 4:54:40 PM, Tue Nov 13, 2018, with elapsed time (wall clock): 151 s (2m  31.3s).
+spectre completes with 0 errors, 4 warnings, and 0 notices.

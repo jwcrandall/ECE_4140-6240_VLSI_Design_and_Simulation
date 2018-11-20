@@ -1,0 +1,7 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - ECE_6240_Digial ,Cell - hw3_1_adder_4bit_tb_vdriver, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/ECE_6240_Digial/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v lib:ECE_6240_Digial cell:hw3_1_adder_4bit_tb_vdriver view:functional"
+

@@ -1,0 +1,7 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw1_3_CMOS_3_Input_NOR
+// View name: schematic
+// Inherited view list: spectre spice pspice verilog verilogams behavioral
+//functional systemVerilog schematic veriloga vhdl vhdlams wreal
+subckt hw1_3_CMOS_3_Input_NOR A B C Out

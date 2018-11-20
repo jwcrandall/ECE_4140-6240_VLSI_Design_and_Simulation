@@ -1,0 +1,14 @@
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=25 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=6m write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+save A_data\<0\> A_data\<1\> A_data\<2\> A_data\<3\> B_data\<0\> \
+    B_data\<1\> B_data\<2\> B_data\<3\> Cin sum\<3\> sum\<2\> sum\<1\> \
+    sum\<0\> Cout 
+saveOptions options save=selected currents=selected

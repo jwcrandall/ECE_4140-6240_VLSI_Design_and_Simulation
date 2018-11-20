@@ -1,0 +1,11 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw2_2_MUX_tb
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+I7 (A B Out) hw2_2_XNOR
+C0 (Out 0) capacitor c=4p m=1
+V1 (A 0) vsource type=pulse val0=0 val1=5 period=50u delay=0 rise=500f \
+        fall=500f width=25u
+V2 (B 0) vsource type=pulse val0=0 val1=5 period=100u delay=0 rise=500f \
+        fall=500f width=50u

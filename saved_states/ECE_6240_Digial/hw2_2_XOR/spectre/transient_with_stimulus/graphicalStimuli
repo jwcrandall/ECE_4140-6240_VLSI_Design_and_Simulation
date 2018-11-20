@@ -1,0 +1,14 @@
+"#INPUTS"
+((name "B") 
+    (nodes 
+	("B" "/gnd!")
+    ) 
+    (enabled nil)
+)
+((name "A") 
+    (nodes 
+	("A" "/gnd!")
+    ) 
+    (enabled nil)
+)
+"#GLOBALS"

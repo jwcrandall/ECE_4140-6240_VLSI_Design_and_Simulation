@@ -1,0 +1,31 @@
+ncvlog(64): 15.20-s045: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+DEFINE 6218_Final_Project 6218_Final_Project
+|
+ncvlog: *W,DLCPTH (./cds.lib,39): cds.lib Invalid path '/home/seas/jwcrandall/cadence/6218_Final_Project' (cds.lib command ignored).
+DEFINE analog_ece6218 analog_ece6218
+|
+ncvlog: *W,DLCPTH (./cds.lib,40): cds.lib Invalid path '/home/seas/jwcrandall/cadence/analog_ece6218' (cds.lib command ignored).
+TOOL:	ncvlog(64)	15.20-s045: Started on Nov 18, 2018 at 17:22:27 EST
+ncvlog
+    -use5x
+    -CDS_IMPLICIT_TMPDIR ./.pcdb
+    -work ECE_6240_Digial
+    -view functional
+    -errorMax 50
+    -incdir /home/seas/jwcrandall/cadence/
+    -messages
+    -status
+    -nowarn DLNOHV
+    /home/seas/jwcrandall/cadence/ECE_6240_Digial/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v
+
+file: /home/seas/jwcrandall/cadence/ECE_6240_Digial/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v
+endmodules
+          |
+ncvlog: *E,EXPLPA (/home/seas/jwcrandall/cadence/ECE_6240_Digial/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v,39|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+	module ECE_6240_Digial.hw3_1_adder_4bit_tb_vdriver:functional
+		errors: 1, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+ncvlog: Memory Usage - 21.3M program + 26.9M data = 48.2M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)
+TOOL:	ncvlog(64)	15.20-s045: Exiting on Nov 18, 2018 at 17:22:27 EST  (total: 00:00:00)

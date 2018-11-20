@@ -1,0 +1,6 @@
+    I3 (net9 net8 Out) hw1_3_CMOS_2_Input_NAND
+    I2 (net7 B net8) hw1_3_CMOS_2_Input_NAND
+    I1 (A net7 net9) hw1_3_CMOS_2_Input_NAND
+    I0 (A B net7) hw1_3_CMOS_2_Input_NAND
+ends hw2_2_XOR
+// End of subcircuit definition.

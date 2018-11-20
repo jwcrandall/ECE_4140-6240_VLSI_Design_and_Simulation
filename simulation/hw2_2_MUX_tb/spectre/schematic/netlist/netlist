@@ -1,0 +1,37 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw1_3_CMOS_2_Input_NOR
+// View name: schematic
+subckt hw1_3_CMOS_2_Input_NOR A B Out
+    N1 (Out B 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N0 (Out A 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    P0 (net2 A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P1 (Out B net2 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+ends hw1_3_CMOS_2_Input_NOR
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digial
+// Cell name: hw2_2_XNOR
+// View name: schematic
+subckt hw2_2_XNOR A B Out
+    I3 (net9 net8 Out) hw1_3_CMOS_2_Input_NOR
+    I2 (net7 B net8) hw1_3_CMOS_2_Input_NOR
+    I1 (A net7 net9) hw1_3_CMOS_2_Input_NOR
+    I0 (A B net7) hw1_3_CMOS_2_Input_NOR
+ends hw2_2_XNOR
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digial
+// Cell name: hw2_2_MUX_tb
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+I7 (A B Out) hw2_2_XNOR
+C0 (Out 0) capacitor c=4p m=1
+V1 (A 0) vsource type=pulse val0=0 val1=5 period=50u delay=0 rise=500f \
+        fall=500f width=25u
+V2 (B 0) vsource type=pulse val0=0 val1=5 period=100u delay=0 rise=500f \
+        fall=500f width=50u

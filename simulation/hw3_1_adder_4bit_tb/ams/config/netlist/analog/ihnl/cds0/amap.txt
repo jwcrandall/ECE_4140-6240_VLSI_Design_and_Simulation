@@ -1,0 +1,9 @@
+cellMap,*hw1_1_c_inverter,*hw1_1_c_inverter,*ECE_6240_Digial,*schematic
+netMap,*hw1_1_c_inverter,*vdd!,*vdd!
+netMap,*hw1_1_c_inverter,*gnd!,*0
+instMap,*hw1_1_c_inverter,*P0,*P0
+instMaster,*hw1_1_c_inverter,*P0,*NCSU_Analog_Parts_pmos4_spectre,*ami06P
+instMap,*hw1_1_c_inverter,*N0,*N0
+instMaster,*hw1_1_c_inverter,*N0,*NCSU_Analog_Parts_nmos4_spectre,*ami06N
+portMap,*hw1_1_c_inverter,*VIN,*VIN
+portMap,*hw1_1_c_inverter,*VOUT,*VOUT

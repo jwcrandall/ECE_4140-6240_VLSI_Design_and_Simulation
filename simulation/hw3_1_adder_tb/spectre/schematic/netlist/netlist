@@ -1,0 +1,125 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw1_1_c_inverter
+// View name: schematic
+subckt hw1_1_c_inverter VIN VOUT
+    P0 (VOUT VIN vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    N0 (VOUT VIN 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends hw1_1_c_inverter
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digial
+// Cell name: hw1_3_CMOS_3_Input_NAND
+// View name: schematic
+subckt hw1_3_CMOS_3_Input_NAND A B C Out
+    P0 (Out A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P1 (Out B vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P2 (Out C vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N2 (net20 C 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N1 (net19 B net20 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N0 (Out A net19 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends hw1_3_CMOS_3_Input_NAND
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digial
+// Cell name: hw1_3_CMOS_2_Input_NAND
+// View name: schematic
+subckt hw1_3_CMOS_2_Input_NAND A B Out
+    P0 (Out A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P1 (Out B vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N1 (net14 B 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N0 (Out A net14 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends hw1_3_CMOS_2_Input_NAND
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digial
+// Cell name: hw1_3_CMOS_3_Input_NOR
+// View name: schematic
+subckt hw1_3_CMOS_3_Input_NOR A B C Out
+    N2 (Out C 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N1 (Out B 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N0 (Out A 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    P0 (net18 A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P1 (net19 B net18 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P2 (Out C net19 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+ends hw1_3_CMOS_3_Input_NOR
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digial
+// Cell name: hw1_3_CMOS_2_Input_NOR
+// View name: schematic
+subckt hw1_3_CMOS_2_Input_NOR A B Out
+    N1 (Out B 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N0 (Out A 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    P0 (net2 A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P1 (Out B net2 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+ends hw1_3_CMOS_2_Input_NOR
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digial
+// Cell name: hw3_1_adder
+// View name: schematic
+subckt hw3_1_adder A B Cin Cout Sum
+    I18 (net21 Cout) hw1_1_c_inverter
+    I30 (net22 Sum) hw1_1_c_inverter
+    I28 (net26 net23) hw1_1_c_inverter
+    I27 (net25 net24) hw1_1_c_inverter
+    I16 (net30 net20) hw1_1_c_inverter
+    I15 (net29 net19) hw1_1_c_inverter
+    I14 (net28 net18) hw1_1_c_inverter
+    I13 (net27 net17) hw1_1_c_inverter
+    I12 (net31 net16) hw1_1_c_inverter
+    I11 (net32 net34) hw1_1_c_inverter
+    I10 (net33 net15) hw1_1_c_inverter
+    I2 (Cin net14) hw1_1_c_inverter
+    I1 (B net11) hw1_1_c_inverter
+    I0 (A net8) hw1_1_c_inverter
+    I6 (A B Cin net27) hw1_3_CMOS_3_Input_NAND
+    I5 (net8 net11 Cin net28) hw1_3_CMOS_3_Input_NAND
+    I4 (A net11 net14 net29) hw1_3_CMOS_3_Input_NAND
+    I3 (net8 B net14 net30) hw1_3_CMOS_3_Input_NAND
+    I9 (B Cin net33) hw1_3_CMOS_2_Input_NAND
+    I8 (A Cin net32) hw1_3_CMOS_2_Input_NAND
+    I7 (A B net31) hw1_3_CMOS_2_Input_NAND
+    I17 (net16 net34 net15 net21) hw1_3_CMOS_3_Input_NOR
+    I26 (net18 net17 net26) hw1_3_CMOS_2_Input_NOR
+    I29 (net24 net23 net22) hw1_3_CMOS_2_Input_NOR
+    I25 (net20 net19 net25) hw1_3_CMOS_2_Input_NOR
+ends hw3_1_adder
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digial
+// Cell name: hw3_1_adder_tb
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+V3 (C 0) vsource type=pulse dc=5 val0=0 val1=5 period=200u delay=0 \
+        rise=500f fall=500f width=100u
+V2 (A 0) vsource type=pulse dc=5 val0=0 val1=5 period=50u delay=0 \
+        rise=500f fall=500f width=25u
+V1 (B 0) vsource type=pulse dc=5 val0=0 val1=5 period=100u delay=0 \
+        rise=500f fall=500f width=50u
+C1 (Cout 0) capacitor c=4p m=1
+C0 (Sum 0) capacitor c=4p m=1
+I13 (A B C Cout Sum) hw3_1_adder

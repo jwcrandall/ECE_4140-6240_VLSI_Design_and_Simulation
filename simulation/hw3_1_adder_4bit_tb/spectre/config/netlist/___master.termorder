@@ -1,0 +1,7 @@
+"ECE_6240_Digial.hw1_3_CMOS_2_Input_NOR.schematic.ECE_6240_Digial.hw3_1_adder_4bit_tb.config.path.termorder" (("A" "B" "Out") ("A" "B" "Out"))
+"ECE_6240_Digial.hw1_3_CMOS_3_Input_NOR.schematic.ECE_6240_Digial.hw3_1_adder_4bit_tb.config.path.termorder" (("A" "B" "C" "Out") ("A" "B" "C" "Out"))
+"ECE_6240_Digial.hw3_1_adder_1bit.schematic.ECE_6240_Digial.hw3_1_adder_4bit_tb.config.path.termorder" (("A" "B" "Cin" "Cout" "Sum") ("A" "B" "Cin" "Cout" "Sum"))
+"ECE_6240_Digial.hw1_3_CMOS_3_Input_NAND.schematic.ECE_6240_Digial.hw3_1_adder_4bit_tb.config.path.termorder" (("A" "B" "C" "Out") ("A" "B" "C" "Out"))
+"ECE_6240_Digial.hw1_3_CMOS_2_Input_NAND.schematic.ECE_6240_Digial.hw3_1_adder_4bit_tb.config.path.termorder" (("A" "B" "Out") ("A" "B" "Out"))
+"ECE_6240_Digial.hw3_1_adder_4bit.schematic.ECE_6240_Digial.hw3_1_adder_4bit_tb.config.path.termorder" (("A0" "A1" "A2" "A3" "B0" "B1" "B2" "B3" "Cin0" "Cout3" "S0" "S1" "S2" "S3") ("A0" "A1" "A2" "A3" "B0" "B1" "B2" "B3" "Cin0" "Cout3" "S0" "S1" "S2" "S3"))
+"ECE_6240_Digial.hw1_1_c_inverter.schematic.ECE_6240_Digial.hw3_1_adder_4bit_tb.config.path.termorder" nil

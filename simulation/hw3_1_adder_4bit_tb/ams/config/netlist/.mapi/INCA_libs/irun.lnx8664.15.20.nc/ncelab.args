@@ -1,0 +1,29 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-AMSCOMPILEFILE
+"file:/home/seas/jwcrandall/cadence/ECE_6240_Digial/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v lib:ECE_6240_Digial cell:hw3_1_adder_4bit_tb_vdriver view:functional"
+-MESSAGES
+-AMSELAB
+-amsdlibdir
+/home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/.mapi//INCA_libs/AMSD
+-XLMODE
+/home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+/home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+/home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+-WORK
+worklib
+-HASXLMODE

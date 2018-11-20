@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+ECE_6240_Digial/hw2_2_XNOR_tb/schematic hw2_2_XNOR_tb
+ECE_6240_Digial/hw2_2_XNOR/schematic hw2_2_XNOR
+ECE_6240_Digial/hw1_3_CMOS_2_Input_NOR/schematic hw1_3_CMOS_2_Input_NOR
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+p5vonly p5vonly
+$endparam

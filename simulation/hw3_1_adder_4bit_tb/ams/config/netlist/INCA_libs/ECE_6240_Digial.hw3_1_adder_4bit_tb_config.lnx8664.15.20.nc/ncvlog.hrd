@@ -1,0 +1,16 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-INCDIR
+/home/seas/jwcrandall/cadence/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/seas/jwcrandall/cadence/
+-DEFINE
+CDS_SELECT_CRS
+-DEFINE
+CONNRULES_18V_FULL_FAST
+-SNAPSHOT
+ECE_6240_Digial.hw3_1_adder_4bit_tb:config

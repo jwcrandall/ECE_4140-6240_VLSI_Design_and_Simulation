@@ -1,0 +1,6 @@
+    I3 (A0 B0 Cin0 Cin1Cout0 S0) hw3_1_adder_1bit
+    I2 (A1 B1 Cin1Cout0 Cin2Cout1 S1) hw3_1_adder_1bit
+    I1 (A2 B2 Cin2Cout1 Cin3Cout2 S2) hw3_1_adder_1bit
+    I0 (A3 B3 Cin3Cout2 Cout3 S3) hw3_1_adder_1bit
+ends hw3_1_adder_4bit
+// End of subcircuit definition.

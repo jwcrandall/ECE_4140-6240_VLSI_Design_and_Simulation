@@ -1,0 +1,6 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw3_1_adder_1bit
+// View name: schematic
+// Inherited view list: schematic
+subckt hw3_1_adder_1bit

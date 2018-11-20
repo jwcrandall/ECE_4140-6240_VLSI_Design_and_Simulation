@@ -1,0 +1,30 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "hw3_1_adder_tb"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/seas/jwcrandall/cadence/simulation/hw3_1_adder_tb/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "ECE_6240_Digial/hw3_1_adder/schematic" "hw3_1_adder" )
+( "ECE_6240_Digial/hw1_1_c_inverter/schematic" "hw1_1_c_inverter" )
+( "ECE_6240_Digial/hw3_1_adder_tb/schematic" "hw3_1_adder_tb" )
+( "ECE_6240_Digial/hw1_3_CMOS_3_Input_NOR/schematic" "hw1_3_CMOS_3_Input_NOR" )
+( "ECE_6240_Digial/hw1_3_CMOS_2_Input_NOR/schematic" "hw1_3_CMOS_2_Input_NOR" )
+( "ECE_6240_Digial/hw1_3_CMOS_3_Input_NAND/schematic" "hw1_3_CMOS_3_Input_NAND" )
+( "ECE_6240_Digial/hw1_3_CMOS_2_Input_NAND/schematic" "hw1_3_CMOS_2_Input_NAND" )
+ )
+( "hw1_3_CMOS_2_Input_NOR" "ihnl/cds4/map" )
+( "hw1_1_c_inverter" "ihnl/cds0/map" )
+( "hw3_1_adder" "ihnl/cds5/map" )
+( "hw1_3_CMOS_2_Input_NAND" "ihnl/cds2/map" )
+( "hw3_1_adder_tb" "ihnl/cds6/map" )
+( "hw1_3_CMOS_3_Input_NOR" "ihnl/cds3/map" )
+( "hw1_3_CMOS_3_Input_NAND" "ihnl/cds1/map" )
+ )

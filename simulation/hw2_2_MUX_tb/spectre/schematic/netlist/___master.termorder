@@ -1,0 +1,4 @@
+"ECE_6240_Digial.hw2_2_MUX.schematic.termorder" (("A" "B" "Out" "S" "[@inh_bn:%:gnd!]") ("A" "B" "Out" "S" "[@inh_bn:%:gnd!]"))
+"ECE_6240_Digial.hw1_1_c_inverter.schematic.termorder" nil
+"ECE_6240_Digial.hw1_3_CMOS_2_Input_NOR.schematic.termorder" (("A" "B" "Out") ("A" "B" "Out"))
+"ECE_6240_Digial.hw2_2_XNOR.schematic.termorder" (("A" "B" "Out") ("A" "B" "Out"))

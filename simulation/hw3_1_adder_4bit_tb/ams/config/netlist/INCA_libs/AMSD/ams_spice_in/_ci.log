@@ -1,0 +1,47 @@
+amspacktool: WARNING: 64bit executable version of "amspacktool" not found... the 32bit version will  be used instead.
+ERROR: Cannot find /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/INCA_libs/AMSD/ams_spice_in/.amsspice_pre.ckt ! 
+Notice: /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/spectre.cfg is filtered . 
+Notice: /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/mapsubckt.cfg is filtered . 
+Copy /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/spiceModels.scs ... 
+ln -s /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/INCA_libs/AMSD/ams_spice_in/.a//home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/spiceModels.scs /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/INCA_libs/AMSD/ams_spice_in/.a/. 
+Use of uninitialized value $i in numeric lt (<) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 292, <LF> line 40.
+Use of uninitialized value $i in array element at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 294, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $i in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $i in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Use of uninitialized value $binary_num in numeric eq (==) at /apps/vlsi_2018/cadence/INCISIVE152/tools/spectre/amspacktool/bin/32bit/amspacktool line 297, <LF> line 40.
+Copy /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m ... 
+Copy /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m ... 
+Copy /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/amsControlSpectre.scs ... 
+Notice: /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/discipline.h is filtered . 
+Notice: /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/disciplines.vams is filtered . 
+Notice: /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.h is filtered . 
+Notice: /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.vams is filtered . 
+
+Copy ./INCA_libs/AMSD/ams_spice_in/.amsspice_pre.ckt.log ... 
+Generating TAR file... 
+Done!
+
+Pack Directory: /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/INCA_libs/AMSD/ams_spice_in/.a 

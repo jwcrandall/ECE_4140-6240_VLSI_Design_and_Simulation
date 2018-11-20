@@ -1,0 +1,27 @@
+    I30 (net22 Sum) hw1_1_c_inverter
+    I28 (net26 net23) hw1_1_c_inverter
+    I27 (net25 net24) hw1_1_c_inverter
+    I18 (net21 Cout) hw1_1_c_inverter
+    I16 (net30 net20) hw1_1_c_inverter
+    I15 (net29 net19) hw1_1_c_inverter
+    I14 (net28 net18) hw1_1_c_inverter
+    I13 (net27 net17) hw1_1_c_inverter
+    I12 (net31 net16) hw1_1_c_inverter
+    I11 (net32 net34) hw1_1_c_inverter
+    I10 (net33 net15) hw1_1_c_inverter
+    I2 (Cin net14) hw1_1_c_inverter
+    I1 (B net11) hw1_1_c_inverter
+    I0 (A net8) hw1_1_c_inverter
+    I6 (A B Cin net27) hw1_3_CMOS_3_Input_NAND
+    I5 (net8 net11 Cin net28) hw1_3_CMOS_3_Input_NAND
+    I4 (A net11 net14 net29) hw1_3_CMOS_3_Input_NAND
+    I3 (net8 B net14 net30) hw1_3_CMOS_3_Input_NAND
+    I9 (B Cin net33) hw1_3_CMOS_2_Input_NAND
+    I8 (A Cin net32) hw1_3_CMOS_2_Input_NAND
+    I7 (A B net31) hw1_3_CMOS_2_Input_NAND
+    I17 (net16 net34 net15 net21) hw1_3_CMOS_3_Input_NOR
+    I29 (net24 net23 net22) hw1_3_CMOS_2_Input_NOR
+    I26 (net18 net17 net26) hw1_3_CMOS_2_Input_NOR
+    I25 (net20 net19 net25) hw1_3_CMOS_2_Input_NOR
+ends hw3_1_adder_1bit
+// End of subcircuit definition.

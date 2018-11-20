@@ -1,0 +1,3 @@
+netMap,*hw1_3_CMOS_3_Input_NAND,*vdd!,*cds_globals.\vdd! 
+netMap,*hw1_3_CMOS_3_Input_NAND,*gnd!,*cds_globals.\gnd! 
+cellMap,*hw1_3_CMOS_3_Input_NAND,*hw1_3_CMOS_3_Input_NAND,*ECE_6240_Digial,*schematic

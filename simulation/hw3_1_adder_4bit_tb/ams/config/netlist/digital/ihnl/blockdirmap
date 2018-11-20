@@ -1,0 +1,10 @@
+CADENCE IHNL04128
+
+ECE_6240_Digial hw1_1_c_inverter schematic nil schematic ECE_6240_Digial hw3_1_adder_4bit_tb config 0 cds0
+ECE_6240_Digial hw1_3_CMOS_3_Input_NAND schematic nil schematic ECE_6240_Digial hw3_1_adder_4bit_tb config 0 cds1
+ECE_6240_Digial hw1_3_CMOS_2_Input_NAND schematic nil schematic ECE_6240_Digial hw3_1_adder_4bit_tb config 0 cds2
+ECE_6240_Digial hw1_3_CMOS_3_Input_NOR schematic nil schematic ECE_6240_Digial hw3_1_adder_4bit_tb config 0 cds3
+ECE_6240_Digial hw1_3_CMOS_2_Input_NOR schematic nil schematic ECE_6240_Digial hw3_1_adder_4bit_tb config 0 cds4
+ECE_6240_Digial hw3_1_adder_1bit schematic nil schematic ECE_6240_Digial hw3_1_adder_4bit_tb config 0 cds5
+ECE_6240_Digial hw3_1_adder_4bit schematic nil schematic ECE_6240_Digial hw3_1_adder_4bit_tb config 0 cds6
+ECE_6240_Digial hw3_1_adder_4bit_tb schematic nil schematic ECE_6240_Digial hw3_1_adder_4bit_tb config 1 cds7

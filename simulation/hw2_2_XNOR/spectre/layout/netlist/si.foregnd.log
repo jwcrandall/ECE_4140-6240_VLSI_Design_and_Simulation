@@ -1,0 +1,20 @@
+Begin Incremental Netlisting Nov 13 17:28:30 2018
+ERROR (OSSHNL-116): Unable to descend into any of the views defined in the view
+list, 'spectre cmos_sch cmos.sch schematic veriloga', for the
+instance 'I16' in
+cell 'hw2_2_XNOR'. Add one of these views to the cell 'ptap' in the
+library
+'NCSU_TechLib_ami06', or modify the view list so that it contains an existing
+view.
+
+End netlisting Nov 13 17:28:30 2018
+Begin Incremental Netlisting Nov 13 17:28:43 2018
+ERROR (OSSHNL-116): Unable to descend into any of the views defined in the view
+list, 'spectre cmos_sch cmos.sch schematic veriloga', for the
+instance 'I16' in
+cell 'hw2_2_XNOR'. Add one of these views to the cell 'ptap' in the
+library
+'NCSU_TechLib_ami06', or modify the view list so that it contains an existing
+view.
+
+End netlisting Nov 13 17:28:43 2018

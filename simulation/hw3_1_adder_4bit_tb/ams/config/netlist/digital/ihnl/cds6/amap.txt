@@ -1,0 +1,11 @@
+instMap,*hw3_1_adder_4bit,*I3,*I3
+instMaster,*hw3_1_adder_4bit,*I3,*ECE_6240_Digial_hw3_1_adder_1bit_schematic
+instMap,*hw3_1_adder_4bit,*I2,*I2
+instMaster,*hw3_1_adder_4bit,*I2,*ECE_6240_Digial_hw3_1_adder_1bit_schematic
+instMap,*hw3_1_adder_4bit,*I1,*I1
+instMaster,*hw3_1_adder_4bit,*I1,*ECE_6240_Digial_hw3_1_adder_1bit_schematic
+instMap,*hw3_1_adder_4bit,*I0,*I0
+instMaster,*hw3_1_adder_4bit,*I0,*ECE_6240_Digial_hw3_1_adder_1bit_schematic
+netMap,*hw3_1_adder_4bit,*vdd!,*cds_globals.\vdd! 
+netMap,*hw3_1_adder_4bit,*gnd!,*cds_globals.\gnd! 
+cellMap,*hw3_1_adder_4bit,*hw3_1_adder_4bit,*ECE_6240_Digial,*schematic

@@ -1,0 +1,51 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "17.1.0.160.isr2"
+"date" "10:46:08 AM, Thur Nov 15, 2018"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+"subckt_instances" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"hw1_3_CMOS_3_Input_NAND" "subckt" (
+""
+"A B C Out vdd! 0"
+"I13.I6 I13.I5 I13.I4 I13.I3"
+)
+"hw1_3_CMOS_2_Input_NOR" "subckt" (
+""
+"A B Out 0 vdd!"
+"I13.I26 I13.I29 I13.I25"
+)
+"hw3_1_adder" "subckt" (
+""
+"A B Cin Cout Sum vdd! 0"
+"I13"
+)
+"hw1_3_CMOS_2_Input_NAND" "subckt" (
+""
+"A B Out vdd! 0"
+"I13.I9 I13.I8 I13.I7"
+)
+"hw1_1_c_inverter" "subckt" (
+""
+"VIN VOUT vdd! 0"
+"I13.I18 I13.I30 I13.I28 I13.I27 I13.I16 I13.I15 I13.I14 I13.I13 I13.I12 I13.I11 I13.I10 I13.I2 I13.I1 I13.I0"
+)
+"hw1_3_CMOS_3_Input_NOR" "subckt" (
+""
+"A B C Out 0 vdd!"
+"I13.I17"
+)
+END

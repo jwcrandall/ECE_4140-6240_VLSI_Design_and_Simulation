@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov 17 13:01:36 2018
+// Design library name: project_g01
+// Design cell name: nand2
+// Design view name: extracted
+simulator lang=spectre
+global 0

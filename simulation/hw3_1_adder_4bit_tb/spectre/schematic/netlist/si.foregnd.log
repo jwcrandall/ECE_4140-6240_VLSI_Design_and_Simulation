@@ -1,0 +1,20 @@
+Begin Incremental Netlisting Nov 18 16:57:50 2018
+ERROR (OSSHNL-116): Unable to descend into any of the views defined in the view
+list, 'spectre cmos_sch cmos.sch schematic veriloga', for the
+instance 'I28' in
+cell 'hw3_1_adder_4bit_tb'. Add one of these views to the cell
+'hw3_1_adder_4bit_tb_vdriver' in the
+library 'ECE_6240_Digial', or modify the
+view list so that it contains an existing view.
+
+End netlisting Nov 18 16:57:50 2018
+Begin Incremental Netlisting Nov 18 16:57:53 2018
+ERROR (OSSHNL-116): Unable to descend into any of the views defined in the view
+list, 'spectre cmos_sch cmos.sch schematic veriloga', for the
+instance 'I28' in
+cell 'hw3_1_adder_4bit_tb'. Add one of these views to the cell
+'hw3_1_adder_4bit_tb_vdriver' in the
+library 'ECE_6240_Digial', or modify the
+view list so that it contains an existing view.
+
+End netlisting Nov 18 16:57:53 2018

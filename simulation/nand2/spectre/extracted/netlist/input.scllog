@@ -1,0 +1,12 @@
+Spectre (R) Circuit Simulator
+Version 17.1.0.160.isr2 64bit -- 26 Jan 2018
+Simulating `input.scs' on linux31.cflab.seas.gwu.edu at 1:01:38 PM, Sat Nov 17, 2018 (process id: 18603).
+H = mpsImport( "spectre" "ipi" "v0.0" ?session "spectre0_16127_1" )
+H->sclSetResultDir( "../psf" )
+H->sclRun( "all" )
+H->sclSetResultDir( "../psf" )
+H->sclRun( "all" )
+H->sclSetResultDir( "../psf" )
+H->sclRun( "all" )
+sclCkt0xa34ada0 = H->sclGetCircuit(  "" )
+H->sclQuit(  )

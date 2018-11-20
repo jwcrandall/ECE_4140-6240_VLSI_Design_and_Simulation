@@ -1,0 +1,13 @@
+HEADER
+"PSFversion" "1.00"
+"Av" "(FUNCTION or(mappedRoot(\".2@index\") mappedRoot(\".A\")))v"
+"Av" ".Av"
+"Av" ".\\2 v"
+"Bv" "(FUNCTION or(mappedRoot(\".3@index\") mappedRoot(\".B\")))v"
+"Bv" ".Bv"
+"Bv" ".\\3 v"
+"Outv" "(FUNCTION or(mappedRoot(\".1@index\") mappedRoot(\".Out\")))v"
+"Outv" ".Outv"
+"Outv" ".\\1 v"
+"N0n N1n" "NCSU_Analog_Parts_nmos4_spectre"
+"P0n P1n" "NCSU_Analog_Parts_pmos4_spectre"

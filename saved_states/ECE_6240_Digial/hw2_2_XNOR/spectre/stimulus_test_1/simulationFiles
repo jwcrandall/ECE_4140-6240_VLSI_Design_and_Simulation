@@ -1,0 +1,19 @@
+EVcdFile ""
+EVcdInfoFile ""
+VcdFile ""
+VcdInfoFile ""
+VectorFile nil
+allDefinitionFiles nil
+allDspfFiles nil
+allIncludedPaths ((t "/apps/design_kits/ibm_kits/IBM_PDK/cmrf7sf/V1.8.0.6ML/Spectre/models"))
+allPspiceFiles nil
+allSpefFiles nil
+allStimulusFiles ((t "/home/seas/jwcrandall/cadence/stimulus.txt"))
+allVectorFiles nil
+definitionFiles nil
+dspfFile nil
+hlcheck "off"
+includePath "/apps/design_kits/ibm_kits/IBM_PDK/cmrf7sf/V1.8.0.6ML/Spectre/models"
+pspiceFile nil
+spefFile nil
+stimulusFile ("/home/seas/jwcrandall/cadence/stimulus.txt")

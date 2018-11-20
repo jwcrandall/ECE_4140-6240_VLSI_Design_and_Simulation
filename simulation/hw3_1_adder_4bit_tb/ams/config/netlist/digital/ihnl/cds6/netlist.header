@@ -1,0 +1,18 @@
+// Library - ECE_6240_Digial, Cell - hw3_1_adder_4bit, View - schematic
+// LAST TIME SAVED: Nov 15 17:31:43 2018
+// NETLIST TIME: Nov 18 17:03:37 2018
+`timescale 1ns / 1ns 
+
+`worklib ECE_6240_Digial
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="ECE_6240_Digial", dfII_cell="hw3_1_adder_4bit", dfII_view="schematic", worklib_name="ECE_6240_Digial", view_name="schematic", last_save_time="Nov 15 17:31:43 2018" *)
+
+module hw3_1_adder_4bit (.Cout(Cout3), S0, S1, S2, S3, A0, A1, A2, A3, 
+    B0, B1, B2, B3, .Cin(Cin0));
+
+output  Cout3, S0, S1, S2, S3;
+
+input  A0, A1, A2, A3, B0, B1, B2, B3, Cin0;
+

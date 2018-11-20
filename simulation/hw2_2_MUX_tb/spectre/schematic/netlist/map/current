@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "hw2_2_MUX_tb"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/seas/jwcrandall/cadence/simulation/hw2_2_MUX_tb/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "ECE_6240_Digial/hw2_2_MUX_tb/schematic" "hw2_2_MUX_tb" )
+( "ECE_6240_Digial/hw2_2_XNOR/schematic" "hw2_2_XNOR" )
+( "ECE_6240_Digial/hw1_3_CMOS_2_Input_NOR/schematic" "hw1_3_CMOS_2_Input_NOR" )
+ )
+( "hw2_2_XNOR" "ihnl/cds4/map" )
+( "hw1_3_CMOS_2_Input_NOR" "ihnl/cds3/map" )
+( "hw2_2_MUX_tb" "ihnl/cds2/map" )
+ )

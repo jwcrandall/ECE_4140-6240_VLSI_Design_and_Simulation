@@ -1,0 +1,5 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw2_2_XNOR
+// View name: schematic
+subckt hw2_2_XNOR A B Out

@@ -1,0 +1,14 @@
+
+hw3_1_adder_1bit I3 ( .Cout(Cin1Cout0), .Sum(S0), .A(A0), .B(B0), 
+    .Cin(Cin0));
+
+hw3_1_adder_1bit I2 ( .Cout(Cin2Cout1), .Sum(S1), .A(A1), .B(B1), 
+    .Cin(Cin1Cout0));
+
+hw3_1_adder_1bit I1 ( .Cout(Cin3Cout2), .Sum(S2), .A(A2), .B(B2), 
+    .Cin(Cin2Cout1));
+
+hw3_1_adder_1bit I0 ( .Cout(Cout3), .Sum(S3), .A(A3), .B(B3), 
+    .Cin(Cin3Cout2));
+
+endmodule

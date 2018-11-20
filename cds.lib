@@ -1,4 +1,4 @@
-# File Created by Joseph Crandall at Tue Oct 30 16:40:51 2018
+# File Created by Joseph Crandall at Tue Nov 13 17:18:18 2018
 # assisted by CdsLibEditor
 ###
 ### Cadence basic libs
@@ -39,3 +39,4 @@ DEFINE ECE_6240_Digial ECE_6240_Digial
 DEFINE 6218_Final_Project 6218_Final_Project
 DEFINE analog_ece6218 analog_ece6218
 DEFINE connectLib /apps/vlsi_2018/cadence/INCISIVE152/tools/affirma_ams/etc/connect_lib/connectLib
+DEFINE project_g01 /home/seas/jack_hirschman/cadence/project_g01

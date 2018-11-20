@@ -1,0 +1,6 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw1_3_CMOS_3_Input_NOR
+// View name: schematic
+// Inherited view list: schematic
+subckt hw1_3_CMOS_3_Input_NOR

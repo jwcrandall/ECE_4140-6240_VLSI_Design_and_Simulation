@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+ECE_6240_Digial/hw2_2_XNOR/extracted hw2_2_XNOR
+$endmodel
+$net
+$endnet
+$param
+p5vonly p5vonly
+$endparam

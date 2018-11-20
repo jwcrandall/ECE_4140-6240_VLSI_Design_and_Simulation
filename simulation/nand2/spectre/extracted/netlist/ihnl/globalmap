@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+project_g01/nand2/extracted nand2
+$endmodel
+$net
+$endnet
+$param
+p5vonly p5vonly
+$endparam

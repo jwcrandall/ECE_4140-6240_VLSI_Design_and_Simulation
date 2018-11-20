@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  ECE_6240_Digial 
+cell: hw3_1_adder_4bit_tb 
+view: config 
+topCellLib: ECE_6240_Digial 

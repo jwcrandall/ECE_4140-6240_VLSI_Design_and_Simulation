@@ -1,0 +1,5 @@
+
+// Library name: ECE_6240_Digial
+// Cell name: hw3_1_adder
+// View name: schematic
+subckt hw3_1_adder A B Cin Cout Sum
