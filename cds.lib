@@ -35,8 +35,9 @@ DEFINE ibm_cmos8hp_sc $DESIGNKITS/ibm_kits/IBM_IP/ibm_cmos8hp/std_cell/sc/v.2011
 ###
 ### My libs
 ###
-DEFINE ECE_6240_Digial ECE_6240_Digial
+#Removed by ddDeleteObj: DEFINE ECE_6240_Digial ECE_6240_Digial
 DEFINE 6218_Final_Project 6218_Final_Project
 DEFINE analog_ece6218 analog_ece6218
 DEFINE connectLib /apps/vlsi_2018/cadence/INCISIVE152/tools/affirma_ams/etc/connect_lib/connectLib
 DEFINE project_g01 /home/seas/jack_hirschman/cadence/project_g01
+DEFINE ECE_6240_Digital /home/seas/jwcrandall/cadence/ECE_6240_Digital
