@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"I41n I40n I39n" "hw3_1_2_Input_OR"
+"I38n I37n I36n" "hw3_1_2_Input_AND"
+"I42n" "hw3_1_3_Input_OR"
+"I2n I1n I0n" "hw1_1_c_inverter"
+"I35n I34n I33n I32n" "hw3_1_3_Input_AND"
+"Av" ":1v"
+"Bv" ":2v"
+"Cinv" ":3v"
+"Coutv" ":4v"
+"Sumv" ":5v"

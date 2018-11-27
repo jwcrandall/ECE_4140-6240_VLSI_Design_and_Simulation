@@ -1,0 +1,54 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.7-64b 08/21/2018 19:43 (sjfhw315) $
+          : sub-version  IC6.1.7-64b.500.22 
+Started at: 20-Nov-2018  14:40:05
+User Name : jwcrandall
+Host Name : linux32.cflab.seas.gwu.edu
+Directory : /home/seas/jwcrandall/cadence
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-75): Target library 'project_g01' is attached to the technology library 'NCSU_TechLib_ami06'. Therefore, the technology file is opened in read-only mode. All the undefined layer-purpose pairs will be dropped.
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /apps/design_kits/ncsu-cdk-1.6.0.beta/pipo/streamInLayermap
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				project_g01
+	strmFile			/home/seas/vlsi/Mini_Frame.gds
+	logFile				strmIn.log
+	view				layout
+	case				Preserve
+	layerMap			/apps/design_kits/ncsu-cdk-1.6.0.beta/pipo/streamInLayermap
+	propSeparator			,
+	checkPolygon				
+
+INFO (XSTRM-220): 1. Translating STRUCTURE PadGnd as cellView project_g01/PadGnd/layout.
+INFO (XSTRM-220): 2. Translating STRUCTURE PadVdd as cellView project_g01/PadVdd/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE PadInC as cellView project_g01/PadInC/layout.
+INFO (XSTRM-220): 4. Translating STRUCTURE PadOut as cellView project_g01/PadOut/layout.
+INFO (XSTRM-220): 5. Translating STRUCTURE PadARef as cellView project_g01/PadARef/layout.
+INFO (XSTRM-220): 6. Translating STRUCTURE PadSpace as cellView project_g01/PadSpace/layout.
+INFO (XSTRM-220): 7. Translating STRUCTURE PadIO as cellView project_g01/PadIO/layout.
+INFO (XSTRM-220): 8. Translating STRUCTURE PadFC as cellView project_g01/PadFC/layout.
+INFO (XSTRM-220): 9. Translating STRUCTURE Mini_Frame as cellView project_g01/Mini_Frame/layout.
+
+Summary of Objects Translated:
+	Instances:                              44
+	CustomVias:                             0
+	StandardVias:                           0
+	CdsGenVias:                             0
+	Arrays:                                 0
+	Polygons:                               0
+	Paths:                                  0
+	PathSegs:                               0
+	Rectangles:                             54860
+	Text:                                   37
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  9
+
+Elapsed Time: 1.2s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 79052KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.

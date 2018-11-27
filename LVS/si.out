@@ -8,24 +8,32 @@ Compiling Diva LVS rules...
 
     Net-list summary for /home/seas/jwcrandall/cadence/LVS/layout/netlist
        count
-        7               nets
-        0               terminals
-        3               pmos
-        3               nmos
+        42              nets
+        7               terminals
+        37              pmos
+        37              nmos
 
     Net-list summary for /home/seas/jwcrandall/cadence/LVS/schematic/netlist
        count
-        7               nets
-        5               terminals
-        3               pmos
-        3               nmos
+        42              nets
+        7               terminals
+        37              pmos
+        37              nmos
+
+
+    Terminal correspondence points
+    N37       N16       A
+    N36       N2        B
+    N40       N13       Cin
+    N41       N15       Cout
+    N39       N4        Sum
+    N35       N0        gnd!
+    N38       N1        vdd!
 
 Devices in the netlist but not in the rules:
         pcapacitor
 Devices in the rules but not in the netlist:
         cap nfet pfet nmos4 pmos4
-
-1 net-list ambiguity was resolved by random selection.
 
 The net-lists match.
 
@@ -35,21 +43,21 @@ The net-lists match.
         rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  6       6      
-        total                   6       6      
+        active                  74      74     
+        total                   74      74     
 
                                   nets
         un-matched              0       0      
         merged                  0       0      
         pruned                  0       0      
-        active                  7       7      
-        total                   7       7      
+        active                  42      42     
+        total                   42      42     
 
                                 terminals
         un-matched              0       0      
         matched but
         different type          0       0      
-        total                   0       5      
+        total                   7       7      
 
 
 Probe files from /home/seas/jwcrandall/cadence/LVS/schematic

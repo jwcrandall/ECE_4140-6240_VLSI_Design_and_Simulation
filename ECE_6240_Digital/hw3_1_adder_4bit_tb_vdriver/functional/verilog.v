@@ -19,11 +19,11 @@ module hw3_1_adder_4bit_tb_vdriver (sum,c_out,A_data,B_data,c_in);
 		A_data = 0;
 		B_data = 0;
 		for (i=0; i<2;i=i+1)begin
-			#1 c_in = i;
+			#20 c_in = i;
 			for (j=0; j<16; j=j+1)begin
-				#1 A_data = j;
+				#10 A_data = j;
 				for (k=0; k<16; k=k+1) begin
-					#1 B_data = k;
+					#5 B_data = k;
 					$monitor ($time, " A_data = %b, B_data= %b, c_in = %b, sum = %b, c_out = %b",A_data,B_data,c_in,sum,c_out);
 					sum_full_expected = A_data + B_data + c_in;
 					if(sum == sum_full_expected[3:0] && c_out == sum_full_expected[4])

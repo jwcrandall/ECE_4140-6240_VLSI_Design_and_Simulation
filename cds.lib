@@ -41,3 +41,5 @@ DEFINE analog_ece6218 analog_ece6218
 DEFINE connectLib /apps/vlsi_2018/cadence/INCISIVE152/tools/affirma_ams/etc/connect_lib/connectLib
 DEFINE project_g01 /home/seas/jack_hirschman/cadence/project_g01
 DEFINE ECE_6240_Digital /home/seas/jwcrandall/cadence/ECE_6240_Digital
+DEFINE hw3_1_2_Input_Or /home/seas/jwcrandall/cadence/hw3_1_2_Input_Or
+DEFINE project_g01_crandall /home/seas/jwcrandall/cadence/project_g01_crandall

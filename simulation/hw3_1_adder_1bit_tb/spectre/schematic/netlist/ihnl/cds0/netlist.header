@@ -1,0 +1,5 @@
+
+// Library name: ECE_6240_Digital
+// Cell name: hw1_3_CMOS_3_Input_NAND
+// View name: schematic
+subckt hw1_3_CMOS_3_Input_NAND A B C Out

@@ -36,4 +36,4 @@ module hw3_1_adder_4bit_tb_vdriver (sum,c_out,A_data,B_data,c_in);
 	#10 $finish;
 	end
       
-endmodules
+endmodule

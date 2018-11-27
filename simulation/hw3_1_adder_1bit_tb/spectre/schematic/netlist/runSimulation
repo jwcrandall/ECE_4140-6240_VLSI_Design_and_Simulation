@@ -1,0 +1,2 @@
+# runSimulation scripts generated for spectre interactive are not intended to be used for command line.
+ spectre  input.scs +escchars +log ../psf/spectre.out +inter=mpsc +mpssession=spectre3_1750_2  -format psfxl -raw ../psf  -I/apps/design_kits/ibm_kits/IBM_PDK/cmrf7sf/V1.8.0.6ML/Spectre/models +lqtimeout 900 -maxw 5 -maxn 5   

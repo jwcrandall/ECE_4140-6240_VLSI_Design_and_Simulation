@@ -1,0 +1,10 @@
+"ECE_6240_Digital.hw3_1_3_Input_OR.schematic.termorder" (("A" "B" "C" "Out") ("A" "B" "C" "Out"))
+"ECE_6240_Digital.hw3_1_2_Input_OR.schematic.termorder" (("A" "B" "Out") ("A" "B" "Out"))
+"ECE_6240_Digital.hw1_1_c_inverter.schematic.termorder" nil
+"ECE_6240_Digital.hw1_3_CMOS_2_Input_NOR.schematic.termorder" (("A" "B" "Out") ("A" "B" "Out"))
+"ECE_6240_Digital.hw1_3_CMOS_2_Input_NAND.schematic.termorder" (("A" "B" "Out") ("A" "B" "Out"))
+"ECE_6240_Digital.hw3_1_3_Input_AND.schematic.termorder" (("A" "B" "C" "Out") ("A" "B" "C" "Out"))
+"ECE_6240_Digital.hw1_3_CMOS_3_Input_NOR.schematic.termorder" (("A" "B" "C" "Out") ("A" "B" "C" "Out"))
+"ECE_6240_Digital.hw3_1_2_Input_AND.schematic.termorder" (("A" "B" "Out") ("A" "B" "Out"))
+"ECE_6240_Digital.hw3_1_adder_1bit.schematic.termorder" (("A" "B" "Cin" "Cout" "Sum") ("A" "B" "Cin" "Cout" "Sum"))
+"ECE_6240_Digital.hw1_3_CMOS_3_Input_NAND.schematic.termorder" (("A" "B" "C" "Out") ("A" "B" "C" "Out"))
