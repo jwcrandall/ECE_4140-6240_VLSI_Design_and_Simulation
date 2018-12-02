@@ -1,0 +1,888 @@
+irun(64): 15.20-s045: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s045: Started on Nov 29, 2018 at 10:59:54 EST
+irun
+	-f irunArgs
+		-UNBUFFERED
+		-cdslib ./cds.lib
+		-errormax 50
+		-status
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-incdir /home/seas/jwcrandall/cadence/
+		-ade
+		-timescale 1ns/1ns
+		-vtimescale 1ns/1ns
+		-discipline logic
+		-delay_mode None
+		-novitalaccl
+		-access r
+		-noparamerr
+		-amspartinfo ../psf/partition.info
+		-rnm_partinfo
+		-modelincdir /home/seas/jwcrandall/cadence/
+		./spiceModels.scs
+		./amsControlSpectre.scs
+		-input ./probe.tcl
+		-run
+		-exit
+		-ncsimargs "+amsrawdir ../psf"
+		-simcompatible_ams spectre
+		-name ECE_6240_Digital.hw3_1_mirror_adder_4bit_tb:config
+		-amsconnrules ConnRules_5V_full_fast
+		+define+CDS_SELECT_CRS
+		+define+CONNRULES_5V_FULL_FAST
+		-allowredefinition
+		-amsbind
+		-top ECE_6240_Digital.hw3_1_mirror_adder_4bit_tb:schematic
+		-top cds_globals
+		./netlist.vams
+		-f ./textInputs
+			-amscompilefile "file:/home/seas/jwcrandall/cadence/ECE_6240_Digital/hw3_1_mirror_adder_4bit_tb_vdriver/functional/verilog.v lib:ECE_6240_Digital cell:hw3_1_mirror_adder_4bit_tb_vdriver view:functional"
+		./cds_globals.vams
+		-l ../psf/irun.log
+file: /home/seas/jwcrandall/cadence/ECE_6240_Digital/hw3_1_mirror_adder_4bit_tb_vdriver/functional/verilog.v
+ncvlog: *W,SPDUSD: Include directory /home/seas/jwcrandall/cadence/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+ncvlog: Memory Usage - 21.3M program + 28.4M data = 49.7M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 39.3% cpu)
+		Caching library 'ECE_6240_Digital' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		hw3_1_mirror_adder_4bit_tb
+		cds_globals
+	Discipline resolution Pass...
+	Doing auto-insertion of connection elements...
+	Connect Rules applied are:
+		ConnRules_5V_full_fast
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                30      24
+		Registers:             109     133
+		Scalar wires:           29       -
+		Expanded wires:          8       2
+		Vectored wires:         14       -
+		Always blocks:          53      55
+		Initial blocks:         15      25
+		Cont. assignments:      14      21
+		Interconnect:           67       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: ECE_6240_Digital.hw3_1_mirror_adder_4bit_tb:config
+ncelab: Memory Usage - 49.8M program + 53.2M data = 103.0M total (Peak 236.8M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.3s, 32.5% cpu)
+Loading snapshot ECE_6240_Digital.hw3_1_mirror_adder_4bit_tb:config .................... Done
+Simulating in AMS-SIE mode...
+	Starting analog simulation engine...
+AMSD: Using spectre solver with arguments: -ahdllibdir INCA_libs/AMSD/ahdlSimDB.
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.803.isr18 64bit -- 25 Jul 2017
+Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
+        Cadence Design Systems, Inc. All others are the property of their
+        respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: jwcrandall   Host: linux02.cflab.seas.gwu.edu   HostID: A4801F8B   PID:
+        16446
+Memory  available: 26.8889 GB  physical: 33.5891 GB
+Linux   : CentOS release 6.10 (Final)
+CPU Type: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+All processors running at 3492.1 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 (  4 ),  1 (  5 ),  2 (  6 ),  3 (  7 )
+        
+System load averages (1min, 5min, 15min) : 1.9 %, 1.9 %, 1.1 %
+Hyperthreading is enabled
+
+
+Analog Kernel using -ANALOGCONTROL  ./spiceModels.scs.
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/hw3_1_mirror_adder_4bit_tb/ams/config/netlist/spiceModels.scs
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/hw3_1_mirror_adder_4bit_tb/ams/config/netlist/netlist.vams
+Reading link:  /apps/vlsi_2018/cadence/INCISIVE152/tools
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory INCA_libs/AMSD/ahdlSimDB (775)
+Opening directory
+        INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/hw3_1_mirror_adder_4bit_tb/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2.vams
+Opening directory INCA_libs/AMSD/ahdlSimDB (775)
+Opening directory
+        INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/hw3_1_mirror_adder_4bit_tb/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__E2L_2__module__0x10000001_behavioral.
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/hw3_1_mirror_adder_4bit_tb/ams/config/netlist/cds_globals.vams
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file: 
+        /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/hw3_1_mirror_adder_4bit_tb/ams/config/netlist/amsControlSpectre.scs
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/hw3_1_mirror_adder_4bit_tb/ams/config/netlist/.amsbind.scs
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/spectre.cfg
+Time for NDB Parsing: CPU = 143.979 ms, elapsed = 673.284 ms.
+Time accumulated: CPU = 280.957 ms, elapsed = 673.286 ms.
+Peak resident memory used = 87.7 Mbytes.
+
+ncsim> source /apps/vlsi_2018/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> # This is the NC-SIM(R) probe command file
+ncsim> # used in the AMS-ADE integration.
+ncsim> 
+ncsim> 
+ncsim> #
+ncsim> # Database settings
+ncsim> #
+ncsim> if { [info exists ::env(AMS_RESULTS_DIR) ] } { set AMS_RESULTS_DIR $env(AMS_RESULTS_DIR)} else {set AMS_RESULTS_DIR "../psf"}
+../psf
+ncsim> database -open ams_database -into ${AMS_RESULTS_DIR} -default
+Created default SHM database ams_database
+ncsim> 
+ncsim> #
+ncsim> # Probe settings
+ncsim> #
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.A_data[0]}
+Created probe 1
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.A_data[1]}
+Created probe 2
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.A_data[2]}
+Created probe 3
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.A_data[3]}
+Created probe 4
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.B_data[0]}
+Created probe 5
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.B_data[1]}
+Created probe 6
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.B_data[2]}
+Created probe 7
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.B_data[3]}
+Created probe 8
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.Cin}
+Created probe 9
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.sum[3]}
+Created probe 10
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.sum[2]}
+Created probe 11
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.sum[1]}
+Created probe 12
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.sum[0]}
+Created probe 13
+ncsim> probe -create -emptyok -database ams_database {hw3_1_mirror_adder_4bit_tb.Cout}
+Created probe 14
+ncsim> 
+ncsim> run
+
+The CPU load for active processors is :
+        Spectre  0 (28.4 %)      1 (1.3 %)       3 (1.3 %)       4 (10.1 %)
+                 6 (1.3 %)      
+        Other   
+Reading link: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 75.988 ms, elapsed = 126.007 ms.
+Time accumulated: CPU = 356.945 ms, elapsed = 799.417 ms.
+Peak resident memory used = 108 Mbytes.
+
+Time for EDB Visiting: CPU = 1.999 ms, elapsed = 1.42193 ms.
+Time accumulated: CPU = 358.944 ms, elapsed = 800.963 ms.
+Peak resident memory used = 109 Mbytes.
+
+
+Global user options:
+      addflowsuffix = yes
+        dotprobefmt = hier
+               temp = 27
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+             pivrel = 0.001
+     checklimitdest = psf
+             rawfmt = sst2
+               save = selected
+               tnom = 25
+              scale = 1
+             scalem = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 69
+            bsim3v3 112   
+connectLib__E2L_2__module__0x10000001_behavioral 5     
+connectLib__L2E_2__module__0x10000001_behavioral 9     
+            vsource 1     
+
+Analysis and control statement inventory:
+               info 4     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 14    
+
+Time for parsing: CPU = 3 ms, elapsed = 9.39322 ms.
+Time accumulated: CPU = 361.944 ms, elapsed = 810.47 ms.
+Peak resident memory used = 110 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+**********************************************
+Transient Analysis `tran': time = (0 s -> 1 s)
+**********************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(hw3_1_mirror_adder_4bit_tb.I36.I1.net059) = -29.1747 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 5.999 ms, elapsed = 5.615 ms.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 1 s
+    step = 1 ms
+    maxstep = 20 ms
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 25 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   14      (voltage)
+
+Pass: A_input =  0, B_input =  0, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  1, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  2, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  3, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  4, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  5, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  6, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  7, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  8, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  9, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 10, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 11, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 12, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 13, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 14, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 15, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  0, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  1, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  2, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  3, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  4, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  5, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  6, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  7, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  8, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  9, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 10, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+
+Notice from spectre at time = 4.7 ms during transient analysis `tran'.
+    Found trapezoidal ringing on node hw3_1_mirror_adder_4bit_tb.sum[2].
+Pass: A_input =  1, B_input = 11, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 12, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 13, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 14, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 15, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  2, B_input =  0, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  1, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  2, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  3, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  4, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  5, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  6, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  7, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  8, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  9, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 10, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 11, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 12, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 13, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 14, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  2, B_input = 15, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input =  0, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  1, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  2, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  3, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  4, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  5, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  6, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  7, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  8, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  9, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 10, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 11, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 12, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 13, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input = 14, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input = 15, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input =  0, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  1, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  2, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  3, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  4, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  5, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  6, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  7, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  8, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  9, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input = 10, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input = 11, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input = 12, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 13, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 14, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 15, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input =  0, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  1, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  2, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  3, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  4, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  5, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  6, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  7, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  8, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  9, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input = 10, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input = 11, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 12, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 13, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 14, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 15, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input =  0, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  1, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  2, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  3, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  4, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  5, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  6, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  7, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  8, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  9, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input = 10, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 11, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 12, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 13, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 14, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 15, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input =  0, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  1, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  2, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  3, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  4, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  5, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  6, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  7, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  8, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  9, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 10, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 11, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 12, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 13, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 14, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 15, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input =  0, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  1, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  2, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  3, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  4, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  5, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  6, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  7, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  8, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input =  9, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 10, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 11, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 12, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 13, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 14, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 15, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  0, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  1, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  2, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  3, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  4, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  5, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+
+    tran: time = 25 ms        (2.5 %), step = 20.1 us     (2.01 m%)
+Pass: A_input =  9, B_input =  6, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  7, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  8, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  9, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 10, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 11, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 12, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 13, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 14, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 15, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  0, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  1, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  2, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  3, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  4, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  5, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  6, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  7, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  8, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  9, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 10, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 11, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 12, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 13, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 14, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 15, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  0, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  1, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  2, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  3, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  4, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  5, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  6, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  7, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  8, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  9, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 10, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 11, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 12, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 13, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 14, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 15, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  0, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  1, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  2, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  3, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  4, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  5, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  6, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  7, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  8, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  9, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 10, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 11, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 12, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 13, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 14, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 15, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  0, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 13, B_input =  1, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 13, B_input =  2, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 13, B_input =  3, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  4, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  5, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  6, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  7, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  8, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  9, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 10, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 11, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 12, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 13, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 14, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 15, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  0, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 14, B_input =  1, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 14, B_input =  2, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  3, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  4, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  5, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  6, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  7, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  8, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  9, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 10, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 11, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 12, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 13, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 14, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 15, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  0, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 15, B_input =  1, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  2, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  3, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  4, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  5, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  6, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  7, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  8, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  9, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 10, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 11, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 12, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 13, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 14, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 15, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  0, B_input =  0, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  1, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  2, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  3, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  4, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  5, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  6, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  7, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  8, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  9, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 10, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 11, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 12, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 13, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 14, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 15, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  1, B_input =  0, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  1, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  2, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  3, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  4, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  5, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  6, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  7, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  8, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  9, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 10, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 11, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 12, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 13, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 14, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  1, B_input = 15, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  2, B_input =  0, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  1, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  2, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  3, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  4, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  5, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  6, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  7, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  8, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  9, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 10, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 11, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 12, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 13, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  2, B_input = 14, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  2, B_input = 15, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input =  0, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  1, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  2, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  3, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  4, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  5, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  6, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  7, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  8, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  9, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 10, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 11, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 12, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input = 13, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input = 14, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input = 15, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input =  0, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  1, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  2, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  3, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  4, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  5, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  6, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  7, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  8, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  9, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input = 10, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input = 11, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 12, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 13, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 14, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 15, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input =  0, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  1, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  2, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  3, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  4, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  5, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  6, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  7, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  8, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  9, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input = 10, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 11, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 12, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 13, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 14, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 15, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input =  0, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  1, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  2, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  3, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  4, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  5, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  6, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  7, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  8, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  9, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 10, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 11, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 12, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 13, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 14, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 15, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input =  0, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  1, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  2, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  3, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  4, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  5, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  6, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  7, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  8, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input =  9, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 10, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 11, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 12, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 13, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 14, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 15, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input =  0, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  1, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  2, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  3, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  4, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  5, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  6, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  7, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input =  8, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input =  9, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 10, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 11, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 12, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 13, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 14, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 15, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  0, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  1, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  2, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  3, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  4, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  5, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  6, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  7, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  8, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  9, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 10, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 11, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 12, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 13, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 14, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 15, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  0, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  1, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  2, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  3, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  4, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  5, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  6, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  7, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  8, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  9, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 10, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 11, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 12, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 13, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 14, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 15, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  0, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  1, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  2, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  3, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  4, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  5, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  6, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  7, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  8, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  9, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 10, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 11, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 12, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 13, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 14, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 15, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  0, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  1, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  2, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  3, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  4, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  5, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  6, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  7, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  8, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  9, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 10, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 11, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+    tran: time = 75 ms        (7.5 %), step = 16.63 us    (1.66 m%)
+Pass: A_input = 12, B_input = 12, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 13, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 14, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 15, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  0, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 13, B_input =  1, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 13, B_input =  2, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  3, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  4, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  5, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  6, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  7, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  8, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  9, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 10, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 11, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 12, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 13, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 14, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 15, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  0, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 14, B_input =  1, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  2, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  3, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  4, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  5, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  6, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  7, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  8, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  9, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 10, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 11, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 12, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 13, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 14, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 15, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  0, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  1, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  2, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  3, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  4, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  5, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  6, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  7, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  8, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  9, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 10, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 11, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 12, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 13, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 14, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 15, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 1, Carry Out 1
+Simulation complete via $finish(1) at time 83300 US + 0
+/home/seas/jwcrandall/cadence/ECE_6240_Digital/hw3_1_mirror_adder_4bit_tb_vdriver/functional/verilog.v:38 	#10 $finish;
+ncsim> exit
+    tran: time = 83.38 ms     (100 %), step = 106.8 us     (91.7 %)
+`AutoStop = yes'. Analysis finished at 83.3827 ms s.
+
+Number of accepted tran steps =             46476
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (27.0 %)      1 (4.2 %)       2 (41.8 %)      3 (23.6 %)
+                 4 (7.6 %)      
+        Other   
+Initial condition solution time: CPU = 5.999 ms, elapsed = 5.64694 ms.
+
+**** AMSD: Mixed-Signal Activity Statistics ****
+Number of A-to-D events:                    3378
+  Number of A-to-D events in IEs:           3378
+Number of D-to-A events:                    1040
+  Number of D-to-A events in IEs:           1040
+Number of VHDL-AMS Breaks:                     0
+
+Intrinsic tran analysis time:    CPU = 16.0656 s, elapsed = 16.1051 s.
+Total time required for tran analysis `tran': CPU = 16.0726 s, elapsed =
+        16.1123 s.
+Time accumulated: CPU = 16.4385 s, elapsed = 16.9305 s.
+Peak resident memory used = 115 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+
+Aggregate audit (11:00:20 AM, Thur Nov 29, 2018):
+Time used: CPU = 16.5 s, elapsed = 17 s, util. = 96.9%.
+Time spent in licensing: elapsed = 85 ms.
+Peak memory used = 115 Mbytes.
+Simulation started at: 11:00:03 AM, Thur Nov 29, 2018, ended at: 11:00:20 AM,
+        Thur Nov 29, 2018, with elapsed time (wall clock): 17 s.
+spectre completes with 0 errors, 0 warnings, and 3 notices.
+ncsim: Memory Usage - 38.6M program + 465.3M data = 503.8M total (503.8M Peak)
+ncsim: CPU Usage - 0.3s system + 16.2s user = 16.4s total (17.7s, 92.9% cpu)
+TOOL:	irun(64)	15.20-s045: Exiting on Nov 29, 2018 at 11:00:20 EST  (total: 00:00:26)

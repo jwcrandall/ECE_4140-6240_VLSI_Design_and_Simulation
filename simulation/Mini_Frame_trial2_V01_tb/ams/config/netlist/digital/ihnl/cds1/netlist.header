@@ -1,0 +1,34 @@
+// Library - project_g01, Cell - Mini_Frame_trial2_V01_tb, View -
+//schematic
+// LAST TIME SAVED: Dec  1 19:13:04 2018
+// NETLIST TIME: Dec  1 19:32:17 2018
+`timescale 1ns / 1ns 
+
+`worklib project_g01
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="project_g01", dfII_cell="Mini_Frame_trial2_V01_tb", dfII_view="schematic", worklib_name="project_g01", view_name="schematic", last_save_time="Dec  1 19:13:04 2018" *)
+
+module Mini_Frame_trial2_V01_tb ();
+
+// Buses in the design
+
+wire  [7:0]  Clk1B;
+
+wire  [7:0]  Clk1A;
+
+wire  [7:0]  Clk2A;
+
+wire  [7:0]  Clk2B;
+
+wire  [7:0]  B;
+
+wire  [15:0]  Clk2F;
+
+wire  [15:0]  Clk1F;
+
+wire  [15:0]  F;
+
+wire  [7:0]  A;
+

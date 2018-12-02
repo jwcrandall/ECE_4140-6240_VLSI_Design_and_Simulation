@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+ECE_6240_Digital/hw3_2_dynamic_cmos_4_tb/schematic hw3_2_dynamic_cmos_4_tb
+ECE_6240_Digital/hw3_2_dynamic_cmos_4/schematic hw3_2_dynamic_cmos_4
+$endmodel
+$net
+gnd! 0
+gnda! gnda!
+vdd! vdd!
+$endnet
+$param
+p5vonly p5vonly
+$endparam

@@ -1,0 +1,31 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "17.1.0.160.isr2"
+"date" "12:31:48 PM, Fri Nov 30, 2018"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+"subckt_instances" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"hw3_2_dynamic_domino_cmos_3" "subckt" (
+""
+"A B C Clk F gnda! vdd! 0"
+"I13"
+)
+"hw1_1_c_inverter" "subckt" (
+""
+"VIN VOUT vdd! 0"
+"I13.I2"
+)
+END

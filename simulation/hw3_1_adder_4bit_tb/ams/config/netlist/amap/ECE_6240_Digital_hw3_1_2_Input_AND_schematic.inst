@@ -1,0 +1,13 @@
+HEADER
+"PSFversion" "1.00"
+"Outv" "(FUNCTION or(mappedRoot(\".1@index\") mappedRoot(\".Out\")))v"
+"Outv" ".Outv"
+"Outv" ".\\1 v"
+"Av" "(FUNCTION or(mappedRoot(\".2@index\") mappedRoot(\".A\")))v"
+"Av" ".Av"
+"Av" ".\\2 v"
+"Bv" "(FUNCTION or(mappedRoot(\".3@index\") mappedRoot(\".B\")))v"
+"Bv" ".Bv"
+"Bv" ".\\3 v"
+"I0n" "ECE_6240_Digital_hw1_3_CMOS_2_Input_NAND_schematic"
+"I1n" "ECE_6240_Digital_hw1_1_c_inverter_schematic"

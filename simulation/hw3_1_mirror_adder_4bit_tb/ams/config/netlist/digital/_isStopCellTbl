@@ -1,0 +1,7 @@
+("ECE_6240_Digital" "hw1_1_c_inverter" "schematic") nil
+("NCSU_Analog_Parts" "vdc" "spectre") t
+("NCSU_Analog_Parts" "nmos4" "spectre") t
+("NCSU_Analog_Parts" "pmos4" "spectre") t
+("ECE_6240_Digital" "hw3_1_mirror_adder_4bit_tb_vdriver" "functional") t
+("ECE_6240_Digital" "hw3_1_mirror_adder_4bit" "schematic") nil
+("ECE_6240_Digital" "hw3_1_mirror_adder_1bit" "schematic") nil

@@ -1,5 +1,29 @@
 
-// Library name: ECE_6240_Digial
+// Library name: ECE_6240_Digital
+// Cell name: hw3_1_4_Input_NOR
+// View name: schematic
+// Inherited view list: schematic
+subckt hw3_1_4_Input_NOR
+    N3 (Out D 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N2 (Out C 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N1 (Out B 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N0 (Out A 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    P0 (net018 A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P1 (net18 B net018 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P2 (net19 C net18 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P3 (Out D net19 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+ends hw3_1_4_Input_NOR
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digital
 // Cell name: hw1_1_c_inverter
 // View name: schematic
 // Inherited view list: schematic
@@ -11,27 +35,17 @@ subckt hw1_1_c_inverter
 ends hw1_1_c_inverter
 // End of subcircuit definition.
 
-// Library name: ECE_6240_Digial
-// Cell name: hw1_3_CMOS_3_Input_NAND
+// Library name: ECE_6240_Digital
+// Cell name: hw3_1_4_Input_OR
 // View name: schematic
 // Inherited view list: schematic
-subckt hw1_3_CMOS_3_Input_NAND
-    P0 (Out A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
-        ps=6u pd=6u m=1 region=sat
-    P1 (Out B vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
-        ps=6u pd=6u m=1 region=sat
-    P2 (Out C vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
-        ps=6u pd=6u m=1 region=sat
-    N2 (net20 C 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
-        pd=6u m=1 region=sat
-    N1 (net19 B net20 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
-        ps=6u pd=6u m=1 region=sat
-    N0 (Out A net19 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
-        pd=6u m=1 region=sat
-ends hw1_3_CMOS_3_Input_NAND
+subckt hw3_1_4_Input_OR
+    I0 hw3_1_4_Input_NOR
+    I1 hw1_1_c_inverter
+ends hw3_1_4_Input_OR
 // End of subcircuit definition.
 
-// Library name: ECE_6240_Digial
+// Library name: ECE_6240_Digital
 // Cell name: hw1_3_CMOS_2_Input_NAND
 // View name: schematic
 // Inherited view list: schematic
@@ -47,7 +61,17 @@ subckt hw1_3_CMOS_2_Input_NAND
 ends hw1_3_CMOS_2_Input_NAND
 // End of subcircuit definition.
 
-// Library name: ECE_6240_Digial
+// Library name: ECE_6240_Digital
+// Cell name: hw3_1_2_Input_AND
+// View name: schematic
+// Inherited view list: schematic
+subckt hw3_1_2_Input_AND
+    I0 hw1_3_CMOS_2_Input_NAND
+    I1 hw1_1_c_inverter
+ends hw3_1_2_Input_AND
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digital
 // Cell name: hw1_3_CMOS_3_Input_NOR
 // View name: schematic
 // Inherited view list: schematic
@@ -67,56 +91,67 @@ subckt hw1_3_CMOS_3_Input_NOR
 ends hw1_3_CMOS_3_Input_NOR
 // End of subcircuit definition.
 
-// Library name: ECE_6240_Digial
-// Cell name: hw1_3_CMOS_2_Input_NOR
+// Library name: ECE_6240_Digital
+// Cell name: hw3_1_3_Input_OR
 // View name: schematic
 // Inherited view list: schematic
-subckt hw1_3_CMOS_2_Input_NOR
-    N1 (Out B 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
-        pd=6u m=1 region=sat
-    N0 (Out A 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
-        pd=6u m=1 region=sat
-    P0 (net2 A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
-        ps=6u pd=6u m=1 region=sat
-    P1 (Out B net2 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
-        ps=6u pd=6u m=1 region=sat
-ends hw1_3_CMOS_2_Input_NOR
+subckt hw3_1_3_Input_OR
+    I0 hw1_3_CMOS_3_Input_NOR
+    I1 hw1_1_c_inverter
+ends hw3_1_3_Input_OR
 // End of subcircuit definition.
 
-// Library name: ECE_6240_Digial
+// Library name: ECE_6240_Digital
+// Cell name: hw1_3_CMOS_3_Input_NAND
+// View name: schematic
+// Inherited view list: schematic
+subckt hw1_3_CMOS_3_Input_NAND
+    P0 (Out A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P1 (Out B vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P2 (Out C vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N2 (net20 C 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N1 (net19 B net20 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N0 (Out A net19 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends hw1_3_CMOS_3_Input_NAND
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digital
+// Cell name: hw3_1_3_Input_AND
+// View name: schematic
+// Inherited view list: schematic
+subckt hw3_1_3_Input_AND
+    I0 hw1_3_CMOS_3_Input_NAND
+    I1 hw1_1_c_inverter
+ends hw3_1_3_Input_AND
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digital
 // Cell name: hw3_1_adder_1bit
 // View name: schematic
 // Inherited view list: schematic
 subckt hw3_1_adder_1bit
-    I30 hw1_1_c_inverter
-    I28 hw1_1_c_inverter
-    I27 hw1_1_c_inverter
-    I18 hw1_1_c_inverter
-    I16 hw1_1_c_inverter
-    I15 hw1_1_c_inverter
-    I14 hw1_1_c_inverter
-    I13 hw1_1_c_inverter
-    I12 hw1_1_c_inverter
-    I11 hw1_1_c_inverter
-    I10 hw1_1_c_inverter
+    I43 hw3_1_4_Input_OR
+    I38 hw3_1_2_Input_AND
+    I37 hw3_1_2_Input_AND
+    I36 hw3_1_2_Input_AND
+    I42 hw3_1_3_Input_OR
     I2 hw1_1_c_inverter
     I1 hw1_1_c_inverter
     I0 hw1_1_c_inverter
-    I6 hw1_3_CMOS_3_Input_NAND
-    I5 hw1_3_CMOS_3_Input_NAND
-    I4 hw1_3_CMOS_3_Input_NAND
-    I3 hw1_3_CMOS_3_Input_NAND
-    I9 hw1_3_CMOS_2_Input_NAND
-    I8 hw1_3_CMOS_2_Input_NAND
-    I7 hw1_3_CMOS_2_Input_NAND
-    I17 hw1_3_CMOS_3_Input_NOR
-    I29 hw1_3_CMOS_2_Input_NOR
-    I26 hw1_3_CMOS_2_Input_NOR
-    I25 hw1_3_CMOS_2_Input_NOR
+    I32 hw3_1_3_Input_AND
+    I33 hw3_1_3_Input_AND
+    I34 hw3_1_3_Input_AND
+    I35 hw3_1_3_Input_AND
 ends hw3_1_adder_1bit
 // End of subcircuit definition.
 
-// Library name: ECE_6240_Digial
+// Library name: ECE_6240_Digital
 // Cell name: hw3_1_adder_4bit
 // View name: schematic
 // Inherited view list: schematic
@@ -128,7 +163,7 @@ subckt hw3_1_adder_4bit
 ends hw3_1_adder_4bit
 // End of subcircuit definition.
 
-// Library name: ECE_6240_Digial
+// Library name: ECE_6240_Digital
 // Cell name: hw3_1_adder_4bit_tb
 // View name: schematic
 // Inherited view list: schematic

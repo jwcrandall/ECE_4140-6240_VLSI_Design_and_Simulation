@@ -1,0 +1,27 @@
+// Library - project_g01, Cell - Mini_Frame_trial2_V01, View -
+//extracted
+// LAST TIME SAVED: Dec  1 19:04:58 2018
+// NETLIST TIME: Dec  1 19:32:16 2018
+`timescale 1ns / 1ns 
+
+`worklib project_g01
+`view extracted
+
+(* cds_ams_schematic *) 
+(* dfII_lib="project_g01", dfII_cell="Mini_Frame_trial2_V01", dfII_view="extracted", worklib_name="project_g01", view_name="extracted", last_save_time="Dec  1 19:04:58 2018" *)
+
+module Mini_Frame_trial2_V01 (.Clk1A0(Clk1B0), .Clk2A0(Clk2B0), F0, F1, 
+    F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, F13, F14, F15, \gnd! 
+    , A0, A1, A2, A3, A4, A5, A6, A7, B0, B1, B2, B3, B4, B5, B6, B7, 
+    Clk1, Clk2);
+
+output  Clk1B0, Clk2B0, F0, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, 
+    F11, F12, F13, F14, F15;
+
+inout  \gnd! ;
+
+input  A0, A1, A2, A3, A4, A5, A6, A7, B0, B1, B2, B3, B4, B5, B6, B7, 
+    Clk1, Clk2;
+
+
+endmodule

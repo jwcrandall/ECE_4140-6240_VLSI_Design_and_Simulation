@@ -1,0 +1,68 @@
+// Generated for: spectre
+// Generated on: Nov 30 12:31:48 2018
+// Design library name: ECE_6240_Digital
+// Design cell name: hw3_2_dynamic_domino_cmos_3_tb
+// Design view name: schematic
+simulator lang=spectre
+global 0 gnda! vdd!
+parameters p5vonly=0
+include "/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m"
+include "/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m"
+
+// Library name: ECE_6240_Digital
+// Cell name: hw1_1_c_inverter
+// View name: schematic
+subckt hw1_1_c_inverter VIN VOUT
+    P0 (VOUT VIN vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    N0 (VOUT VIN 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends hw1_1_c_inverter
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digital
+// Cell name: hw3_2_dynamic_domino_cmos_3
+// View name: schematic
+subckt hw3_2_dynamic_domino_cmos_3 A B C Clk F
+    N3 (net9 Clk gnda! gnda!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N2 (net09 C net9 net9) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N1 (net09 B net9 net9) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N0 (net09 A net9 net9) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P0 (net09 Clk vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    I2 (net09 F) hw1_1_c_inverter
+ends hw3_2_dynamic_domino_cmos_3
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digital
+// Cell name: hw3_2_dynamic_domino_cmos_3_tb
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+V4 (Clk 0) vsource type=pulse dc=5 val0=0 val1=5 period=320u delay=0 \
+        rise=500f fall=500f width=160u
+V3 (C 0) vsource type=pulse dc=5 val0=0 val1=5 period=160u delay=0 \
+        rise=500f fall=500f width=80u
+V2 (B 0) vsource type=pulse dc=5 val0=0 val1=5 period=80u delay=0 \
+        rise=500f fall=500f width=40u
+V1 (A 0) vsource type=pulse dc=5 val0=0 val1=5 period=40u delay=0 \
+        rise=500f fall=500f width=20u
+C0 (F 0) capacitor c=4p m=1
+I13 (A B C Clk F) hw3_2_dynamic_domino_cmos_3
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=25 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=400u write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

@@ -1,0 +1,6 @@
+    I3 hw3_1_mirror_adder_1bit
+    I2 hw3_1_mirror_adder_1bit
+    I1 hw3_1_mirror_adder_1bit
+    I0 hw3_1_mirror_adder_1bit
+ends hw3_1_mirror_adder_4bit
+// End of subcircuit definition.

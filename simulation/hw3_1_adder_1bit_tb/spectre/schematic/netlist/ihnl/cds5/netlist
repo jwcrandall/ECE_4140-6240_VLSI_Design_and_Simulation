@@ -1,6 +1,4 @@
-    I41 (net022 net023 Sum) hw3_1_2_Input_OR
-    I40 (net18 net17 net023) hw3_1_2_Input_OR
-    I39 (net20 net19 net022) hw3_1_2_Input_OR
+    I43 (net20 net19 net18 net17 Sum) hw3_1_4_Input_OR
     I38 (B Cin net15) hw3_1_2_Input_AND
     I37 (A Cin net34) hw3_1_2_Input_AND
     I36 (A B net16) hw3_1_2_Input_AND
@@ -8,9 +6,9 @@
     I2 (Cin net14) hw1_1_c_inverter
     I1 (B net11) hw1_1_c_inverter
     I0 (A net8) hw1_1_c_inverter
-    I35 (A B Cin net17) hw3_1_3_Input_AND
-    I34 (net8 net11 Cin net18) hw3_1_3_Input_AND
-    I33 (A net11 net14 net19) hw3_1_3_Input_AND
     I32 (net8 B net14 net20) hw3_1_3_Input_AND
+    I33 (A net11 net14 net19) hw3_1_3_Input_AND
+    I34 (net8 net11 Cin net18) hw3_1_3_Input_AND
+    I35 (A B Cin net17) hw3_1_3_Input_AND
 ends hw3_1_adder_1bit
 // End of subcircuit definition.

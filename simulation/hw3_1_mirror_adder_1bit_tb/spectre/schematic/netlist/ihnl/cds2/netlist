@@ -1,0 +1,14 @@
+
+// Library name: ECE_6240_Digital
+// Cell name: hw3_1_mirror_adder_1bit_tb
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+V3 (Cin 0) vsource type=pulse dc=5 val0=0 val1=5 period=200u delay=0 \
+        rise=500f fall=500f width=100u
+V2 (A 0) vsource type=pulse dc=5 val0=0 val1=5 period=50u delay=0 \
+        rise=500f fall=500f width=25u
+V1 (B 0) vsource type=pulse dc=5 val0=0 val1=5 period=100u delay=0 \
+        rise=500f fall=500f width=50u
+C1 (Sum 0) capacitor c=4p m=1
+C0 (Cout 0) capacitor c=4p m=1
+I16 (A B Cin Cout Sum) hw3_1_mirror_adder_1bit

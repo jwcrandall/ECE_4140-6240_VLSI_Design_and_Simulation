@@ -2,20 +2,59 @@
 // IC subversion:  IC6.1.7-64b.500.22 
 // IUS version: 15.20-s045
 // Copyright(C) 2005-2009, Cadence Design Systems, Inc
-// User: jwcrandall Pid: 5521
-// Design library name: ECE_6240_Digial
+// User: jwcrandall Pid: 21312
+// Design library name: ECE_6240_Digital
 // Design cell name: hw3_1_adder_4bit_tb
 // Design view name: config
 // Solver: Spectre
 
 `include "disciplines.vams"
 `include "userDisciplines.vams"
-// HDL file - ECE_6240_Digial, hw3_1_adder_4bit_tb_vdriver, functional.
-// Library - ECE_6240_Digial, Cell - hw1_1_c_inverter, View - schematic
-// LAST TIME SAVED: Oct 16 17:53:52 2018
-// NETLIST TIME: Nov 18 17:28:12 2018
+// HDL file - ECE_6240_Digital, hw3_1_adder_4bit_tb_vdriver, functional.
+// Library - ECE_6240_Digital, Cell - hw3_1_4_Input_NOR, View - schematic
+// LAST TIME SAVED: Nov 25 12:40:22 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
 
-`worklib ECE_6240_Digial
+`worklib ECE_6240_Digital
+`view schematic
+
+`timescale 1ns / 1ns 
+(* cds_ams_schematic *)
+
+module hw3_1_4_Input_NOR (Out, A, B, C, D);
+output  Out;
+input  A, B, C, D;
+ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ N3 (Out, D, cds_globals.\gnd! , cds_globals.\gnd! );
+ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ N2 (Out, C, cds_globals.\gnd! , cds_globals.\gnd! );
+ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ N1 (Out, B, cds_globals.\gnd! , cds_globals.\gnd! );
+ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ N0 (Out, A, cds_globals.\gnd! , cds_globals.\gnd! );
+ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ P0 (net018, A, cds_globals.\vdd! , cds_globals.\vdd! );
+ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ P1 (net18, B, net018, cds_globals.\vdd! );
+ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ P2 (net19, C, net18, cds_globals.\vdd! );
+ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ P3 (Out, D, net19, cds_globals.\vdd! );
+
+endmodule
+// Library - ECE_6240_Digital, Cell - hw1_1_c_inverter, View - schematic
+// LAST TIME SAVED: Oct 16 17:53:52 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
+
+`worklib ECE_6240_Digital
 `view schematic
 
 `timescale 1ns / 1ns 
@@ -32,44 +71,72 @@ ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6
  N0 (VOUT, VIN, cds_globals.\gnd! , cds_globals.\gnd! );
 
 endmodule
-// Library - ECE_6240_Digial, Cell - hw1_3_CMOS_3_Input_NAND, View - schematic
-// LAST TIME SAVED: Oct 18 11:12:37 2018
-// NETLIST TIME: Nov 18 17:28:12 2018
+// Library - ECE_6240_Digital, Cell - hw3_1_adder_4bit, View - schematic
+// LAST TIME SAVED: Nov 20 13:15:49 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
 
-`worklib ECE_6240_Digial
+`worklib ECE_6240_Digital
 `view schematic
 
 `timescale 1ns / 1ns 
 (* cds_ams_schematic *)
 
-module hw1_3_CMOS_3_Input_NAND (Out, A, B, C);
-output  Out;
-input  A, B, C;
-ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
-(* integer passed_mfactor = "m"; *)
- P0 (Out, A, cds_globals.\vdd! , cds_globals.\vdd! );
-ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
-(* integer passed_mfactor = "m"; *)
- P1 (Out, B, cds_globals.\vdd! , cds_globals.\vdd! );
-ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
-(* integer passed_mfactor = "m"; *)
- P2 (Out, C, cds_globals.\vdd! , cds_globals.\vdd! );
-ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
-(* integer passed_mfactor = "m"; *)
- N2 (net20, C, cds_globals.\gnd! , cds_globals.\gnd! );
-ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
-(* integer passed_mfactor = "m"; *)
- N1 (net19, B, net20, cds_globals.\gnd! );
-ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
-(* integer passed_mfactor = "m"; *)
- N0 (Out, A, net19, cds_globals.\gnd! );
+module hw3_1_adder_4bit (.Cout(Cout3), S0, S1, S2, S3, A0, A1, A2, A3, B0, B1, B2, B3, .Cin(Cin0));
+output  Cout3, S0, S1, S2, S3;
+input  A0, A1, A2, A3, B0, B1, B2, B3, Cin0;
+wire Cin1Cout0;
+wire Cin2Cout1;
+wire Cin3Cout2;
+hw3_1_adder_1bit I3 (.Cout( Cin1Cout0 ), .Sum( S0 ), .A( A0 ), .B( B0 ), .Cin( Cin0 ));
+hw3_1_adder_1bit I2 (.Cout( Cin2Cout1 ), .Sum( S1 ), .A( A1 ), .B( B1 ), .Cin( Cin1Cout0 ));
+hw3_1_adder_1bit I1 (.Cout( Cin3Cout2 ), .Sum( S2 ), .A( A2 ), .B( B2 ), .Cin( Cin2Cout1 ));
+hw3_1_adder_1bit I0 (.Cout( Cout3 ), .Sum( S3 ), .A( A3 ), .B( B3 ), .Cin( Cin3Cout2 ));
 
 endmodule
-// Library - ECE_6240_Digial, Cell - hw1_3_CMOS_2_Input_NAND, View - schematic
-// LAST TIME SAVED: Oct 18 09:24:43 2018
-// NETLIST TIME: Nov 18 17:28:12 2018
+// Library - ECE_6240_Digital, Cell - hw3_1_adder_4bit_tb, View - schematic
+// LAST TIME SAVED: Nov 27 14:05:57 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
 
-`worklib ECE_6240_Digial
+`worklib ECE_6240_Digital
+`view schematic
+
+`timescale 1ns / 1ns 
+(* cds_ams_schematic *)
+
+module hw3_1_adder_4bit_tb ( );
+wire [3:0] A_data;
+wire [3:0] B_data;
+wire [3:0] sum;
+wire Cout;
+wire Cin;
+hw3_1_adder_4bit_tb_vdriver I35 (.A_data( A_data ), .B_data( B_data ), .c_in( Cin ), .c_out( Cout ), .sum( sum ));
+hw3_1_adder_4bit I13 (.Cout( Cout ), .S0( sum[0] ), .S1( sum[1] ), .S2( sum[2] ), .S3( sum[3] ), .A0( A_data[0] ), .A1( A_data[1] ), .A2( A_data[2] ), .A3( A_data[3] ), .B0( B_data[0] ), .B1( B_data[1] ), .B2( B_data[2] ), .B3( B_data[3] ), .Cin( Cin ));
+vsource #(.type("dc"), .dc(5)) V0 (cds_globals.\vdd! , cds_globals.\gnd! );
+
+endmodule
+// Library - ECE_6240_Digital, Cell - hw3_1_4_Input_OR, View - schematic
+// LAST TIME SAVED: Nov 25 13:01:45 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
+
+`worklib ECE_6240_Digital
+`view schematic
+
+`timescale 1ns / 1ns 
+(* cds_ams_schematic *)
+
+module hw3_1_4_Input_OR (Out, A, B, C, D);
+output  Out;
+input  A, B, C, D;
+wire net11;
+hw3_1_4_Input_NOR I0 (.D( D ), .Out( net11 ), .A( A ), .B( B ), .C( C ));
+hw1_1_c_inverter I1 (.VOUT( Out ), .VIN( net11 ));
+
+endmodule
+// Library - ECE_6240_Digital, Cell - hw1_3_CMOS_2_Input_NAND, View - schematic
+// LAST TIME SAVED: Oct 18 09:24:43 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
+
+`worklib ECE_6240_Digital
 `view schematic
 
 `timescale 1ns / 1ns 
@@ -92,11 +159,29 @@ ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6
  N0 (Out, A, net14, cds_globals.\gnd! );
 
 endmodule
-// Library - ECE_6240_Digial, Cell - hw1_3_CMOS_3_Input_NOR, View - schematic
-// LAST TIME SAVED: Oct 18 10:17:07 2018
-// NETLIST TIME: Nov 18 17:28:12 2018
+// Library - ECE_6240_Digital, Cell - hw3_1_2_Input_AND, View - schematic
+// LAST TIME SAVED: Nov 24 21:59:18 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
 
-`worklib ECE_6240_Digial
+`worklib ECE_6240_Digital
+`view schematic
+
+`timescale 1ns / 1ns 
+(* cds_ams_schematic *)
+
+module hw3_1_2_Input_AND (Out, A, B);
+output  Out;
+input  A, B;
+wire net7;
+hw1_3_CMOS_2_Input_NAND I0 (.Out( net7 ), .A( A ), .B( B ));
+hw1_1_c_inverter I1 (.VOUT( Out ), .VIN( net7 ));
+
+endmodule
+// Library - ECE_6240_Digital, Cell - hw1_3_CMOS_3_Input_NOR, View - schematic
+// LAST TIME SAVED: Oct 18 10:17:07 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
+
+`worklib ECE_6240_Digital
 `view schematic
 
 `timescale 1ns / 1ns 
@@ -125,38 +210,80 @@ ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6
  P2 (Out, C, net19, cds_globals.\vdd! );
 
 endmodule
-// Library - ECE_6240_Digial, Cell - hw1_3_CMOS_2_Input_NOR, View - schematic
-// LAST TIME SAVED: Oct 17 22:06:34 2018
-// NETLIST TIME: Nov 18 17:28:12 2018
+// Library - ECE_6240_Digital, Cell - hw3_1_3_Input_OR, View - schematic
+// LAST TIME SAVED: Nov 25 10:09:31 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
 
-`worklib ECE_6240_Digial
+`worklib ECE_6240_Digital
 `view schematic
 
 `timescale 1ns / 1ns 
 (* cds_ams_schematic *)
 
-module hw1_3_CMOS_2_Input_NOR (Out, A, B);
+module hw3_1_3_Input_OR (Out, A, B, C);
 output  Out;
-input  A, B;
-ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
-(* integer passed_mfactor = "m"; *)
- N1 (Out, B, cds_globals.\gnd! , cds_globals.\gnd! );
-ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
-(* integer passed_mfactor = "m"; *)
- N0 (Out, A, cds_globals.\gnd! , cds_globals.\gnd! );
-ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
-(* integer passed_mfactor = "m"; *)
- P0 (net2, A, cds_globals.\vdd! , cds_globals.\vdd! );
-ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
-(* integer passed_mfactor = "m"; *)
- P1 (Out, B, net2, cds_globals.\vdd! );
+input  A, B, C;
+wire net9;
+hw1_3_CMOS_3_Input_NOR I0 (.Out( net9 ), .A( A ), .B( B ), .C( C ));
+hw1_1_c_inverter I1 (.VOUT( Out ), .VIN( net9 ));
 
 endmodule
-// Library - ECE_6240_Digial, Cell - hw3_1_adder_1bit, View - schematic
-// LAST TIME SAVED: Nov 15 17:31:41 2018
-// NETLIST TIME: Nov 18 17:28:12 2018
+// Library - ECE_6240_Digital, Cell - hw1_3_CMOS_3_Input_NAND, View - schematic
+// LAST TIME SAVED: Oct 18 11:12:37 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
 
-`worklib ECE_6240_Digial
+`worklib ECE_6240_Digital
+`view schematic
+
+`timescale 1ns / 1ns 
+(* cds_ams_schematic *)
+
+module hw1_3_CMOS_3_Input_NAND (Out, A, B, C);
+output  Out;
+input  A, B, C;
+ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ P0 (Out, A, cds_globals.\vdd! , cds_globals.\vdd! );
+ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ P1 (Out, B, cds_globals.\vdd! , cds_globals.\vdd! );
+ami06P #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ P2 (Out, C, cds_globals.\vdd! , cds_globals.\vdd! );
+ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ N2 (net20, C, cds_globals.\gnd! , cds_globals.\gnd! );
+ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ N1 (net19, B, net20, cds_globals.\gnd! );
+ami06N #(.w(1.5e-06), .l(6e-07), .as(2.25e-12), .ad(2.25e-12), .ps(6e-06), .pd(6e-06), .m(1), .region("sat"))
+(* integer passed_mfactor = "m"; *)
+ N0 (Out, A, net19, cds_globals.\gnd! );
+
+endmodule
+// Library - ECE_6240_Digital, Cell - hw3_1_3_Input_AND, View - schematic
+// LAST TIME SAVED: Nov 25 09:34:31 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
+
+`worklib ECE_6240_Digital
+`view schematic
+
+`timescale 1ns / 1ns 
+(* cds_ams_schematic *)
+
+module hw3_1_3_Input_AND (Out, A, B, C);
+output  Out;
+input  A, B, C;
+wire net9;
+hw1_3_CMOS_3_Input_NAND I0 (.Out( net9 ), .A( A ), .B( B ), .C( C ));
+hw1_1_c_inverter I1 (.VOUT( Out ), .VIN( net9 ));
+
+endmodule
+// Library - ECE_6240_Digital, Cell - hw3_1_adder_1bit, View - schematic
+// LAST TIME SAVED: Nov 27 00:01:10 2018
+// NETLIST TIME: Nov 27 14:33:42 2018
+
+`worklib ECE_6240_Digital
 `view schematic
 
 `timescale 1ns / 1ns 
@@ -165,97 +292,28 @@ endmodule
 module hw3_1_adder_1bit (Cout, Sum, A, B, Cin);
 output  Cout, Sum;
 input  A, B, Cin;
-wire net22;
-wire net26;
-wire net23;
-wire net25;
-wire net24;
-wire net21;
-wire net30;
-wire net20;
-wire net29;
-wire net19;
-wire net28;
-wire net18;
-wire net27;
 wire net17;
-wire net31;
-wire net16;
-wire net32;
-wire net34;
-wire net33;
+wire net18;
+wire net19;
+wire net20;
 wire net15;
+wire net34;
+wire net16;
 wire net14;
 wire net11;
 wire net8;
-hw1_1_c_inverter I30 (.VOUT( Sum ), .VIN( net22 ));
-hw1_1_c_inverter I28 (.VOUT( net23 ), .VIN( net26 ));
-hw1_1_c_inverter I27 (.VOUT( net24 ), .VIN( net25 ));
-hw1_1_c_inverter I18 (.VOUT( Cout ), .VIN( net21 ));
-hw1_1_c_inverter I16 (.VOUT( net20 ), .VIN( net30 ));
-hw1_1_c_inverter I15 (.VOUT( net19 ), .VIN( net29 ));
-hw1_1_c_inverter I14 (.VOUT( net18 ), .VIN( net28 ));
-hw1_1_c_inverter I13 (.VOUT( net17 ), .VIN( net27 ));
-hw1_1_c_inverter I12 (.VOUT( net16 ), .VIN( net31 ));
-hw1_1_c_inverter I11 (.VOUT( net34 ), .VIN( net32 ));
-hw1_1_c_inverter I10 (.VOUT( net15 ), .VIN( net33 ));
+hw3_1_4_Input_OR I43 (.Out( Sum ), .A( net20 ), .B( net19 ), .C( net18 ), .D( net17 ));
+hw3_1_2_Input_AND I38 (.Out( net15 ), .A( B ), .B( Cin ));
+hw3_1_2_Input_AND I37 (.Out( net34 ), .A( A ), .B( Cin ));
+hw3_1_2_Input_AND I36 (.Out( net16 ), .A( A ), .B( B ));
+hw3_1_3_Input_OR I42 (.Out( Cout ), .A( net16 ), .B( net34 ), .C( net15 ));
 hw1_1_c_inverter I2 (.VOUT( net14 ), .VIN( Cin ));
 hw1_1_c_inverter I1 (.VOUT( net11 ), .VIN( B ));
 hw1_1_c_inverter I0 (.VOUT( net8 ), .VIN( A ));
-hw1_3_CMOS_3_Input_NAND I6 (.Out( net27 ), .A( A ), .B( B ), .C( Cin ));
-hw1_3_CMOS_3_Input_NAND I5 (.Out( net28 ), .A( net8 ), .B( net11 ), .C( Cin ));
-hw1_3_CMOS_3_Input_NAND I4 (.Out( net29 ), .A( A ), .B( net11 ), .C( net14 ));
-hw1_3_CMOS_3_Input_NAND I3 (.Out( net30 ), .A( net8 ), .B( B ), .C( net14 ));
-hw1_3_CMOS_2_Input_NAND I9 (.Out( net33 ), .A( B ), .B( Cin ));
-hw1_3_CMOS_2_Input_NAND I8 (.Out( net32 ), .A( A ), .B( Cin ));
-hw1_3_CMOS_2_Input_NAND I7 (.Out( net31 ), .A( A ), .B( B ));
-hw1_3_CMOS_3_Input_NOR I17 (.Out( net21 ), .A( net16 ), .B( net34 ), .C( net15 ));
-hw1_3_CMOS_2_Input_NOR I29 (.Out( net22 ), .A( net24 ), .B( net23 ));
-hw1_3_CMOS_2_Input_NOR I26 (.Out( net26 ), .A( net18 ), .B( net17 ));
-hw1_3_CMOS_2_Input_NOR I25 (.Out( net25 ), .A( net20 ), .B( net19 ));
-
-endmodule
-// Library - ECE_6240_Digial, Cell - hw3_1_adder_4bit, View - schematic
-// LAST TIME SAVED: Nov 15 17:31:43 2018
-// NETLIST TIME: Nov 18 17:28:12 2018
-
-`worklib ECE_6240_Digial
-`view schematic
-
-`timescale 1ns / 1ns 
-(* cds_ams_schematic *)
-
-module hw3_1_adder_4bit (.Cout(Cout3), S0, S1, S2, S3, A0, A1, A2, A3, B0, B1, B2, B3, .Cin(Cin0));
-output  Cout3, S0, S1, S2, S3;
-input  A0, A1, A2, A3, B0, B1, B2, B3, Cin0;
-wire Cin1Cout0;
-wire Cin2Cout1;
-wire Cin3Cout2;
-hw3_1_adder_1bit I3 (.Cout( Cin1Cout0 ), .Sum( S0 ), .A( A0 ), .B( B0 ), .Cin( Cin0 ));
-hw3_1_adder_1bit I2 (.Cout( Cin2Cout1 ), .Sum( S1 ), .A( A1 ), .B( B1 ), .Cin( Cin1Cout0 ));
-hw3_1_adder_1bit I1 (.Cout( Cin3Cout2 ), .Sum( S2 ), .A( A2 ), .B( B2 ), .Cin( Cin2Cout1 ));
-hw3_1_adder_1bit I0 (.Cout( Cout3 ), .Sum( S3 ), .A( A3 ), .B( B3 ), .Cin( Cin3Cout2 ));
-
-endmodule
-// Library - ECE_6240_Digial, Cell - hw3_1_adder_4bit_tb, View - schematic
-// LAST TIME SAVED: Nov 18 16:59:00 2018
-// NETLIST TIME: Nov 18 17:28:12 2018
-
-`worklib ECE_6240_Digial
-`view schematic
-
-`timescale 1ns / 1ns 
-(* cds_ams_schematic *)
-
-module hw3_1_adder_4bit_tb ( );
-wire [3:0] A_data;
-wire [3:0] B_data;
-wire [3:0] sum;
-wire Cout;
-wire Cin;
-hw3_1_adder_4bit_tb_vdriver I28 (.A_data( A_data ), .B_data( B_data ), .c_in( Cin ), .c_out( Cout ), .sum( sum ));
-hw3_1_adder_4bit I13 (.Cout( Cout ), .S0( sum[0] ), .S1( sum[1] ), .S2( sum[2] ), .S3( sum[3] ), .A0( A_data[0] ), .A1( A_data[1] ), .A2( A_data[2] ), .A3( A_data[3] ), .B0( B_data[0] ), .B1( B_data[1] ), .B2( B_data[2] ), .B3( B_data[3] ), .Cin( Cin ));
-vsource #(.type("dc"), .dc(5)) V0 (cds_globals.\vdd! , cds_globals.\gnd! );
+hw3_1_3_Input_AND I32 (.Out( net20 ), .A( net8 ), .B( B ), .C( net14 ));
+hw3_1_3_Input_AND I33 (.Out( net19 ), .A( A ), .B( net11 ), .C( net14 ));
+hw3_1_3_Input_AND I34 (.Out( net18 ), .A( net8 ), .B( net11 ), .C( Cin ));
+hw3_1_3_Input_AND I35 (.Out( net17 ), .A( A ), .B( B ), .C( Cin ));
 
 endmodule
 `noworklib

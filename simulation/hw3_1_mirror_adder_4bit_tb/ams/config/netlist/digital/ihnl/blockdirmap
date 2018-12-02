@@ -1,0 +1,6 @@
+CADENCE IHNL04124
+
+ECE_6240_Digital hw1_1_c_inverter schematic nil schematic ECE_6240_Digital hw3_1_mirror_adder_4bit_tb config 0 cds0
+ECE_6240_Digital hw3_1_mirror_adder_1bit schematic nil schematic ECE_6240_Digital hw3_1_mirror_adder_4bit_tb config 0 cds1
+ECE_6240_Digital hw3_1_mirror_adder_4bit schematic nil schematic ECE_6240_Digital hw3_1_mirror_adder_4bit_tb config 0 cds2
+ECE_6240_Digital hw3_1_mirror_adder_4bit_tb schematic nil schematic ECE_6240_Digital hw3_1_mirror_adder_4bit_tb config 1 cds3

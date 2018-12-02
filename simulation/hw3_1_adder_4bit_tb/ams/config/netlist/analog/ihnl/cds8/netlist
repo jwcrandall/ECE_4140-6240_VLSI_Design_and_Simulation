@@ -1,0 +1,4 @@
+    I0 hw1_3_CMOS_3_Input_NAND
+    I1 hw1_1_c_inverter
+ends hw3_1_3_Input_AND
+// End of subcircuit definition.

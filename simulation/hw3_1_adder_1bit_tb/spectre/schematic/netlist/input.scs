@@ -1,5 +1,5 @@
 // Generated for: spectre
-// Generated on: Nov 24 20:23:54 2018
+// Generated on: Nov 27 00:01:54 2018
 // Design library name: ECE_6240_Digital
 // Design cell name: hw3_1_adder_1bit_tb
 // Design view name: schematic
@@ -10,18 +10,26 @@ include "/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m"
 include "/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m"
 
 // Library name: ECE_6240_Digital
-// Cell name: hw1_3_CMOS_2_Input_NOR
+// Cell name: hw3_1_4_Input_NOR
 // View name: schematic
-subckt hw1_3_CMOS_2_Input_NOR A B Out
+subckt hw3_1_4_Input_NOR A B C D Out
+    N3 (Out D 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N2 (Out C 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
     N1 (Out B 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
         pd=6u m=1 region=sat
     N0 (Out A 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
         pd=6u m=1 region=sat
-    P0 (net2 A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+    P0 (net018 A vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
         ps=6u pd=6u m=1 region=sat
-    P1 (Out B net2 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+    P1 (net18 B net018 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
         ps=6u pd=6u m=1 region=sat
-ends hw1_3_CMOS_2_Input_NOR
+    P2 (net19 C net18 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P3 (Out D net19 vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+ends hw3_1_4_Input_NOR
 // End of subcircuit definition.
 
 // Library name: ECE_6240_Digital
@@ -36,12 +44,12 @@ ends hw1_1_c_inverter
 // End of subcircuit definition.
 
 // Library name: ECE_6240_Digital
-// Cell name: hw3_1_2_Input_OR
+// Cell name: hw3_1_4_Input_OR
 // View name: schematic
-subckt hw3_1_2_Input_OR A B Out
-    I0 (A B net7) hw1_3_CMOS_2_Input_NOR
-    I1 (net7 Out) hw1_1_c_inverter
-ends hw3_1_2_Input_OR
+subckt hw3_1_4_Input_OR A B C D Out
+    I0 (A B C D net11) hw3_1_4_Input_NOR
+    I1 (net11 Out) hw1_1_c_inverter
+ends hw3_1_4_Input_OR
 // End of subcircuit definition.
 
 // Library name: ECE_6240_Digital
@@ -128,9 +136,7 @@ ends hw3_1_3_Input_AND
 // Cell name: hw3_1_adder_1bit
 // View name: schematic
 subckt hw3_1_adder_1bit A B Cin Cout Sum
-    I41 (net022 net023 Sum) hw3_1_2_Input_OR
-    I40 (net18 net17 net023) hw3_1_2_Input_OR
-    I39 (net20 net19 net022) hw3_1_2_Input_OR
+    I43 (net20 net19 net18 net17 Sum) hw3_1_4_Input_OR
     I38 (B Cin net15) hw3_1_2_Input_AND
     I37 (A Cin net34) hw3_1_2_Input_AND
     I36 (A B net16) hw3_1_2_Input_AND
@@ -138,10 +144,10 @@ subckt hw3_1_adder_1bit A B Cin Cout Sum
     I2 (Cin net14) hw1_1_c_inverter
     I1 (B net11) hw1_1_c_inverter
     I0 (A net8) hw1_1_c_inverter
-    I35 (A B Cin net17) hw3_1_3_Input_AND
-    I34 (net8 net11 Cin net18) hw3_1_3_Input_AND
-    I33 (A net11 net14 net19) hw3_1_3_Input_AND
     I32 (net8 B net14 net20) hw3_1_3_Input_AND
+    I33 (A net11 net14 net19) hw3_1_3_Input_AND
+    I34 (net8 net11 Cin net18) hw3_1_3_Input_AND
+    I35 (A B Cin net17) hw3_1_3_Input_AND
 ends hw3_1_adder_1bit
 // End of subcircuit definition.
 
@@ -157,7 +163,7 @@ V1 (B 0) vsource type=pulse dc=5 val0=0 val1=5 period=100u delay=0 \
         rise=500f fall=500f width=50u
 C1 (Sum 0) capacitor c=4p m=1
 C0 (Cout 0) capacitor c=4p m=1
-I13 (A B Cin Cout Sum) hw3_1_adder_1bit
+I15 (A B Cin Cout Sum) hw3_1_adder_1bit
 simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
     tnom=25 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
     digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \

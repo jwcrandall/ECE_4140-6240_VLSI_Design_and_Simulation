@@ -1,0 +1,7 @@
+("ECE_6240_Digital" "hw1_1_c_inverter" "schematic") "hw1_1_c_inverter"
+("NCSU_Analog_Parts" "vdc" "spectre") "vsource"
+("NCSU_Analog_Parts" "nmos4" "spectre") "ami06N"
+("NCSU_Analog_Parts" "pmos4" "spectre") "ami06P"
+("ECE_6240_Digital" "hw3_1_mirror_adder_4bit_tb_vdriver" "functional") "hw3_1_mirror_adder_4bit_tb_vdriver"
+("ECE_6240_Digital" "hw3_1_mirror_adder_4bit" "schematic") "hw3_1_mirror_adder_4bit"
+("ECE_6240_Digital" "hw3_1_mirror_adder_1bit" "schematic") "hw3_1_mirror_adder_1bit"

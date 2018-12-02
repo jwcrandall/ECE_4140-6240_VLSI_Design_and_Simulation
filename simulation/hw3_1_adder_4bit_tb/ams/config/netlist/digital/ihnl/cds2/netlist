@@ -1,20 +1,24 @@
-// Library - ECE_6240_Digial, Cell - hw1_3_CMOS_2_Input_NAND, View -
+// Library - ECE_6240_Digital, Cell - hw3_1_4_Input_OR, View -
 //schematic
-// LAST TIME SAVED: Oct 18 09:24:43 2018
-// NETLIST TIME: Nov 18 17:03:37 2018
+// LAST TIME SAVED: Nov 25 13:01:45 2018
+// NETLIST TIME: Nov 27 14:33:37 2018
 `timescale 1ns / 1ns 
 
-`worklib ECE_6240_Digial
+`worklib ECE_6240_Digital
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="ECE_6240_Digial", dfII_cell="hw1_3_CMOS_2_Input_NAND", dfII_view="schematic", worklib_name="ECE_6240_Digial", view_name="schematic", last_save_time="Oct 18 09:24:43 2018" *)
+(* dfII_lib="ECE_6240_Digital", dfII_cell="hw3_1_4_Input_OR", dfII_view="schematic", worklib_name="ECE_6240_Digital", view_name="schematic", last_save_time="Nov 25 13:01:45 2018" *)
 
-module hw1_3_CMOS_2_Input_NAND (Out, A, B);
+module hw3_1_4_Input_OR (Out, A, B, C, D);
 
 output  Out;
 
-input  A, B;
+input  A, B, C, D;
 
+
+hw3_1_4_Input_NOR I0 ( .D(D), .Out(net11), .A(A), .B(B), .C(C));
+
+hw1_1_c_inverter I1 ( .VOUT(Out), .VIN(net11));
 
 endmodule

@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"I0n" "hw3_1_4_Input_NOR"
+"I1n" "hw1_1_c_inverter"
+"Av" ":1v"
+"Bv" ":2v"
+"Cv" ":3v"
+"Dv" ":4v"
+"Outv" ":5v"

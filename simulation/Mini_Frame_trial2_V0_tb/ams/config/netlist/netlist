@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  project_g01 
+cell: Mini_Frame_trial2_V0_tb 
+view: config 
+topCellLib: project_g01 

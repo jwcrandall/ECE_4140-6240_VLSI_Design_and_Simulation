@@ -1,0 +1,14 @@
+CADENCE IHNL11140
+$model
+ECE_6240_Digital/hw3_2_dynamic_domino_cmos_3/schematic hw3_2_dynamic_domino_cmos_3
+ECE_6240_Digital/hw1_1_c_inverter/schematic hw1_1_c_inverter
+ECE_6240_Digital/hw3_2_dynamic_domino_cmos_3_tb/schematic hw3_2_dynamic_domino_cmos_3_tb
+$endmodel
+$net
+gnd! 0
+gnda! gnda!
+vdd! vdd!
+$endnet
+$param
+p5vonly p5vonly
+$endparam

@@ -1,13 +1,13 @@
-CADENCE IHNL111411
+CADENCE IHNL111413
 
 ECE_6240_Digital hw1_3_CMOS_3_Input_NAND schematic cds0
 ECE_6240_Digital hw1_3_CMOS_2_Input_NAND schematic cds1
 ECE_6240_Digital hw1_3_CMOS_3_Input_NOR schematic cds2
-ECE_6240_Digital hw1_3_CMOS_2_Input_NOR schematic cds3
 ECE_6240_Digital hw1_1_c_inverter schematic cds4
 ECE_6240_Digital hw3_1_adder_1bit schematic cds5
 ECE_6240_Digital hw3_1_adder_1bit_tb schematic cds6
-ECE_6240_Digital hw3_1_2_Input_OR schematic cds7
 ECE_6240_Digital hw3_1_2_Input_AND schematic cds8
 ECE_6240_Digital hw3_1_3_Input_OR schematic cds9
 ECE_6240_Digital hw3_1_3_Input_AND schematic cds10
+ECE_6240_Digital hw3_1_4_Input_NOR schematic cds11
+ECE_6240_Digital hw3_1_4_Input_OR schematic cds12

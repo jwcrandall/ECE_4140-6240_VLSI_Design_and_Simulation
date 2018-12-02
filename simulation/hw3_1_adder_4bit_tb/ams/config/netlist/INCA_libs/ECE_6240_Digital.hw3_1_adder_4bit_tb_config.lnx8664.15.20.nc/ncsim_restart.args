@@ -1,0 +1,53 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
++define+CDS_SELECT_CRS
++define+CONNRULES_5V_FULL_FAST
+-SPECTRE_ARGS
+"-ahdllibdir INCA_libs/AMSD/ahdlSimDB"
+-AMSINPUT
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-ADE
+-AMSINPUT
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-INPUT
+./probe.tcl
+-RUN
+-EXIT
++amsrawdir
+../psf
+-SIMCOMPATIBLE_AMS
+spectre
+-ANALOGCONTROL
+.amsbind.scs
+-MESSAGES
++EMGRLOG
+../psf/irun.log
+-XLSTIME
+1543347225
+-XLKEEP
+-XLMODE
+./INCA_libs/ECE_6240_Digital.hw3_1_adder_4bit_tb_config.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/ECE_6240_Digital.hw3_1_adder_4bit_tb_config.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/ECE_6240_Digital.hw3_1_adder_4bit_tb_config.lnx8664.15.20.nc/hdl.var
+-XLNAME
+irun
+-XLVERSION
+"TOOL:	irun(64)	15.20-s045"
+-XLNAME
+./INCA_libs/ECE_6240_Digital.hw3_1_adder_4bit_tb_config.lnx8664.15.20.nc/linux02.cflab.seas.gwu.edu_22199

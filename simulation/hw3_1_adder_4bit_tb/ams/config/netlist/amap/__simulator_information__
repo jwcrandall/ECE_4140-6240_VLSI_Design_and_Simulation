@@ -3,7 +3,7 @@ HEADER
 "__artInstanceTerminalDelimiter__" "."
 "__artHierarchyDelimiter__" "."
 "__netlister__" "AMS-UNL"
-"__lib__" "ECE_6240_Digial"
+"__lib__" "ECE_6240_Digital"
 "__cell__" "hw3_1_adder_4bit_tb"
 "__view__" "config"
 "__topcell__" "hw3_1_adder_4bit_tb"

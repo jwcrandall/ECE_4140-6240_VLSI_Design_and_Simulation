@@ -1,4 +1,0 @@
-    I0 (A B net7) hw1_3_CMOS_2_Input_NOR
-    I1 (net7 Out) hw1_1_c_inverter
-ends hw3_1_2_Input_OR
-// End of subcircuit definition.

@@ -1,0 +1,35 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir INCA_libs/AMSD/ahdlSimDB"
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-MESSAGES
++EMGRLOG
+/home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V0_tb/ams/config/netlist/.mapi/mapirun.log
+-amsdlibdir
+/home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V0_tb/ams/config/netlist/.mapi//INCA_libs/AMSD
+-XLSTIME
+1543522310
+-XLKEEP
+-XLMODE
+/home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V0_tb/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+/home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V0_tb/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+/home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V0_tb/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+-XLNAME
+irun
+-XLVERSION
+"TOOL:	irun(64)	15.20-s045"
+-XLNAME
+./.mapi/INCA_libs/irun.lnx8664.15.20.nc/linux16.cflab.seas.gwu.edu_29135

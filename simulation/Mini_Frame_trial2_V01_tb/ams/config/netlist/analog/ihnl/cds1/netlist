@@ -1,0 +1,9 @@
+
+// Library name: project_g01
+// Cell name: Mini_Frame_trial2_V01_tb
+// View name: schematic
+// Inherited view list: schematic
+I13 Mini_Frame_trial2_V01
+V0 (vdd! 0) vsource type=dc dc=3.1
+C1 (vdd! 0) capacitor c=1p m=1
+C0 (vdd! 0) capacitor c=1p m=1

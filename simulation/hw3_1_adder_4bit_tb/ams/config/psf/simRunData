@@ -1,10 +1,10 @@
 HEADER
 "PSFversion" "1.00"
-"design" "(\"ECE_6240_Digial\" \"hw3_1_adder_4bit_tb\" \"config\" \"\")"
+"design" "(\"ECE_6240_Digital\" \"hw3_1_adder_4bit_tb\" \"config\" \"\")"
 "simulator" "ams"
 "temperature" "27"
 "host" ""
-"date" "Nov 18 17:28:05 2018"
+"date" "Nov 27 14:33:33 2018"
 "title" ""
 "analysisList" "()"
 END

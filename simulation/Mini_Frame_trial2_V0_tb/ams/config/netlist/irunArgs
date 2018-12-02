@@ -1,0 +1,37 @@
+
+-UNBUFFERED 
+-cdslib ./cds.lib 
+-errormax 50 
+-status 
+-nowarn DLNOHV 
+-nowarn DLCLAP 
+-v93 
+-incdir ${IC_INVOKE_DIR}/
+-ade 
+-timescale 1ns/1ns 
+-vtimescale 1ns/1ns 
+-discipline logic 
+-delay_mode None 
+-novitalaccl 
+-access r 
+-noparamerr 
+-amspartinfo ../psf/partition.info -rnm_partinfo 
+-modelincdir ${IC_INVOKE_DIR}/
+./spiceModels.scs 
+./amsControlSpectre.scs 
+-input ./probe.tcl 
+-run -exit 
+-ncsimargs "+amsrawdir ../psf" 
+ -simcompatible_ams spectre 
+-name project_g01.Mini_Frame_trial2_V0_tb:config 
+-amsconnrules ConnRules_3V_full_fast 
++define+CDS_SELECT_CRS 
++define+CONNRULES_3V_FULL_FAST  
+-allowredefinition 
+-amsbind 
+-top project_g01.Mini_Frame_trial2_V0_tb:schematic 
+-top cds_globals 
+./netlist.vams 
+-f ./textInputs
+./cds_globals.vams 
+-l ../psf/irun.log 

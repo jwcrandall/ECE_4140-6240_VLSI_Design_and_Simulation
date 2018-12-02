@@ -1,0 +1,24 @@
+// Library - ECE_6240_Digital, Cell - hw3_1_mirror_adder_1bit, View -
+//schematic
+// LAST TIME SAVED: Nov 29 10:00:54 2018
+// NETLIST TIME: Nov 29 10:58:11 2018
+`timescale 1ns / 1ns 
+
+`worklib ECE_6240_Digital
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="ECE_6240_Digital", dfII_cell="hw3_1_mirror_adder_1bit", dfII_view="schematic", worklib_name="ECE_6240_Digital", view_name="schematic", last_save_time="Nov 29 10:00:54 2018" *)
+
+module hw3_1_mirror_adder_1bit (Cout, S, A, B, Cin);
+
+output  Cout, S;
+
+input  A, B, Cin;
+
+
+hw1_1_c_inverter I3 ( .VOUT(S), .VIN(net32));
+
+hw1_1_c_inverter I2 ( .VOUT(Cout), .VIN(net10));
+
+endmodule

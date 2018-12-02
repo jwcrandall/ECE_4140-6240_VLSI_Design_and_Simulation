@@ -25,9 +25,9 @@ DLCLAP
 /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
 -ncfatal
 NOTCMP
-/home/seas/jwcrandall/cadence/ECE_6240_Digial/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v
+/home/seas/jwcrandall/cadence/ECE_6240_Digital/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v
 -amscompilefile
-"file:/home/seas/jwcrandall/cadence/ECE_6240_Digial/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v lib:ECE_6240_Digial cell:hw3_1_adder_4bit_tb_vdriver view:functional"
+"file:/home/seas/jwcrandall/cadence/ECE_6240_Digital/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v lib:ECE_6240_Digital cell:hw3_1_adder_4bit_tb_vdriver view:functional"
 -MESSAGES
 -UPDATE
 -XLLIBSTORE

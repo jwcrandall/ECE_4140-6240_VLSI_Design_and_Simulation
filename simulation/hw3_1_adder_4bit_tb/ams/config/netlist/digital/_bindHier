@@ -1,12 +1,16 @@
-("ECE_6240_Digial" "hw1_3_CMOS_3_Input_NOR" "schematic" "schematic") nil
 ("NCSU_Analog_Parts" "vdc" "spectre" "spectre") nil
-("ECE_6240_Digial" "hw3_1_adder_4bit" "schematic" "schematic") (("I13" ("ECE_6240_Digial" "hw3_1_adder_4bit_tb" "schematic" "schematic")))
+("ECE_6240_Digital" "hw3_1_adder_4bit_tb" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw3_1_adder_1bit" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw1_1_c_inverter" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw3_1_3_Input_AND" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw3_1_2_Input_AND" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw1_3_CMOS_3_Input_NAND" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw3_1_4_Input_NOR" "schematic" "schematic") nil
 ("NCSU_Analog_Parts" "nmos4" "spectre" "spectre") nil
+("ECE_6240_Digital" "hw3_1_3_Input_OR" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw1_3_CMOS_2_Input_NAND" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw3_1_adder_4bit_tb_vdriver" "functional" "functional") nil
 ("NCSU_Analog_Parts" "pmos4" "spectre" "spectre") nil
-("ECE_6240_Digial" "hw1_3_CMOS_3_Input_NAND" "schematic" "schematic") nil
-("ECE_6240_Digial" "hw1_1_c_inverter" "schematic" "schematic") nil
-("ECE_6240_Digial" "hw3_1_adder_1bit" "schematic" "schematic") nil
-("ECE_6240_Digial" "hw3_1_adder_4bit_tb" "schematic" "schematic") nil
-("ECE_6240_Digial" "hw1_3_CMOS_2_Input_NOR" "schematic" "schematic") nil
-("ECE_6240_Digial" "hw3_1_adder_4bit_tb_vdriver" "functional" "functional") nil
-("ECE_6240_Digial" "hw1_3_CMOS_2_Input_NAND" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw3_1_adder_4bit" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw1_3_CMOS_3_Input_NOR" "schematic" "schematic") nil
+("ECE_6240_Digital" "hw3_1_4_Input_OR" "schematic" "schematic") nil

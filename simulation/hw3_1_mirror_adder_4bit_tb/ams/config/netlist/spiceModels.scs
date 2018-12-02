@@ -1,0 +1,4 @@
+
+simulator lang=spectre
+include "/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m" amsd_subckt_bind=yes
+include "/apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m" amsd_subckt_bind=yes

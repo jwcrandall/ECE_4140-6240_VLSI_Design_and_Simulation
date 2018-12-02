@@ -1,71 +1,20 @@
-// Library - ECE_6240_Digial, Cell - hw3_1_adder_1bit, View - schematic
-// LAST TIME SAVED: Nov 15 17:31:41 2018
-// NETLIST TIME: Nov 18 17:03:37 2018
+// Library - ECE_6240_Digital, Cell - hw1_3_CMOS_3_Input_NOR, View -
+//schematic
+// LAST TIME SAVED: Oct 18 10:17:07 2018
+// NETLIST TIME: Nov 27 14:33:38 2018
 `timescale 1ns / 1ns 
 
-`worklib ECE_6240_Digial
+`worklib ECE_6240_Digital
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="ECE_6240_Digial", dfII_cell="hw3_1_adder_1bit", dfII_view="schematic", worklib_name="ECE_6240_Digial", view_name="schematic", last_save_time="Nov 15 17:31:41 2018" *)
+(* dfII_lib="ECE_6240_Digital", dfII_cell="hw1_3_CMOS_3_Input_NOR", dfII_view="schematic", worklib_name="ECE_6240_Digital", view_name="schematic", last_save_time="Oct 18 10:17:07 2018" *)
 
-module hw3_1_adder_1bit (Cout, Sum, A, B, Cin);
+module hw1_3_CMOS_3_Input_NOR (Out, A, B, C);
 
-output  Cout, Sum;
+output  Out;
 
-input  A, B, Cin;
+input  A, B, C;
 
-
-hw1_1_c_inverter I30 ( .VOUT(Sum), .VIN(net22));
-
-hw1_1_c_inverter I28 ( .VOUT(net23), .VIN(net26));
-
-hw1_1_c_inverter I27 ( .VOUT(net24), .VIN(net25));
-
-hw1_1_c_inverter I18 ( .VOUT(Cout), .VIN(net21));
-
-hw1_1_c_inverter I16 ( .VOUT(net20), .VIN(net30));
-
-hw1_1_c_inverter I15 ( .VOUT(net19), .VIN(net29));
-
-hw1_1_c_inverter I14 ( .VOUT(net18), .VIN(net28));
-
-hw1_1_c_inverter I13 ( .VOUT(net17), .VIN(net27));
-
-hw1_1_c_inverter I12 ( .VOUT(net16), .VIN(net31));
-
-hw1_1_c_inverter I11 ( .VOUT(net34), .VIN(net32));
-
-hw1_1_c_inverter I10 ( .VOUT(net15), .VIN(net33));
-
-hw1_1_c_inverter I2 ( .VOUT(net14), .VIN(Cin));
-
-hw1_1_c_inverter I1 ( .VOUT(net11), .VIN(B));
-
-hw1_1_c_inverter I0 ( .VOUT(net8), .VIN(A));
-
-hw1_3_CMOS_3_Input_NAND I6 ( .Out(net27), .A(A), .B(B), .C(Cin));
-
-hw1_3_CMOS_3_Input_NAND I5 ( .Out(net28), .A(net8), .B(net11), 
-    .C(Cin));
-
-hw1_3_CMOS_3_Input_NAND I4 ( .Out(net29), .A(A), .B(net11), .C(net14));
-
-hw1_3_CMOS_3_Input_NAND I3 ( .Out(net30), .A(net8), .B(B), .C(net14));
-
-hw1_3_CMOS_2_Input_NAND I9 ( .Out(net33), .A(B), .B(Cin));
-
-hw1_3_CMOS_2_Input_NAND I8 ( .Out(net32), .A(A), .B(Cin));
-
-hw1_3_CMOS_2_Input_NAND I7 ( .Out(net31), .A(A), .B(B));
-
-hw1_3_CMOS_3_Input_NOR I17 ( .Out(net21), .A(net16), .B(net34), 
-    .C(net15));
-
-hw1_3_CMOS_2_Input_NOR I29 ( .Out(net22), .A(net24), .B(net23));
-
-hw1_3_CMOS_2_Input_NOR I26 ( .Out(net26), .A(net18), .B(net17));
-
-hw1_3_CMOS_2_Input_NOR I25 ( .Out(net25), .A(net20), .B(net19));
 
 endmodule

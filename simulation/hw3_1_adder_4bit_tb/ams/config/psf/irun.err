@@ -1,13 +1,43 @@
 irun(64): 15.20-s045: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /home/seas/jwcrandall/cadence/ECE_6240_Digial/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v
+file: ./netlist.vams
+	module ECE_6240_Digital.hw3_1_4_Input_NOR:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw1_1_c_inverter:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw3_1_adder_4bit:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw3_1_adder_4bit_tb:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw3_1_4_Input_OR:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw1_3_CMOS_2_Input_NAND:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw3_1_2_Input_AND:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw1_3_CMOS_3_Input_NOR:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw3_1_3_Input_OR:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw1_3_CMOS_3_Input_NAND:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw3_1_3_Input_AND:schematic
+		errors: 0, warnings: 0
+	module ECE_6240_Digital.hw3_1_adder_1bit:schematic
+		errors: 0, warnings: 0
+file: ./cds_globals.vams
+	module worklib.cds_globals:vams
+		errors: 0, warnings: 0
+file: /home/seas/jwcrandall/cadence/ECE_6240_Digital/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v
+	module ECE_6240_Digital.hw3_1_adder_4bit_tb_vdriver:functional
+		errors: 0, warnings: 0
 ncvlog: *W,SPDUSD: Include directory /home/seas/jwcrandall/cadence/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-ncvlog: Memory Usage - 21.3M program + 28.4M data = 49.7M total
-ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 22.1% cpu)
+ncvlog: Memory Usage - 21.3M program + 28.7M data = 50.0M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 23.8% cpu)
 
+		Caching library 'ECE_6240_Digital' ....... Done
 		Caching library 'worklib' ....... Done
-		Caching library 'ECE_6240_Digial' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
 		hw3_1_adder_4bit_tb
@@ -15,13 +45,21 @@ ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 22.1% cpu)
 	Discipline resolution Pass...
 	Doing auto-insertion of connection elements...
 	Connect Rules applied are:
-		ConnRules_18V_full_fast
+		ConnRules_5V_full_fast
 	Building instance overlay tables: .................... Done
+	Using implicit TMP libraries; associated with library ECE_6240_Digital
+	Generating native compiled code:
+		ECE_6240_Digital.hw3_1_adder_4bit_tb_vdriver:functional <0x3723aae3>
+			streams:   1, words:  6812
+		connectLib.E2L_2:module <0x616d3cac>
+			streams:   9, words:  9526
+		connectLib.L2E_2:module <0x30a126c6>
+			streams:   4, words:  8792
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
-		Modules:               122      28
+		Modules:               142      32
 		Registers:             109     133
 		Scalar wires:           29       -
 		Expanded wires:          8       2
@@ -29,12 +67,12 @@ ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 22.1% cpu)
 		Always blocks:          53      55
 		Initial blocks:         15      25
 		Cont. assignments:      14      21
-		Interconnect:          175       -
+		Interconnect:          159       -
 		Simulation timescale:  1ps
-	Writing initial simulation snapshot: ECE_6240_Digial.hw3_1_adder_4bit_tb:config
-ncelab: Memory Usage - 49.8M program + 53.5M data = 103.4M total (Peak 237.1M)
-ncelab: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.5s, 18.1% cpu)
-Loading snapshot ECE_6240_Digial.hw3_1_adder_4bit_tb:config .................... Done
+	Writing initial simulation snapshot: ECE_6240_Digital.hw3_1_adder_4bit_tb:config
+ncelab: Memory Usage - 49.8M program + 54.0M data = 103.8M total (Peak 237.3M)
+ncelab: CPU Usage - 0.1s system + 0.1s user = 0.1s total (0.3s, 36.5% cpu)
+Loading snapshot ECE_6240_Digital.hw3_1_adder_4bit_tb:config .................... Done
 Simulating in AMS-SIE mode...
 	Starting analog simulation engine...
 AMSD: Using spectre solver with arguments: -ahdllibdir INCA_libs/AMSD/ahdlSimDB.
@@ -50,38 +88,29 @@ Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
         Security, Inc.
 
 User: jwcrandall   Host: linux02.cflab.seas.gwu.edu   HostID: A4801F8B   PID:
-        9831
-Memory  available: 23.2604 GB  physical: 33.5891 GB
+        22199
+Memory  available: 28.7322 GB  physical: 33.5891 GB
 Linux   : CentOS release 6.10 (Final)
 CPU Type: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
-All processors running at 3492.0 MHz
+All processors running at 3492.1 MHz
         Socket: Processors (Hyperthreaded Processor)
         0:       0 (  4 ),  1 (  5 ),  2 (  6 ),  3 (  7 )
         
-System load averages (1min, 5min, 15min) : 3.8 %, 1.6 %, 0.5 %
+System load averages (1min, 5min, 15min) : 2.0 %, 1.6 %, 0.5 %
 Hyperthreading is enabled
 
 
 Analog Kernel using -ANALOGCONTROL  ./spiceModels.scs.
 Reading file: 
         /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/spiceModels.scs
-Reading file: 
-        /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/netlist.vams
-Reading link:  /apps/vlsi_2018/cadence/INCISIVE152/tools
-Reading file: 
-        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
-Reading file: 
-        /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Compiling ahdlcmi module library.
+Finished compilation in 1.56 s (elapsed).
 Installed compiled interface for
         connectLib__L2E_2__module__0x10000001_behavioral.
-Reading file: 
-        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2.vams
-Reading file: 
-        /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2__module__0x10000001_behavioral.so
+Compiling ahdlcmi module library.
+Finished compilation in 899 ms (elapsed).
 Installed compiled interface for
         connectLib__E2L_2__module__0x10000001_behavioral.
-Reading file: 
-        /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/cds_globals.vams
 Reading file: 
         /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
 Reading file: 
@@ -94,9 +123,9 @@ Reading file:
         /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/.amsbind.scs
 Reading file: 
         /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/spectre.cfg
-Time for NDB Parsing: CPU = 152.977 ms, elapsed = 787.79 ms.
-Time accumulated: CPU = 297.954 ms, elapsed = 787.792 ms.
-Peak resident memory used = 85.8 Mbytes.
+Time for NDB Parsing: CPU = 158.977 ms, elapsed = 3.31021 s.
+Time accumulated: CPU = 306.953 ms, elapsed = 3.31021 s.
+Peak resident memory used = 86.1 Mbytes.
 
 ncsim> source /apps/vlsi_2018/cadence/INCISIVE152/tools/inca/files/ncsimrc
 ncsim> 
@@ -147,8 +176,8 @@ ncsim>
 ncsim> run
 
 The CPU load for active processors is :
-        Spectre  0 (23.1 %)      1 (2.7 %)       3 (2.7 %)       4 (4.6 %)
-                 5 (1.8 %)       7 (1.8 %)      
+        Spectre  0 (25.6 %)      1 (12.3 %)      2 (26.2 %)      3 (10.8 %)
+                 4 (14.3 %)      5 (27.4 %)      6 (12.3 %)      7 (13.1 %)
         Other   
 Reading link: 
         /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/discipline.h
@@ -158,13 +187,13 @@ Reading link:
         /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.h
 Reading file: 
         /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.vams
-Time for Elaboration: CPU = 82.987 ms, elapsed = 343.708 ms.
-Time accumulated: CPU = 380.941 ms, elapsed = 1.13164 s.
-Peak resident memory used = 105 Mbytes.
+Time for Elaboration: CPU = 78.988 ms, elapsed = 142.386 ms.
+Time accumulated: CPU = 385.941 ms, elapsed = 3.45271 s.
+Peak resident memory used = 107 Mbytes.
 
-Time for EDB Visiting: CPU = 4 ms, elapsed = 4.08816 ms.
-Time accumulated: CPU = 384.941 ms, elapsed = 1.13586 s.
-Peak resident memory used = 106 Mbytes.
+Time for EDB Visiting: CPU = 3.999 ms, elapsed = 4.0319 ms.
+Time accumulated: CPU = 389.94 ms, elapsed = 3.45687 s.
+Peak resident memory used = 108 Mbytes.
 
 
 Global user options:
@@ -190,8 +219,8 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 177
-            bsim3v3 328   
+              nodes 161
+            bsim3v3 296   
 connectLib__E2L_2__module__0x10000001_behavioral 5     
 connectLib__L2E_2__module__0x10000001_behavioral 9     
             vsource 1     
@@ -205,31 +234,33 @@ Output statements:
            .measure 0     
                save 14    
 
-Time for parsing: CPU = 2.999 ms, elapsed = 9.54318 ms.
-Time accumulated: CPU = 387.94 ms, elapsed = 1.14552 s.
-Peak resident memory used = 107 Mbytes.
+Time for parsing: CPU = 2.999 ms, elapsed = 4.16589 ms.
+Time accumulated: CPU = 392.939 ms, elapsed = 3.46115 s.
+Peak resident memory used = 109 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
 ~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~
 
-***********************************************
-Transient Analysis `tran': time = (0 s -> 6 ms)
-***********************************************
+**********************************************
+Transient Analysis `tran': time = (0 s -> 1 s)
+**********************************************
 
 Notice from spectre during IC analysis, during transient analysis `tran'.
     GminDC = 1 pS is large enough to noticeably affect the DC solution.
-        dV(hw3_1_adder_4bit_tb.I13.I3.I5.net20) = -29.4172 mV
+        dV(hw3_1_adder_4bit_tb.I13.I3.I34.I0.net20) = -29.4172 mV
         Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is
+        recommended for possible improvement of convergence.
 
-DC simulation time: CPU = 13.998 ms, elapsed = 14.56 ms.
+DC simulation time: CPU = 12.998 ms, elapsed = 12.9681 ms.
 Important parameter values:
     start = 0 s
     outputstart = 0 s
-    stop = 6 ms
-    step = 6 us
-    maxstep = 120 us
+    stop = 1 s
+    step = 1 ms
+    maxstep = 20 ms
     ic = all
     useprevic = no
     skipdc = no
@@ -250,1101 +281,549 @@ Important parameter values:
 Output and IC/nodeset summary:
                  save   14      (voltage)
 
-Pass: A_input = 0000, B_input = 0000, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                   3 A_data = 0000, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0001, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                   4 A_data = 0000, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0010, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                   5 A_data = 0000, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0011, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                   6 A_data = 0000, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
+Pass: A_input =  0, B_input =  0, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  1, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  2, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  3, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  4, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  5, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  6, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  7, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  8, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  9, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 10, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 11, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 12, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 13, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 14, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 15, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  0, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  1, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  2, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  3, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  4, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  5, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  6, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  7, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  8, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  9, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 10, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 11, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 12, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 13, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 14, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 15, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
 
-Notice from spectre at time = 60.0056 us during transient analysis `tran'.
-    Found trapezoidal ringing on node hw3_1_adder_4bit_tb.B_data[0].
-Notice from spectre at time = 60.0099 us during transient analysis `tran'.
-    Found trapezoidal ringing on node hw3_1_adder_4bit_tb.B_data[0].
-Notice from spectre at time = 60.0183 us during transient analysis `tran'.
-    Found trapezoidal ringing on node hw3_1_adder_4bit_tb.B_data[0].
-Notice from spectre at time = 60.0353 us during transient analysis `tran'.
-    Found trapezoidal ringing on node hw3_1_adder_4bit_tb.B_data[0].
-Notice from spectre at time = 60.0691 us during transient analysis `tran'.
-    Found trapezoidal ringing on node hw3_1_adder_4bit_tb.B_data[0].
+Notice from spectre at time = 6.18334 ms during transient analysis `tran'.
+    Found trapezoidal ringing on node hw3_1_adder_4bit_tb.sum[3].
+Pass: A_input =  2, B_input =  0, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  1, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  2, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  3, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  4, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  5, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  6, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  7, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  8, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  9, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 10, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 11, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 12, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 13, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 14, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  2, B_input = 15, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input =  0, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  1, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  2, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  3, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  4, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  5, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  6, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  7, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  8, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  9, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 10, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 11, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 12, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 13, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input = 14, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input = 15, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input =  0, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  1, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  2, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  3, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  4, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  5, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  6, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  7, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  8, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  9, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input = 10, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input = 11, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input = 12, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 13, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 14, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 15, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input =  0, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  1, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  2, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Notice from spectre at time = 14.3 ms during transient analysis `tran'.
+    Found trapezoidal ringing on node hw3_1_adder_4bit_tb.sum[3].
+Pass: A_input =  5, B_input =  3, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  4, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  5, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  6, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  7, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  8, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  9, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input = 10, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input = 11, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 12, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 13, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 14, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 15, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Notice from spectre at time = 16.3 ms during transient analysis `tran'.
+    Found trapezoidal ringing on node hw3_1_adder_4bit_tb.sum[1].
+Pass: A_input =  6, B_input =  0, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  1, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+
+    tran: time = 16.8 ms     (1.68 %), step = 30.57 ps    (3.06 n%)
+Pass: A_input =  6, B_input =  2, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  3, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  4, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  5, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  6, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  7, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  8, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  9, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input = 10, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 11, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 12, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 13, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 14, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 15, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input =  0, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  1, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  2, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  3, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  4, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  5, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  6, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  7, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  8, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  9, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 10, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 11, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 12, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 13, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 14, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 15, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input =  0, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  1, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  2, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  3, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  4, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  5, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  6, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  7, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  8, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input =  9, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 10, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 11, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 12, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 13, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 14, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 15, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  0, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  1, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  2, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  3, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  4, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  5, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+    tran: time = 25 ms        (2.5 %), step = 17.62 us    (1.76 m%)
+Pass: A_input =  9, B_input =  6, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  7, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  8, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  9, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 10, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 11, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 12, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 13, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 14, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 15, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  0, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  1, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  2, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  3, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  4, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  5, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  6, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  7, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  8, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  9, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 10, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 11, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 12, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 13, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 14, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 15, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  0, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  1, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  2, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  3, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  4, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  5, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  6, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  7, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  8, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  9, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 10, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 11, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 12, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 13, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 14, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 15, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  0, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  1, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  2, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  3, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  4, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  5, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  6, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  7, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  8, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  9, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 10, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 11, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 12, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 13, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 14, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 15, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  0, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 13, B_input =  1, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 13, B_input =  2, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 13, B_input =  3, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  4, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  5, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  6, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  7, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  8, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  9, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 10, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 11, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 12, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 13, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 14, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 15, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+
+Notice from spectre at time = 37.1003 ms during transient analysis `tran'.
+    Found trapezoidal ringing on node hw3_1_adder_4bit_tb.sum[1].
+Pass: A_input = 14, B_input =  0, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 14, B_input =  1, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 14, B_input =  2, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  3, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  4, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  5, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  6, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  7, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  8, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  9, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 10, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 11, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 12, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 13, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 14, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 15, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  0, c_in = 0, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 15, B_input =  1, c_in = 0, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  2, c_in = 0, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  3, c_in = 0, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+
+    tran: time = 40.4 ms     (4.04 %), step = 54.42 ps    (5.44 n%)
+Pass: A_input = 15, B_input =  4, c_in = 0, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  5, c_in = 0, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  6, c_in = 0, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  7, c_in = 0, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  8, c_in = 0, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  9, c_in = 0, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 10, c_in = 0, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 11, c_in = 0, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 12, c_in = 0, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 13, c_in = 0, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 14, c_in = 0, Expected Sum = 13, Sum = 13, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 15, c_in = 0, Expected Sum = 14, Sum = 14, Expected Carry Out = 1, Carry Out 1
+
+Notice from spectre at time = 41.6001 ms during transient analysis `tran'.
+    Found trapezoidal ringing on node hw3_1_adder_4bit_tb.I13.I3.I35.net9.
         Further occurrences of this notice will be suppressed (except in log
         file).
-Fail: A_input = 0000, B_input = 0100, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                   7 A_data = 0000, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0101, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                   8 A_data = 0000, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0110, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                   9 A_data = 0000, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0111, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  10 A_data = 0000, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1000, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  11 A_data = 0000, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1001, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  12 A_data = 0000, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1010, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  13 A_data = 0000, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1011, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  14 A_data = 0000, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1100, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  0, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  1, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  2, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  3, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  4, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  5, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  6, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  7, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  8, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input =  9, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 10, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 11, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 12, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 13, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 14, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  0, B_input = 15, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  1, B_input =  0, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  1, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  2, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  3, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  4, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  5, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  6, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  7, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  8, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input =  9, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 10, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 11, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 12, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 13, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  1, B_input = 14, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  1, B_input = 15, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  2, B_input =  0, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  1, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  2, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  3, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  4, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  5, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  6, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  7, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  8, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input =  9, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 10, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 11, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 12, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  2, B_input = 13, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  2, B_input = 14, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  2, B_input = 15, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input =  0, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  1, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  2, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  3, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  4, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  5, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  6, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  7, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  8, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input =  9, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 10, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 11, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  3, B_input = 12, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input = 13, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input = 14, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  3, B_input = 15, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input =  0, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  1, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  2, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  3, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  4, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  5, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  6, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  7, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  8, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input =  9, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input = 10, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  4, B_input = 11, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 12, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 13, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 14, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  4, B_input = 15, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input =  0, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 0, Carry Out 0
 
-    tran: time = 150 us       (2.5 %), step = 1.332 us    (22.2 m%)
-                  15 A_data = 0000, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1101, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  16 A_data = 0000, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1110, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  17 A_data = 0000, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1111, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  18 A_data = 0000, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                  19 A_data = 0001, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0000, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  20 A_data = 0001, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0001, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  21 A_data = 0001, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0010, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  22 A_data = 0001, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0011, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  23 A_data = 0001, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0100, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  24 A_data = 0001, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0101, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  25 A_data = 0001, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0110, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  26 A_data = 0001, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0111, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  27 A_data = 0001, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1000, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  28 A_data = 0001, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1001, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  29 A_data = 0001, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1010, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  30 A_data = 0001, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1011, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  31 A_data = 0001, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1100, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  32 A_data = 0001, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1101, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  33 A_data = 0001, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1110, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  34 A_data = 0001, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1111, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  35 A_data = 0001, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                  36 A_data = 0010, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0000, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  37 A_data = 0010, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0001, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  38 A_data = 0010, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0010, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  39 A_data = 0010, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0011, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  40 A_data = 0010, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0100, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  41 A_data = 0010, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0101, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  42 A_data = 0010, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0110, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  43 A_data = 0010, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0111, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  44 A_data = 0010, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1000, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-    tran: time = 450 us       (7.5 %), step = 1.321 us      (22 m%)
-                  45 A_data = 0010, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1001, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  46 A_data = 0010, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1010, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  47 A_data = 0010, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1011, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  48 A_data = 0010, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1100, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  49 A_data = 0010, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1101, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  50 A_data = 0010, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1110, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  51 A_data = 0010, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1111, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  52 A_data = 0010, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                  53 A_data = 0011, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0000, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  54 A_data = 0011, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0001, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  55 A_data = 0011, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0010, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  56 A_data = 0011, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0011, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  57 A_data = 0011, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0100, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  58 A_data = 0011, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0101, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  59 A_data = 0011, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0110, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  60 A_data = 0011, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0111, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  61 A_data = 0011, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1000, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  62 A_data = 0011, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1001, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  63 A_data = 0011, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1010, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  64 A_data = 0011, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1011, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  65 A_data = 0011, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1100, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  66 A_data = 0011, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1101, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  67 A_data = 0011, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1110, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  68 A_data = 0011, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1111, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  69 A_data = 0011, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                  70 A_data = 0100, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0000, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  71 A_data = 0100, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0001, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  72 A_data = 0100, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0010, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  73 A_data = 0100, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0011, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  74 A_data = 0100, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0100, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-    tran: time = 750 us      (12.5 %), step = 1.328 us    (22.1 m%)
-                  75 A_data = 0100, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0101, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  76 A_data = 0100, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0110, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  77 A_data = 0100, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0111, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  78 A_data = 0100, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1000, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  79 A_data = 0100, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1001, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  80 A_data = 0100, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1010, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  81 A_data = 0100, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1011, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  82 A_data = 0100, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1100, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  83 A_data = 0100, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1101, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  84 A_data = 0100, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1110, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  85 A_data = 0100, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1111, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  86 A_data = 0100, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                  87 A_data = 0101, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0000, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  88 A_data = 0101, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0001, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  89 A_data = 0101, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0010, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  90 A_data = 0101, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0011, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  91 A_data = 0101, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0100, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  92 A_data = 0101, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0101, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  93 A_data = 0101, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0110, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  94 A_data = 0101, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0111, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  95 A_data = 0101, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1000, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  96 A_data = 0101, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1001, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  97 A_data = 0101, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1010, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                  98 A_data = 0101, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1011, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                  99 A_data = 0101, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1100, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 100 A_data = 0101, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1101, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 101 A_data = 0101, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1110, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 102 A_data = 0101, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1111, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 103 A_data = 0101, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 104 A_data = 0110, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0000, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-    tran: time = 1.05 ms     (17.5 %), step = 3.465 us    (57.7 m%)
-                 105 A_data = 0110, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0001, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 106 A_data = 0110, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0010, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 107 A_data = 0110, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0011, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 108 A_data = 0110, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0100, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 109 A_data = 0110, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0101, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 110 A_data = 0110, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0110, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 111 A_data = 0110, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0111, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 112 A_data = 0110, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1000, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 113 A_data = 0110, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1001, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 114 A_data = 0110, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1010, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 115 A_data = 0110, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1011, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 116 A_data = 0110, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1100, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 117 A_data = 0110, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1101, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 118 A_data = 0110, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1110, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 119 A_data = 0110, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1111, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 120 A_data = 0110, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 121 A_data = 0111, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0000, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 122 A_data = 0111, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0001, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 123 A_data = 0111, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0010, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 124 A_data = 0111, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0011, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 125 A_data = 0111, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0100, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 126 A_data = 0111, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0101, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 127 A_data = 0111, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0110, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 128 A_data = 0111, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0111, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 129 A_data = 0111, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1000, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 130 A_data = 0111, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1001, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 131 A_data = 0111, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1010, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 132 A_data = 0111, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1011, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 133 A_data = 0111, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1100, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 134 A_data = 0111, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1101, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-    tran: time = 1.35 ms     (22.5 %), step = 1.069 us    (17.8 m%)
-                 135 A_data = 0111, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1110, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 136 A_data = 0111, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1111, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 137 A_data = 0111, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 138 A_data = 1000, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0000, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 139 A_data = 1000, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0001, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 140 A_data = 1000, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0010, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 141 A_data = 1000, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0011, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 142 A_data = 1000, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0100, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 143 A_data = 1000, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0101, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 144 A_data = 1000, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0110, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 145 A_data = 1000, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0111, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 146 A_data = 1000, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1000, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 147 A_data = 1000, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1001, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 148 A_data = 1000, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1010, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 149 A_data = 1000, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1011, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 150 A_data = 1000, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1100, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 151 A_data = 1000, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1101, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 152 A_data = 1000, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1110, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 153 A_data = 1000, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1111, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 154 A_data = 1000, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 155 A_data = 1001, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0000, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 156 A_data = 1001, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0001, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 157 A_data = 1001, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0010, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 158 A_data = 1001, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0011, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 159 A_data = 1001, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0100, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 160 A_data = 1001, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0101, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 161 A_data = 1001, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0110, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 162 A_data = 1001, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0111, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 163 A_data = 1001, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1000, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 164 A_data = 1001, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1001, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-    tran: time = 1.65 ms     (27.5 %), step = 1.19 us     (19.8 m%)
-                 165 A_data = 1001, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1010, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 166 A_data = 1001, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1011, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 167 A_data = 1001, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1100, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 168 A_data = 1001, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1101, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 169 A_data = 1001, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1110, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 170 A_data = 1001, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1111, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 171 A_data = 1001, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 172 A_data = 1010, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0000, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 173 A_data = 1010, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0001, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 174 A_data = 1010, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0010, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 175 A_data = 1010, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0011, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 176 A_data = 1010, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0100, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 177 A_data = 1010, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0101, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 178 A_data = 1010, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0110, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 179 A_data = 1010, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0111, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 180 A_data = 1010, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1000, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 181 A_data = 1010, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1001, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 182 A_data = 1010, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1010, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 183 A_data = 1010, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1011, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 184 A_data = 1010, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1100, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 185 A_data = 1010, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1101, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 186 A_data = 1010, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1110, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 187 A_data = 1010, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1111, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 188 A_data = 1010, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 189 A_data = 1011, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0000, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 190 A_data = 1011, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0001, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 191 A_data = 1011, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0010, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 192 A_data = 1011, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0011, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 193 A_data = 1011, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0100, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 194 A_data = 1011, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0101, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-    tran: time = 1.95 ms     (32.5 %), step = 147.6 ns    (2.46 m%)
-                 195 A_data = 1011, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0110, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 196 A_data = 1011, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0111, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 197 A_data = 1011, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1000, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 198 A_data = 1011, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1001, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 199 A_data = 1011, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1010, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 200 A_data = 1011, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1011, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 201 A_data = 1011, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1100, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 202 A_data = 1011, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1101, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 203 A_data = 1011, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1110, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 204 A_data = 1011, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1111, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 205 A_data = 1011, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 206 A_data = 1100, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0000, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 207 A_data = 1100, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0001, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 208 A_data = 1100, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0010, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 209 A_data = 1100, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0011, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 210 A_data = 1100, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0100, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 211 A_data = 1100, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0101, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 212 A_data = 1100, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0110, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 213 A_data = 1100, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0111, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 214 A_data = 1100, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1000, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 215 A_data = 1100, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1001, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 216 A_data = 1100, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1010, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 217 A_data = 1100, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1011, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 218 A_data = 1100, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1100, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 219 A_data = 1100, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1101, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 220 A_data = 1100, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1110, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 221 A_data = 1100, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1111, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 222 A_data = 1100, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 223 A_data = 1101, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0000, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 224 A_data = 1101, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0001, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-    tran: time = 2.25 ms     (37.5 %), step = 1.963 us    (32.7 m%)
-                 225 A_data = 1101, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0010, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 226 A_data = 1101, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0011, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 227 A_data = 1101, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0100, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 228 A_data = 1101, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0101, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 229 A_data = 1101, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0110, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 230 A_data = 1101, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0111, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 231 A_data = 1101, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1000, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 232 A_data = 1101, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1001, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 233 A_data = 1101, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1010, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 234 A_data = 1101, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1011, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 235 A_data = 1101, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1100, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 236 A_data = 1101, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1101, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 237 A_data = 1101, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1110, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 238 A_data = 1101, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1111, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 239 A_data = 1101, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 240 A_data = 1110, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0000, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 241 A_data = 1110, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0001, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 242 A_data = 1110, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0010, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 243 A_data = 1110, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0011, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 244 A_data = 1110, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0100, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 245 A_data = 1110, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0101, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 246 A_data = 1110, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0110, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 247 A_data = 1110, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0111, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 248 A_data = 1110, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1000, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 249 A_data = 1110, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1001, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 250 A_data = 1110, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1010, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 251 A_data = 1110, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1011, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 252 A_data = 1110, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1100, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 253 A_data = 1110, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1101, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 254 A_data = 1110, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1110, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-    tran: time = 2.55 ms     (42.5 %), step = 1.32 us       (22 m%)
-                 255 A_data = 1110, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1111, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 256 A_data = 1110, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 257 A_data = 1111, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0000, c_in = 0, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 258 A_data = 1111, B_data= 0000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0001, c_in = 0, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 259 A_data = 1111, B_data= 0001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0010, c_in = 0, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 260 A_data = 1111, B_data= 0010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0011, c_in = 0, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 261 A_data = 1111, B_data= 0011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0100, c_in = 0, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 262 A_data = 1111, B_data= 0100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0101, c_in = 0, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 263 A_data = 1111, B_data= 0101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0110, c_in = 0, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 264 A_data = 1111, B_data= 0110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0111, c_in = 0, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 265 A_data = 1111, B_data= 0111, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1000, c_in = 0, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 266 A_data = 1111, B_data= 1000, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1001, c_in = 0, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 267 A_data = 1111, B_data= 1001, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1010, c_in = 0, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 268 A_data = 1111, B_data= 1010, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1011, c_in = 0, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 269 A_data = 1111, B_data= 1011, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1100, c_in = 0, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 270 A_data = 1111, B_data= 1100, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1101, c_in = 0, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 271 A_data = 1111, B_data= 1101, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1110, c_in = 0, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 272 A_data = 1111, B_data= 1110, c_in = 0, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1111, c_in = 0, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 273 A_data = 1111, B_data= 1111, c_in = 0, sum = 0000, c_out = 0
-                 274 A_data = 1111, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 275 A_data = 0000, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0000, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 276 A_data = 0000, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0001, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 277 A_data = 0000, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0010, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 278 A_data = 0000, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0011, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 279 A_data = 0000, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0100, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 280 A_data = 0000, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0101, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 281 A_data = 0000, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0110, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 282 A_data = 0000, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 0111, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 283 A_data = 0000, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1000, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 284 A_data = 0000, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1001, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-    tran: time = 2.85 ms     (47.5 %), step = 409.2 ns    (6.82 m%)
-                 285 A_data = 0000, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1010, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 286 A_data = 0000, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1011, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 287 A_data = 0000, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1100, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 288 A_data = 0000, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1101, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 289 A_data = 0000, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1110, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 290 A_data = 0000, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0000, B_input = 1111, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 291 A_data = 0000, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 292 A_data = 0001, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0000, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 293 A_data = 0001, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0001, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 294 A_data = 0001, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0010, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 295 A_data = 0001, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0011, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 296 A_data = 0001, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0100, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 297 A_data = 0001, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0101, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 298 A_data = 0001, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0110, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 299 A_data = 0001, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 0111, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 300 A_data = 0001, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1000, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 301 A_data = 0001, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1001, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 302 A_data = 0001, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1010, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 303 A_data = 0001, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1011, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 304 A_data = 0001, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1100, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 305 A_data = 0001, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1101, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 306 A_data = 0001, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1110, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 307 A_data = 0001, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0001, B_input = 1111, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 308 A_data = 0001, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 309 A_data = 0010, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0000, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 310 A_data = 0010, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0001, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 311 A_data = 0010, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0010, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 312 A_data = 0010, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0011, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 313 A_data = 0010, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0100, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 314 A_data = 0010, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0101, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-    tran: time = 3.15 ms     (52.5 %), step = 378.5 ns    (6.31 m%)
-                 315 A_data = 0010, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0110, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 316 A_data = 0010, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 0111, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 317 A_data = 0010, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1000, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 318 A_data = 0010, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1001, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 319 A_data = 0010, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1010, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 320 A_data = 0010, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1011, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 321 A_data = 0010, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1100, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 322 A_data = 0010, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1101, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 323 A_data = 0010, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1110, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 324 A_data = 0010, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0010, B_input = 1111, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 325 A_data = 0010, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 326 A_data = 0011, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0000, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 327 A_data = 0011, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0001, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 328 A_data = 0011, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0010, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 329 A_data = 0011, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0011, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 330 A_data = 0011, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0100, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 331 A_data = 0011, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0101, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 332 A_data = 0011, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0110, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 333 A_data = 0011, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 0111, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 334 A_data = 0011, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1000, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 335 A_data = 0011, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1001, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 336 A_data = 0011, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1010, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 337 A_data = 0011, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1011, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 338 A_data = 0011, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1100, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 339 A_data = 0011, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1101, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 340 A_data = 0011, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1110, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 341 A_data = 0011, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0011, B_input = 1111, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 342 A_data = 0011, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 343 A_data = 0100, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0000, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 344 A_data = 0100, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0001, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-    tran: time = 3.45 ms     (57.5 %), step = 2.016 us    (33.6 m%)
-                 345 A_data = 0100, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0010, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 346 A_data = 0100, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0011, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 347 A_data = 0100, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0100, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 348 A_data = 0100, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0101, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 349 A_data = 0100, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0110, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 350 A_data = 0100, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 0111, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 351 A_data = 0100, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1000, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 352 A_data = 0100, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1001, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 353 A_data = 0100, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1010, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 354 A_data = 0100, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1011, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 355 A_data = 0100, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1100, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 356 A_data = 0100, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1101, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 357 A_data = 0100, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1110, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 358 A_data = 0100, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0100, B_input = 1111, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 359 A_data = 0100, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 360 A_data = 0101, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0000, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 361 A_data = 0101, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0001, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 362 A_data = 0101, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0010, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 363 A_data = 0101, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0011, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 364 A_data = 0101, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0100, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 365 A_data = 0101, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0101, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 366 A_data = 0101, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0110, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 367 A_data = 0101, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 0111, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 368 A_data = 0101, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1000, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 369 A_data = 0101, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1001, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 370 A_data = 0101, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1010, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 371 A_data = 0101, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1011, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 372 A_data = 0101, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1100, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 373 A_data = 0101, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1101, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 374 A_data = 0101, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1110, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-    tran: time = 3.75 ms     (62.5 %), step = 2.68 us     (44.7 m%)
-                 375 A_data = 0101, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0101, B_input = 1111, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 376 A_data = 0101, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 377 A_data = 0110, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0000, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 378 A_data = 0110, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0001, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 379 A_data = 0110, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0010, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 380 A_data = 0110, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0011, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 381 A_data = 0110, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0100, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 382 A_data = 0110, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0101, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 383 A_data = 0110, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0110, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 384 A_data = 0110, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 0111, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 385 A_data = 0110, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1000, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 386 A_data = 0110, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1001, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 387 A_data = 0110, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1010, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 388 A_data = 0110, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1011, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 389 A_data = 0110, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1100, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 390 A_data = 0110, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1101, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 391 A_data = 0110, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1110, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 392 A_data = 0110, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0110, B_input = 1111, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 393 A_data = 0110, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 394 A_data = 0111, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0000, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 395 A_data = 0111, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0001, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 396 A_data = 0111, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0010, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 397 A_data = 0111, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0011, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 398 A_data = 0111, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0100, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 399 A_data = 0111, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0101, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 400 A_data = 0111, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0110, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 401 A_data = 0111, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 0111, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 402 A_data = 0111, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1000, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 403 A_data = 0111, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1001, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 404 A_data = 0111, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1010, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-    tran: time = 4.05 ms     (67.5 %), step = 2.687 us    (44.8 m%)
-                 405 A_data = 0111, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1011, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 406 A_data = 0111, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1100, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 407 A_data = 0111, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1101, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 408 A_data = 0111, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1110, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 409 A_data = 0111, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 0111, B_input = 1111, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 410 A_data = 0111, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 411 A_data = 1000, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0000, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 412 A_data = 1000, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0001, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 413 A_data = 1000, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0010, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 414 A_data = 1000, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0011, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 415 A_data = 1000, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0100, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 416 A_data = 1000, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0101, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 417 A_data = 1000, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0110, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 418 A_data = 1000, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 0111, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 419 A_data = 1000, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1000, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 420 A_data = 1000, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1001, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 421 A_data = 1000, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1010, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 422 A_data = 1000, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1011, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 423 A_data = 1000, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1100, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 424 A_data = 1000, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1101, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 425 A_data = 1000, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1110, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 426 A_data = 1000, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1000, B_input = 1111, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 427 A_data = 1000, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 428 A_data = 1001, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0000, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 429 A_data = 1001, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0001, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 430 A_data = 1001, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0010, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 431 A_data = 1001, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0011, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 432 A_data = 1001, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0100, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 433 A_data = 1001, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0101, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 434 A_data = 1001, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0110, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-    tran: time = 4.35 ms     (72.5 %), step = 2.687 us    (44.8 m%)
-                 435 A_data = 1001, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 0111, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 436 A_data = 1001, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1000, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 437 A_data = 1001, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1001, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 438 A_data = 1001, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1010, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 439 A_data = 1001, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1011, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 440 A_data = 1001, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1100, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 441 A_data = 1001, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1101, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 442 A_data = 1001, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1110, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 443 A_data = 1001, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1001, B_input = 1111, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 444 A_data = 1001, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 445 A_data = 1010, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0000, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 446 A_data = 1010, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0001, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 447 A_data = 1010, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0010, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 448 A_data = 1010, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0011, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 449 A_data = 1010, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0100, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 450 A_data = 1010, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0101, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 451 A_data = 1010, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0110, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 452 A_data = 1010, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 0111, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 453 A_data = 1010, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1000, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 454 A_data = 1010, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1001, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 455 A_data = 1010, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1010, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 456 A_data = 1010, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1011, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 457 A_data = 1010, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1100, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 458 A_data = 1010, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1101, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 459 A_data = 1010, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1110, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 460 A_data = 1010, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1010, B_input = 1111, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 461 A_data = 1010, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 462 A_data = 1011, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0000, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 463 A_data = 1011, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0001, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 464 A_data = 1011, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0010, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-    tran: time = 4.65 ms     (77.5 %), step = 2.687 us    (44.8 m%)
-                 465 A_data = 1011, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0011, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 466 A_data = 1011, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0100, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 467 A_data = 1011, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0101, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 468 A_data = 1011, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0110, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 469 A_data = 1011, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 0111, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 470 A_data = 1011, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1000, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 471 A_data = 1011, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1001, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 472 A_data = 1011, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1010, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 473 A_data = 1011, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1011, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 474 A_data = 1011, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1100, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 475 A_data = 1011, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1101, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 476 A_data = 1011, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1110, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 477 A_data = 1011, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1011, B_input = 1111, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 478 A_data = 1011, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 479 A_data = 1100, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0000, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 480 A_data = 1100, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0001, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 481 A_data = 1100, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0010, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 482 A_data = 1100, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0011, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 483 A_data = 1100, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0100, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 484 A_data = 1100, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0101, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 485 A_data = 1100, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0110, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 486 A_data = 1100, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 0111, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 487 A_data = 1100, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1000, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 488 A_data = 1100, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1001, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 489 A_data = 1100, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1010, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 490 A_data = 1100, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1011, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 491 A_data = 1100, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1100, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 492 A_data = 1100, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1101, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 493 A_data = 1100, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1110, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 494 A_data = 1100, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1100, B_input = 1111, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-    tran: time = 4.95 ms     (82.5 %), step = 187.5 ns    (3.13 m%)
-                 495 A_data = 1100, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 496 A_data = 1101, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0000, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 497 A_data = 1101, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0001, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 498 A_data = 1101, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0010, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 499 A_data = 1101, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0011, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 500 A_data = 1101, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0100, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 501 A_data = 1101, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0101, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 502 A_data = 1101, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0110, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 503 A_data = 1101, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 0111, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 504 A_data = 1101, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1000, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 505 A_data = 1101, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1001, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 506 A_data = 1101, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1010, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 507 A_data = 1101, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1011, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 508 A_data = 1101, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1100, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 509 A_data = 1101, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1101, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 510 A_data = 1101, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1110, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 511 A_data = 1101, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1101, B_input = 1111, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 512 A_data = 1101, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 513 A_data = 1110, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0000, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 0, Carry Out 0
-                 514 A_data = 1110, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0001, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 515 A_data = 1110, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0010, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 516 A_data = 1110, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0011, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 517 A_data = 1110, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0100, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 518 A_data = 1110, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0101, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 519 A_data = 1110, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0110, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 520 A_data = 1110, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 0111, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 521 A_data = 1110, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1000, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 522 A_data = 1110, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1001, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 523 A_data = 1110, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1010, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 524 A_data = 1110, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1011, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-    tran: time = 5.25 ms     (87.5 %), step = 1.113 us    (18.6 m%)
-                 525 A_data = 1110, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1100, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 526 A_data = 1110, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1101, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 527 A_data = 1110, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1110, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 528 A_data = 1110, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1110, B_input = 1111, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 529 A_data = 1110, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-                 530 A_data = 1111, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0000, c_in = 1, Expected Sum = 0000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 531 A_data = 1111, B_data= 0000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0001, c_in = 1, Expected Sum = 0001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 532 A_data = 1111, B_data= 0001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0010, c_in = 1, Expected Sum = 0010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 533 A_data = 1111, B_data= 0010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0011, c_in = 1, Expected Sum = 0011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 534 A_data = 1111, B_data= 0011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0100, c_in = 1, Expected Sum = 0100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 535 A_data = 1111, B_data= 0100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0101, c_in = 1, Expected Sum = 0101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 536 A_data = 1111, B_data= 0101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0110, c_in = 1, Expected Sum = 0110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 537 A_data = 1111, B_data= 0110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 0111, c_in = 1, Expected Sum = 0111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 538 A_data = 1111, B_data= 0111, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1000, c_in = 1, Expected Sum = 1000, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 539 A_data = 1111, B_data= 1000, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1001, c_in = 1, Expected Sum = 1001, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 540 A_data = 1111, B_data= 1001, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1010, c_in = 1, Expected Sum = 1010, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 541 A_data = 1111, B_data= 1010, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1011, c_in = 1, Expected Sum = 1011, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 542 A_data = 1111, B_data= 1011, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1100, c_in = 1, Expected Sum = 1100, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 543 A_data = 1111, B_data= 1100, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1101, c_in = 1, Expected Sum = 1101, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 544 A_data = 1111, B_data= 1101, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1110, c_in = 1, Expected Sum = 1110, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 545 A_data = 1111, B_data= 1110, c_in = 1, sum = 0000, c_out = 0
-Fail: A_input = 1111, B_input = 1111, c_in = 1, Expected Sum = 1111, Sum = 0000, Expected Carry Out = 1, Carry Out 0
-                 546 A_data = 1111, B_data= 1111, c_in = 1, sum = 0000, c_out = 0
-Simulation complete via $finish(1) at time 5560 US + 0
-/home/seas/jwcrandall/cadence/ECE_6240_Digial/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v:36 	#10 $finish;
+    tran: time = 55.7 ms     (5.57 %), step = 21.24 ns    (2.12 u%)
+Pass: A_input =  5, B_input =  1, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  2, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  3, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  4, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  5, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  6, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  7, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  8, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input =  9, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  5, B_input = 10, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 11, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 12, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 13, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 14, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  5, B_input = 15, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input =  0, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  1, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  2, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  3, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  4, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  5, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  6, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  7, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  8, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  6, B_input =  9, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 10, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 11, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 12, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 13, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 14, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  6, B_input = 15, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input =  0, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  1, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  2, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  3, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  4, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  5, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  6, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  7, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  7, B_input =  8, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input =  9, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 10, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 11, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 12, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 13, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 14, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  7, B_input = 15, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input =  0, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  1, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  2, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  3, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  4, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  5, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  6, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  8, B_input =  7, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input =  8, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input =  9, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 10, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 11, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 12, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 13, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 14, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  8, B_input = 15, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  0, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  1, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  2, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  3, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  4, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  5, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input =  9, B_input =  6, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  7, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  8, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input =  9, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 10, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 11, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 12, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 13, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 14, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input =  9, B_input = 15, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  0, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  1, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  2, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  3, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  4, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 10, B_input =  5, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  6, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  7, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  8, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input =  9, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 10, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 11, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 12, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 13, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 14, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 10, B_input = 15, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  0, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  1, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  2, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  3, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 11, B_input =  4, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  5, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  6, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  7, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+    tran: time = 72 ms        (7.2 %), step = 21.79 ps    (2.18 n%)
+Pass: A_input = 11, B_input =  8, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input =  9, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 10, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 11, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 12, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 13, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 14, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 11, B_input = 15, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  0, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  1, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  2, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 12, B_input =  3, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  4, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  5, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  6, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  7, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  8, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input =  9, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 10, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 11, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+    tran: time = 75 ms        (7.5 %), step = 9.324 us     (932 u%)
+Pass: A_input = 12, B_input = 12, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 13, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 14, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 12, B_input = 15, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  0, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 13, B_input =  1, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 13, B_input =  2, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  3, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  4, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  5, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  6, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  7, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  8, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input =  9, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 10, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 11, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 12, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 13, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 14, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 13, B_input = 15, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  0, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 0, Carry Out 0
+Pass: A_input = 14, B_input =  1, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  2, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  3, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  4, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  5, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  6, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  7, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  8, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input =  9, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 10, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 11, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 12, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 13, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 14, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 14, B_input = 15, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  0, c_in = 1, Expected Sum =  0, Sum =  0, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  1, c_in = 1, Expected Sum =  1, Sum =  1, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  2, c_in = 1, Expected Sum =  2, Sum =  2, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  3, c_in = 1, Expected Sum =  3, Sum =  3, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  4, c_in = 1, Expected Sum =  4, Sum =  4, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  5, c_in = 1, Expected Sum =  5, Sum =  5, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  6, c_in = 1, Expected Sum =  6, Sum =  6, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  7, c_in = 1, Expected Sum =  7, Sum =  7, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  8, c_in = 1, Expected Sum =  8, Sum =  8, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input =  9, c_in = 1, Expected Sum =  9, Sum =  9, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 10, c_in = 1, Expected Sum = 10, Sum = 10, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 11, c_in = 1, Expected Sum = 11, Sum = 11, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 12, c_in = 1, Expected Sum = 12, Sum = 12, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 13, c_in = 1, Expected Sum = 13, Sum = 13, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 14, c_in = 1, Expected Sum = 14, Sum = 14, Expected Carry Out = 1, Carry Out 1
+Pass: A_input = 15, B_input = 15, c_in = 1, Expected Sum = 15, Sum = 15, Expected Carry Out = 1, Carry Out 1
+Simulation complete via $finish(1) at time 83300 US + 0
+/home/seas/jwcrandall/cadence/ECE_6240_Digital/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v:38 	#10 $finish;
 ncsim> exit
-    tran: time = 5.577 ms     (100 %), step = 58.55 us     (8.02 %)
-`AutoStop = yes'. Analysis finished at 5.5771 ms s.
+    tran: time = 83.4 ms      (100 %), step = 108.8 us     (91.7 %)
+`AutoStop = yes'. Analysis finished at 83.3992 ms s.
 
-Number of accepted tran steps =             20119
+Number of accepted tran steps =             65664
 
 Notice from spectre during transient analysis `tran'.
     Trapezoidal ringing is detected during tran analysis.
@@ -1360,26 +839,27 @@ Post-Transient Simulation Summary
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  0 (95.1 %)      2 (5.1 %)       3 (1.4 %)       4 (1.2 %)
+        Spectre  0 (95.1 %)      1 (1.3 %)       2 (1.6 %)       4 (1.1 %)
+                 5 (6.5 %)      
         Other   
-Initial condition solution time: CPU = 13.998 ms, elapsed = 14.595 ms.
+Initial condition solution time: CPU = 12.998 ms, elapsed = 13.0019 ms.
 
 **** AMSD: Mixed-Signal Activity Statistics ****
-Number of A-to-D events:                      10
-  Number of A-to-D events in IEs:             10
+Number of A-to-D events:                    3468
+  Number of A-to-D events in IEs:           3468
 Number of D-to-A events:                    1040
   Number of D-to-A events in IEs:           1040
 Number of VHDL-AMS Breaks:                     0
 
-Intrinsic tran analysis time:    CPU = 17.6843 s, elapsed = 17.7012 s.
-Total time required for tran analysis `tran': CPU = 17.7003 s, elapsed =
-        17.7176 s.
-Time accumulated: CPU = 18.0972 s, elapsed = 18.8787 s.
-Peak resident memory used = 113 Mbytes.
+Intrinsic tran analysis time:    CPU = 51.8211 s, elapsed = 51.8742 s.
+Total time required for tran analysis `tran': CPU = 51.8341 s, elapsed =
+        51.8888 s.
+Time accumulated: CPU = 52.2361 s, elapsed = 55.3668 s.
+Peak resident memory used = 115 Mbytes.
 
 
 Notice from spectre.
-    3309 notices suppressed.
+    63 notices suppressed.
 
 finalTimeOP: writing operating point information to rawfile.
 
@@ -1394,12 +874,12 @@ outputParameter: writing output parameter values to rawfile.
 
 Opening the PSF file ../psf/outputParameter.info ...
 
-Aggregate audit (5:28:43 PM, Sun Nov 18, 2018):
-Time used: CPU = 18.1 s, elapsed = 19 s, util. = 95.6%.
-Time spent in licensing: elapsed = 287 ms.
-Peak memory used = 113 Mbytes.
-Simulation started at: 5:28:24 PM, Sun Nov 18, 2018, ended at: 5:28:43 PM, Sun
-        Nov 18, 2018, with elapsed time (wall clock): 19 s.
-spectre completes with 0 errors, 0 warnings, and 8 notices.
-ncsim: Memory Usage - 38.6M program + 465.6M data = 504.2M total (504.4M Peak)
-ncsim: CPU Usage - 0.3s system + 17.9s user = 18.1s total (20.2s, 89.8% cpu)
+Aggregate audit (2:34:50 PM, Tue Nov 27, 2018):
+Time used: CPU = 52.3 s, elapsed = 55.4 s, util. = 94.3%.
+Time spent in licensing: elapsed = 86.1 ms.
+Peak memory used = 115 Mbytes.
+Simulation started at: 2:33:54 PM, Tue Nov 27, 2018, ended at: 2:34:50 PM, Tue
+        Nov 27, 2018, with elapsed time (wall clock): 55.4 s.
+spectre completes with 0 errors, 0 warnings, and 9 notices.
+ncsim: Memory Usage - 38.6M program + 465.9M data = 504.4M total (504.4M Peak)
+ncsim: CPU Usage - 2.2s system + 54.0s user = 56.2s total (56.6s, 99.2% cpu)

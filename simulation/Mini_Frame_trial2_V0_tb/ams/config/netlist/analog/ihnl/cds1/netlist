@@ -1,0 +1,12 @@
+
+// Library name: project_g01
+// Cell name: Mini_Frame_trial2_V0_tb
+// View name: schematic
+// Inherited view list: schematic
+I8 Mini_Frame_trial2_V0
+I7 Mini_Frame_trial2_V0
+V0 (vdd! 0) vsource type=dc dc=3.1
+V2 (net19 0) vsource type=pulse val0=0 val1=3.1 period=240u rise=500f \
+        fall=500f width=120u
+V1 (net20 0) vsource type=pulse val0=0 val1=3.1 period=240u delay=120u \
+        rise=500f fall=500f width=120u

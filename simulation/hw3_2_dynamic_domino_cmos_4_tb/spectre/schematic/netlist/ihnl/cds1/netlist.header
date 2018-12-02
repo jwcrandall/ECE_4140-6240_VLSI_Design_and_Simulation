@@ -1,0 +1,5 @@
+
+// Library name: ECE_6240_Digital
+// Cell name: hw3_2_dynamic_domino_cmos_4
+// View name: schematic
+subckt hw3_2_dynamic_domino_cmos_4 A B C Clk D G

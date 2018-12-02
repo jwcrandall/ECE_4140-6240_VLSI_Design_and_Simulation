@@ -1,6 +1,4 @@
-    I3 hw3_1_adder_1bit
-    I2 hw3_1_adder_1bit
-    I1 hw3_1_adder_1bit
-    I0 hw3_1_adder_1bit
-ends hw3_1_adder_4bit
+    I0 hw1_3_CMOS_3_Input_NOR
+    I1 hw1_1_c_inverter
+ends hw3_1_3_Input_OR
 // End of subcircuit definition.

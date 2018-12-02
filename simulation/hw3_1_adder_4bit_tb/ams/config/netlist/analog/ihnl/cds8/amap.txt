@@ -1,0 +1,11 @@
+cellMap,*hw3_1_3_Input_AND,*hw3_1_3_Input_AND,*ECE_6240_Digital,*schematic
+netMap,*hw3_1_3_Input_AND,*vdd!,*vdd!
+netMap,*hw3_1_3_Input_AND,*gnd!,*0
+instMap,*hw3_1_3_Input_AND,*I0,*I0
+instMaster,*hw3_1_3_Input_AND,*I0,*ECE_6240_Digital_hw1_3_CMOS_3_Input_NAND_schematic,*hw1_3_CMOS_3_Input_NAND
+instMap,*hw3_1_3_Input_AND,*I1,*I1
+instMaster,*hw3_1_3_Input_AND,*I1,*ECE_6240_Digital_hw1_1_c_inverter_schematic,*hw1_1_c_inverter
+portMap,*hw3_1_3_Input_AND,*A,*A
+portMap,*hw3_1_3_Input_AND,*B,*B
+portMap,*hw3_1_3_Input_AND,*C,*C
+portMap,*hw3_1_3_Input_AND,*Out,*Out

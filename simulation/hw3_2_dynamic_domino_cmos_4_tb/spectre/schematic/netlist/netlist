@@ -1,0 +1,48 @@
+
+// Library name: ECE_6240_Digital
+// Cell name: hw1_1_c_inverter
+// View name: schematic
+subckt hw1_1_c_inverter VIN VOUT
+    P0 (VOUT VIN vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    N0 (VOUT VIN 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends hw1_1_c_inverter
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digital
+// Cell name: hw3_2_dynamic_domino_cmos_4
+// View name: schematic
+subckt hw3_2_dynamic_domino_cmos_4 A B C Clk D G
+    N3 (net010 D net9 net9) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N4 (net9 Clk gnda! gnda!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N2 (net010 C net9 net9) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N1 (net010 B net9 net9) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    N0 (net010 A net9 net9) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    P0 (net010 Clk vdd! vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    I2 (net010 G) hw1_1_c_inverter
+ends hw3_2_dynamic_domino_cmos_4
+// End of subcircuit definition.
+
+// Library name: ECE_6240_Digital
+// Cell name: hw3_2_dynamic_domino_cmos_4_tb
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+V5 (D 0) vsource type=pulse dc=5 val0=0 val1=5 period=160u delay=0 \
+        rise=500f fall=500f width=80u
+V4 (Clk 0) vsource type=pulse dc=5 val0=0 val1=5 period=320u delay=0 \
+        rise=500f fall=500f width=160u
+V3 (C 0) vsource type=pulse dc=5 val0=0 val1=5 period=80u delay=0 \
+        rise=500f fall=500f width=40u
+V2 (B 0) vsource type=pulse dc=5 val0=0 val1=5 period=40u delay=0 \
+        rise=500f fall=500f width=20u
+V1 (A 0) vsource type=pulse dc=5 val0=0 val1=5 period=20u delay=0 \
+        rise=500f fall=500f width=10u
+C0 (G 0) capacitor c=4p m=1
+I15 (A B C Clk D G) hw3_2_dynamic_domino_cmos_4

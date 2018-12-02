@@ -11,4 +11,4 @@ V1 (B 0) vsource type=pulse dc=5 val0=0 val1=5 period=100u delay=0 \
         rise=500f fall=500f width=50u
 C1 (Sum 0) capacitor c=4p m=1
 C0 (Cout 0) capacitor c=4p m=1
-I13 (A B Cin Cout Sum) hw3_1_adder_1bit
+I15 (A B Cin Cout Sum) hw3_1_adder_1bit

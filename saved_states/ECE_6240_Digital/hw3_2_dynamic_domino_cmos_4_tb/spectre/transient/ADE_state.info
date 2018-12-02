@@ -1,0 +1,3 @@
+projectDir = '"./simulation"
+designInfo = '("ECE_6240_Digital" "hw3_2_dynamic_domino_cmos_4_tb" "schematic" "spectre")
+descriptionText = "None"

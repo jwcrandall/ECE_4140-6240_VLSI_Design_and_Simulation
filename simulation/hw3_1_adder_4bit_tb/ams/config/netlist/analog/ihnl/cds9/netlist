@@ -1,0 +1,14 @@
+    I43 hw3_1_4_Input_OR
+    I38 hw3_1_2_Input_AND
+    I37 hw3_1_2_Input_AND
+    I36 hw3_1_2_Input_AND
+    I42 hw3_1_3_Input_OR
+    I2 hw1_1_c_inverter
+    I1 hw1_1_c_inverter
+    I0 hw1_1_c_inverter
+    I32 hw3_1_3_Input_AND
+    I33 hw3_1_3_Input_AND
+    I34 hw3_1_3_Input_AND
+    I35 hw3_1_3_Input_AND
+ends hw3_1_adder_1bit
+// End of subcircuit definition.

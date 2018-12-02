@@ -1,0 +1,26 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/seas/jwcrandall/cadence/
+-AMSCONNRULES
+ConnRules_3V_full_fast
+
+project_g01.Mini_Frame_trial2_V01_tb:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/seas/jack_hirschman/cadence/project_g01/Mini_Frame_trial2_V01_tb_vdriver/functional/verilog.v lib:project_g01 cell:Mini_Frame_trial2_V01_tb_vdriver view:functional"

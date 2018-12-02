@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "Mini_Frame_trial2_V01_tb"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V01_tb/ams/config/netlist/analog"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "project_g01/Mini_Frame_trial2_V01/extracted" "Mini_Frame_trial2_V01" )
+( "project_g01/Mini_Frame_trial2_V01_tb/schematic" "Mini_Frame_trial2_V01_tb" )
+ )
+( "Mini_Frame_trial2_V01" "ihnl/cds0/map" )
+( "Mini_Frame_trial2_V01_tb" "ihnl/cds1/map" )
+ )

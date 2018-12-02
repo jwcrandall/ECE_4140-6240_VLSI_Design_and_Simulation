@@ -1,0 +1,32 @@
+// Library - ECE_6240_Digital, Cell - hw3_1_mirror_adder_4bit_tb, View
+//- schematic
+// LAST TIME SAVED: Nov 29 10:58:00 2018
+// NETLIST TIME: Nov 29 10:59:48 2018
+`timescale 1ns / 1ns 
+
+`worklib ECE_6240_Digital
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="ECE_6240_Digital", dfII_cell="hw3_1_mirror_adder_4bit_tb", dfII_view="schematic", worklib_name="ECE_6240_Digital", view_name="schematic", last_save_time="Nov 29 10:58:00 2018" *)
+
+module hw3_1_mirror_adder_4bit_tb ();
+
+// Buses in the design
+
+wire  [3:0]  A_data;
+
+wire  [3:0]  B_data;
+
+wire  [3:0]  sum;
+
+
+hw3_1_mirror_adder_4bit_tb_vdriver I37 ( .A_data(A_data), 
+    .B_data(B_data), .c_in(Cin), .c_out(Cout), .sum(sum));
+
+hw3_1_mirror_adder_4bit I36 ( .Cout(Cout), .S0(sum[0]), .S1(sum[1]), 
+    .S2(sum[2]), .S3(sum[3]), .A0(A_data[0]), .A1(A_data[1]), 
+    .A2(A_data[2]), .A3(A_data[3]), .B0(B_data[0]), .B1(B_data[1]), 
+    .B2(B_data[2]), .B3(B_data[3]), .Cin(Cin));
+
+endmodule

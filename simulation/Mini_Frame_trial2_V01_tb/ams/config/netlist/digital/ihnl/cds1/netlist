@@ -1,0 +1,49 @@
+// Library - project_g01, Cell - Mini_Frame_trial2_V01_tb, View -
+//schematic
+// LAST TIME SAVED: Dec  1 19:13:04 2018
+// NETLIST TIME: Dec  1 19:32:17 2018
+`timescale 1ns / 1ns 
+
+`worklib project_g01
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="project_g01", dfII_cell="Mini_Frame_trial2_V01_tb", dfII_view="schematic", worklib_name="project_g01", view_name="schematic", last_save_time="Dec  1 19:13:04 2018" *)
+
+module Mini_Frame_trial2_V01_tb ();
+
+// Buses in the design
+
+wire  [7:0]  Clk1B;
+
+wire  [7:0]  Clk1A;
+
+wire  [7:0]  Clk2A;
+
+wire  [7:0]  Clk2B;
+
+wire  [7:0]  B;
+
+wire  [15:0]  Clk2F;
+
+wire  [15:0]  Clk1F;
+
+wire  [15:0]  F;
+
+wire  [7:0]  A;
+
+
+Mini_Frame_trial2_V01 I13 ( .\gnd! (cds_globals.\gnd! ), 
+    .Clk2A0(Clk2A[0]), .Clk1A0(Clk1A[0]), .Clk1(Clk1), .Clk2(Clk2), 
+    .F0(F[0]), .F1(F[1]), .F2(F[2]), .F3(F[3]), .F4(F[4]), .F5(F[5]), 
+    .F6(F[6]), .F7(F[7]), .F8(F[8]), .F9(F[9]), .F10(F[10]), 
+    .F11(F[11]), .F12(F[12]), .F13(F[13]), .F14(F[14]), .F15(F[15]), 
+    .A0(A[0]), .A1(A[1]), .A2(A[2]), .A3(A[3]), .A4(A[4]), .A5(A[5]), 
+    .A6(A[6]), .A7(A[7]), .B0(B[0]), .B1(B[1]), .B2(B[2]), .B3(B[3]), 
+    .B4(B[4]), .B5(B[5]), .B6(B[6]), .B7(B[7]));
+
+Mini_Frame_trial2_V01_tb_vdriver I15 ( .Clk1A(Clk1A), .Clk1B(Clk1B), 
+    .Clk1F(Clk1F), .Clk2A(Clk2A), .Clk2B(Clk2B), .Clk2F(Clk2F), 
+    .Clk1(Clk1), .Clk2(Clk2), .A(A), .B(B), .F(F));
+
+endmodule

@@ -1,0 +1,5 @@
+SOFTINCLUDE /apps/vlsi_2018/cadence/INCISIVE152/tools/inca/files/IEEE_vhdlams/cds.lib
+include ../../cds.lib
+define project_g01 ../project_g01
+define worklib ../worklib
+define vhdlspice_skeletons ../vhdlspice_skeletons

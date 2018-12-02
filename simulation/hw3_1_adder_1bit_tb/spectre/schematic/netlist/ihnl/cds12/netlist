@@ -1,0 +1,4 @@
+    I0 (A B C D net11) hw3_1_4_Input_NOR
+    I1 (net11 Out) hw1_1_c_inverter
+ends hw3_1_4_Input_OR
+// End of subcircuit definition.

@@ -1,1 +1,1 @@
-infoDpl = `(nil simulator "ams" libName "ECE_6240_Digial" cellName "hw3_1_adder_4bit_tb" viewName "config" cdslib "cds.lib" extractedViewPresent nil)
+infoDpl = `(nil simulator "ams" libName "ECE_6240_Digital" cellName "hw3_1_adder_4bit_tb" viewName "config" cdslib "cds.lib" extractedViewPresent nil)

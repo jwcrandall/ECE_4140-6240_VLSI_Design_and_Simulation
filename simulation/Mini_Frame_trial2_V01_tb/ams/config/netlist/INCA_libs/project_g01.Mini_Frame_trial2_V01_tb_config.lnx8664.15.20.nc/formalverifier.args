@@ -1,0 +1,22 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-ADE
+-INPUT
+./probe.tcl
+-RUN
+-EXIT
+-SIMCOMPATIBLE_AMS
+spectre
++TOP_INTERNAL+project_g01.Mini_Frame_trial2_V01_tb:schematic
++TOP_INTERNAL+cds_globals
+-MESSAGES

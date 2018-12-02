@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "hw3_1_mirror_adder_4bit_tb"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/seas/jwcrandall/cadence/simulation/hw3_1_mirror_adder_4bit_tb/ams/config/netlist/analog"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "ECE_6240_Digital/hw3_1_mirror_adder_1bit/schematic" "hw3_1_mirror_adder_1bit" )
+( "ECE_6240_Digital/hw3_1_mirror_adder_4bit/schematic" "hw3_1_mirror_adder_4bit" )
+( "ECE_6240_Digital/hw3_1_mirror_adder_4bit_tb/schematic" "hw3_1_mirror_adder_4bit_tb" )
+( "ECE_6240_Digital/hw1_1_c_inverter/schematic" "hw1_1_c_inverter" )
+ )
+( "hw3_1_mirror_adder_4bit" "ihnl/cds2/map" )
+( "hw3_1_mirror_adder_1bit" "ihnl/cds1/map" )
+( "hw1_1_c_inverter" "ihnl/cds0/map" )
+( "hw3_1_mirror_adder_4bit_tb" "ihnl/cds3/map" )
+ )

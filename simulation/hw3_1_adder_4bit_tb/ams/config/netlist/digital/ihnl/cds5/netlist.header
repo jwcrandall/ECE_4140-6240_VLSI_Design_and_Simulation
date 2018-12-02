@@ -1,17 +1,18 @@
-// Library - ECE_6240_Digial, Cell - hw3_1_adder_1bit, View - schematic
-// LAST TIME SAVED: Nov 15 17:31:41 2018
-// NETLIST TIME: Nov 18 17:03:37 2018
+// Library - ECE_6240_Digital, Cell - hw1_3_CMOS_3_Input_NOR, View -
+//schematic
+// LAST TIME SAVED: Oct 18 10:17:07 2018
+// NETLIST TIME: Nov 27 14:33:38 2018
 `timescale 1ns / 1ns 
 
-`worklib ECE_6240_Digial
+`worklib ECE_6240_Digital
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="ECE_6240_Digial", dfII_cell="hw3_1_adder_1bit", dfII_view="schematic", worklib_name="ECE_6240_Digial", view_name="schematic", last_save_time="Nov 15 17:31:41 2018" *)
+(* dfII_lib="ECE_6240_Digital", dfII_cell="hw1_3_CMOS_3_Input_NOR", dfII_view="schematic", worklib_name="ECE_6240_Digital", view_name="schematic", last_save_time="Oct 18 10:17:07 2018" *)
 
-module hw3_1_adder_1bit (Cout, Sum, A, B, Cin);
+module hw1_3_CMOS_3_Input_NOR (Out, A, B, C);
 
-output  Cout, Sum;
+output  Out;
 
-input  A, B, Cin;
+input  A, B, C;
 

@@ -1,0 +1,86 @@
+Begin Netlisting Dec  1 19:32:10 2018
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V01_tb/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped
+table, set 
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the
+.simrc file 
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+WARNING (OSSHNL-176): Property bag for the cell 'Mini_Frame_trial2_V01' in
+library 'project_g01', has been modified or added
+since the last netlisting
+session. Therefore, re-netlisting this cell view and
+all cell views where this
+cell is instantiated.
+
+WARNING (OSSHNL-159): The primitive,
+'project_g01/Mini_Frame_trial2_V01_tb_vdriver/functional', has been updated
+since the last netlisting session
+in this current run directory. Therefore,
+re-netlisting all cell views where
+this primitive is instantiated.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all
+stopping and 
+non-stopping cells.
+ 
+WARNING (VLOGNET-110): The cell 'project_g01/Mini_Frame_trial2_V01_tb/schematic'
+has no ports. Make sure that this was the intended 
+design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+pmos4                       spectre              *Stopping View*  
+pcapacitor                  spectre              *Stopping View*  
+nmos4                       spectre              *Stopping View*  
+Mini_Frame_trial2_V01_tb_vdriver   functional           *Stopping View*  
+vdc                         spectre              *Stopping View*  
+cap                         spectre              *Stopping View*  
+Mini_Frame_trial2_V01_tb    schematic                             
+Mini_Frame_trial2_V01       extracted                             
+
+---------- End of netlist configuration information   ----------
+WARNING (OSSHNL-176): Property bag for the cell 'Mini_Frame_trial2_V01' in
+library 'project_g01', has been modified or added
+since the last netlisting
+session. Therefore, re-netlisting this cell view and
+all cell views where this
+cell is instantiated.
+
+WARNING (OSSHNL-159): The primitive,
+'project_g01/Mini_Frame_trial2_V01_tb_vdriver/functional', has been updated
+since the last netlisting session
+in this current run directory. Therefore,
+re-netlisting all cell views where
+this primitive is instantiated.
+
+Running netlist assembly..
+End netlisting Dec  1 19:32:27 2018

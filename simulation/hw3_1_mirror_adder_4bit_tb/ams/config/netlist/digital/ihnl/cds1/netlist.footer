@@ -1,0 +1,6 @@
+
+hw1_1_c_inverter I3 ( .VOUT(S), .VIN(net32));
+
+hw1_1_c_inverter I2 ( .VOUT(Cout), .VIN(net10));
+
+endmodule

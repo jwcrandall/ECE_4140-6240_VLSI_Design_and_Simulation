@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config project_g01.Mini_Frame_trial2_V01_tb:config
+// Created On: Dec  1 19:32:27 2018
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="project_g01.Mini_Frame_trial2_V01_tb:schematic"
+
+	config cell="ami06N" view="analogtext"
+	config cell="Mini_Frame_trial2_V01" lib="project_g01" view="extracted"
+	config cell="capacitor" view="analogtext"
+	config cell="ami06P" view="analogtext"
+	config cell="vsource" view="analogtext"
+	config cell="Mini_Frame_trial2_V01_tb_vdriver" lib="project_g01" view="functional"
+
+ }

@@ -12,7 +12,7 @@ DLNOHV
 DLCLAP
 -V93
 -AMSCOMPILEFILE
-"file:/home/seas/jwcrandall/cadence/ECE_6240_Digial/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v lib:ECE_6240_Digial cell:hw3_1_adder_4bit_tb_vdriver view:functional"
+"file:/home/seas/jwcrandall/cadence/ECE_6240_Digital/hw3_1_adder_4bit_tb_vdriver/functional/verilog.v lib:ECE_6240_Digital cell:hw3_1_adder_4bit_tb_vdriver view:functional"
 -MESSAGES
 -AMSELAB
 -amsdlibdir

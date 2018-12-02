@@ -1,6 +1,6 @@
 
-// Library name: ECE_6240_Digial
-// Cell name: hw3_1_adder_4bit
+// Library name: ECE_6240_Digital
+// Cell name: hw3_1_3_Input_OR
 // View name: schematic
 // Inherited view list: schematic
-subckt hw3_1_adder_4bit
+subckt hw3_1_3_Input_OR

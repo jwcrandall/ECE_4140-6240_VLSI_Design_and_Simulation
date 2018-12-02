@@ -1,0 +1,7 @@
+("NCSU_Analog_Parts" "vdc" "spectre" "spectre") "USED"
+("NCSU_Analog_Parts" "nmos4" "spectre" "spectre") "USED"
+("project_g01" "Mini_Frame_trial2_V01_tb_vdriver" "functional" "functional") "USED"
+("NCSU_Analog_Parts" "cap" "spectre" "spectre") "USED"
+("NCSU_Analog_Parts" "pmos4" "spectre" "spectre") "USED"
+("project_g01" "Mini_Frame_trial2_V01" "extracted" "extracted") "USED"
+("NCSU_Analog_Parts" "pcapacitor" "spectre" "spectre") "USED"

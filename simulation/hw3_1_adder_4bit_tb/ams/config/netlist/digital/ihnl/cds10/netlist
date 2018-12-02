@@ -1,0 +1,33 @@
+// Library - ECE_6240_Digital, Cell - hw3_1_adder_4bit, View -
+//schematic
+// LAST TIME SAVED: Nov 20 13:15:49 2018
+// NETLIST TIME: Nov 27 14:33:38 2018
+`timescale 1ns / 1ns 
+
+`worklib ECE_6240_Digital
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="ECE_6240_Digital", dfII_cell="hw3_1_adder_4bit", dfII_view="schematic", worklib_name="ECE_6240_Digital", view_name="schematic", last_save_time="Nov 20 13:15:49 2018" *)
+
+module hw3_1_adder_4bit (.Cout(Cout3), S0, S1, S2, S3, A0, A1, A2, A3, 
+    B0, B1, B2, B3, .Cin(Cin0));
+
+output  Cout3, S0, S1, S2, S3;
+
+input  A0, A1, A2, A3, B0, B1, B2, B3, Cin0;
+
+
+hw3_1_adder_1bit I3 ( .Cout(Cin1Cout0), .Sum(S0), .A(A0), .B(B0), 
+    .Cin(Cin0));
+
+hw3_1_adder_1bit I2 ( .Cout(Cin2Cout1), .Sum(S1), .A(A1), .B(B1), 
+    .Cin(Cin1Cout0));
+
+hw3_1_adder_1bit I1 ( .Cout(Cin3Cout2), .Sum(S2), .A(A2), .B(B2), 
+    .Cin(Cin2Cout1));
+
+hw3_1_adder_1bit I0 ( .Cout(Cout3), .Sum(S3), .A(A3), .B(B3), 
+    .Cin(Cin3Cout2));
+
+endmodule

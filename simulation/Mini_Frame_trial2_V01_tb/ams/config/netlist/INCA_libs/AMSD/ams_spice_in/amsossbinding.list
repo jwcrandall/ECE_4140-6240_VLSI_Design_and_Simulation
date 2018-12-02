@@ -1,0 +1,7 @@
+designtop="project_g01.Mini_Frame_trial2_V01_tb:schematic"
+cell="ami06N" view="analogtext" 
+cell="Mini_Frame_trial2_V01" lib="project_g01" view="extracted" 
+cell="capacitor" view="analogtext" 
+cell="ami06P" view="analogtext" 
+cell="vsource" view="analogtext" 
+cell="Mini_Frame_trial2_V01_tb_vdriver" lib="project_g01" view="functional" 

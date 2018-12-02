@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+ECE_6240_Digital/hw1_1_c_inverter/schematic hw1_1_c_inverter
+ECE_6240_Digital/hw3_1_mirror_adder_1bit/schematic hw3_1_mirror_adder_1bit
+ECE_6240_Digital/hw3_1_mirror_adder_1bit_tb/schematic hw3_1_mirror_adder_1bit_tb
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+p5vonly p5vonly
+$endparam

@@ -1,0 +1,7 @@
+instMap,*hw3_1_mirror_adder_1bit,*I3,*I3
+instMaster,*hw3_1_mirror_adder_1bit,*I3,*ECE_6240_Digital_hw1_1_c_inverter_schematic
+instMap,*hw3_1_mirror_adder_1bit,*I2,*I2
+instMaster,*hw3_1_mirror_adder_1bit,*I2,*ECE_6240_Digital_hw1_1_c_inverter_schematic
+netMap,*hw3_1_mirror_adder_1bit,*vdd!,*cds_globals.\vdd! 
+netMap,*hw3_1_mirror_adder_1bit,*gnd!,*cds_globals.\gnd! 
+cellMap,*hw3_1_mirror_adder_1bit,*hw3_1_mirror_adder_1bit,*ECE_6240_Digital,*schematic

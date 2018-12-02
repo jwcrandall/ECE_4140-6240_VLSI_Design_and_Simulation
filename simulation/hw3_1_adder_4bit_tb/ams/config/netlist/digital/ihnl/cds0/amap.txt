@@ -1,3 +1,3 @@
-netMap,*hw1_1_c_inverter,*vdd!,*cds_globals.\vdd! 
-netMap,*hw1_1_c_inverter,*gnd!,*cds_globals.\gnd! 
-cellMap,*hw1_1_c_inverter,*hw1_1_c_inverter,*ECE_6240_Digial,*schematic
+netMap,*hw3_1_4_Input_NOR,*vdd!,*cds_globals.\vdd! 
+netMap,*hw3_1_4_Input_NOR,*gnd!,*cds_globals.\gnd! 
+cellMap,*hw3_1_4_Input_NOR,*hw3_1_4_Input_NOR,*ECE_6240_Digital,*schematic

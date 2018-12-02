@@ -1,0 +1,19 @@
+// Library - ECE_6240_Digital, Cell - hw3_1_mirror_adder_4bit, View -
+//schematic
+// LAST TIME SAVED: Nov 29 10:30:45 2018
+// NETLIST TIME: Nov 29 10:58:11 2018
+`timescale 1ns / 1ns 
+
+`worklib ECE_6240_Digital
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="ECE_6240_Digital", dfII_cell="hw3_1_mirror_adder_4bit", dfII_view="schematic", worklib_name="ECE_6240_Digital", view_name="schematic", last_save_time="Nov 29 10:30:45 2018" *)
+
+module hw3_1_mirror_adder_4bit (Cout, .S0(S), S1, S2, S3, A0, A1, A2, 
+    A3, B0, B1, B2, B3, Cin);
+
+output  Cout, S, S1, S2, S3;
+
+input  A0, A1, A2, A3, B0, B1, B2, B3, Cin;
+

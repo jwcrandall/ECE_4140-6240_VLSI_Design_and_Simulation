@@ -1,0 +1,599 @@
+irun(64): 15.20-s045: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+file: /home/seas/jack_hirschman/cadence/project_g01/Mini_Frame_trial2_V01_tb_vdriver/functional/verilog.v
+	module project_g01.Mini_Frame_trial2_V01_tb_vdriver:functional
+		errors: 0, warnings: 0
+ncvlog: *W,SPDUSD: Include directory /home/seas/jwcrandall/cadence/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+ncvlog: Memory Usage - 21.3M program + 34.1M data = 55.4M total
+ncvlog: CPU Usage - 0.0s system + 0.2s user = 0.3s total (0.4s, 74.4% cpu)
+
+		Caching library 'worklib' ....... Done
+		Caching library 'project_g01' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		Mini_Frame_trial2_V01_tb
+		cds_globals
+	Discipline resolution Pass...
+	Doing auto-insertion of connection elements...
+	Connect Rules applied are:
+		ConnRules_3V_full_fast
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		project_g01.Mini_Frame_trial2_V01_tb_vdriver:functional <0x43c392f1>
+			streams:   6, words: 11324
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 40      22
+		Registers:              260     134
+		Scalar wires:            88       -
+		Expanded wires:          16       2
+		Vectored wires:          40       -
+		Always blocks:          163      56
+		Initial blocks:          38      26
+		Cont. assignments:       36      21
+		Interconnect:          2195       -
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: project_g01.Mini_Frame_trial2_V01_tb:config
+ncelab: Memory Usage - 49.8M program + 74.8M data = 124.6M total (Peak 264.6M)
+ncelab: CPU Usage - 0.1s system + 0.2s user = 0.3s total (0.7s, 41.6% cpu)
+Loading snapshot project_g01.Mini_Frame_trial2_V01_tb:config .................... Done
+Simulating in AMS-SIE mode...
+	Starting analog simulation engine...
+AMSD: Using spectre solver with arguments: -ahdllibdir INCA_libs/AMSD/ahdlSimDB.
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.803.isr18 64bit -- 25 Jul 2017
+Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
+        Cadence Design Systems, Inc. All others are the property of their
+        respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: jwcrandall   Host: linux02.cflab.seas.gwu.edu   HostID: A4801F8B   PID:
+        21415
+Memory  available: 28.5351 GB  physical: 33.5891 GB
+Linux   : CentOS release 6.10 (Final)
+CPU Type: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+All processors running at 3492.3 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 (  4 ),  1 (  5 ),  2 (  6 ),  3 (  7 )
+        
+System load averages (1min, 5min, 15min) : 6.5 %, 3.2 %, 1.8 %
+Hyperthreading is enabled
+
+
+Analog Kernel using -ANALOGCONTROL  ./spiceModels.scs.
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V01_tb/ams/config/netlist/spiceModels.scs
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V01_tb/ams/config/netlist/netlist.vams
+Reading link:  /apps/vlsi_2018/cadence/INCISIVE152/tools
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2.vams
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V01_tb/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__E2L_2__module__0x10000001_behavioral.
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V01_tb/ams/config/netlist/INCA_libs/AMSD/ahdlSimDB/3152_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V01_tb/ams/config/netlist/cds_globals.vams
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file: 
+        /apps/design_kits/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V01_tb/ams/config/netlist/amsControlSpectre.scs
+Reading file: 
+        /home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V01_tb/ams/config/netlist/.amsbind.scs
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/configs/spectre.cfg
+Time for NDB Parsing: CPU = 1.15582 s, elapsed = 1.77936 s.
+Time accumulated: CPU = 1.3068 s, elapsed = 1.77936 s.
+Peak resident memory used = 265 Mbytes.
+
+ncsim> source /apps/vlsi_2018/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> # This is the NC-SIM(R) probe command file
+ncsim> # used in the AMS-ADE integration.
+ncsim> 
+ncsim> 
+ncsim> #
+ncsim> # Database settings
+ncsim> #
+ncsim> if { [info exists ::env(AMS_RESULTS_DIR) ] } { set AMS_RESULTS_DIR $env(AMS_RESULTS_DIR)} else {set AMS_RESULTS_DIR "../psf"}
+../psf
+ncsim> database -open ams_database -into ${AMS_RESULTS_DIR} -default
+Created default SHM database ams_database
+ncsim> 
+ncsim> #
+ncsim> # Probe settings
+ncsim> #
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.A[0]}
+Created probe 1
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.A[1]}
+Created probe 2
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.A[2]}
+Created probe 3
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.A[3]}
+Created probe 4
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.A[4]}
+Created probe 5
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.A[5]}
+Created probe 6
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.A[6]}
+Created probe 7
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.A[7]}
+Created probe 8
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.B[0]}
+Created probe 9
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.B[1]}
+Created probe 10
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.B[2]}
+Created probe 11
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.B[3]}
+Created probe 12
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.B[4]}
+Created probe 13
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.B[5]}
+Created probe 14
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.B[6]}
+Created probe 15
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.B[7]}
+Created probe 16
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1}
+Created probe 17
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2}
+Created probe 18
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1A[0]}
+Created probe 19
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1A[1]}
+Created probe 20
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1A[2]}
+Created probe 21
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1A[3]}
+Created probe 22
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1A[4]}
+Created probe 23
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1A[5]}
+Created probe 24
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1A[6]}
+Created probe 25
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1A[7]}
+Created probe 26
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1B[0]}
+Created probe 27
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1B[1]}
+Created probe 28
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1B[2]}
+Created probe 29
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1B[3]}
+Created probe 30
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1B[4]}
+Created probe 31
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1B[5]}
+Created probe 32
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1B[6]}
+Created probe 33
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1B[7]}
+Created probe 34
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[0]}
+Created probe 35
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[1]}
+Created probe 36
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[2]}
+Created probe 37
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[3]}
+Created probe 38
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[4]}
+Created probe 39
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[5]}
+Created probe 40
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[6]}
+Created probe 41
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[7]}
+Created probe 42
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[8]}
+Created probe 43
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[9]}
+Created probe 44
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[10]}
+Created probe 45
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[11]}
+Created probe 46
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[12]}
+Created probe 47
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[13]}
+Created probe 48
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[14]}
+Created probe 49
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk1F[15]}
+Created probe 50
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2A[0]}
+Created probe 51
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2A[1]}
+Created probe 52
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2A[2]}
+Created probe 53
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2A[3]}
+Created probe 54
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2A[4]}
+Created probe 55
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2A[5]}
+Created probe 56
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2A[6]}
+Created probe 57
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2A[7]}
+Created probe 58
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2B[0]}
+Created probe 59
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2B[1]}
+Created probe 60
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2B[2]}
+Created probe 61
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2B[3]}
+Created probe 62
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2B[4]}
+Created probe 63
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2B[5]}
+Created probe 64
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2B[6]}
+Created probe 65
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2B[7]}
+Created probe 66
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[0]}
+Created probe 67
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[1]}
+Created probe 68
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[2]}
+Created probe 69
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[3]}
+Created probe 70
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[4]}
+Created probe 71
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[5]}
+Created probe 72
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[6]}
+Created probe 73
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[7]}
+Created probe 74
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[8]}
+Created probe 75
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[9]}
+Created probe 76
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[10]}
+Created probe 77
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[11]}
+Created probe 78
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[12]}
+Created probe 79
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[13]}
+Created probe 80
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[14]}
+Created probe 81
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.Clk2F[15]}
+Created probe 82
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[0]}
+Created probe 83
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[1]}
+Created probe 84
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[2]}
+Created probe 85
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[3]}
+Created probe 86
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[4]}
+Created probe 87
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[5]}
+Created probe 88
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[6]}
+Created probe 89
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[7]}
+Created probe 90
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[8]}
+Created probe 91
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[9]}
+Created probe 92
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[10]}
+Created probe 93
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[11]}
+Created probe 94
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[12]}
+Created probe 95
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[13]}
+Created probe 96
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[14]}
+Created probe 97
+ncsim> probe -create -emptyok -database ams_database {Mini_Frame_trial2_V01_tb.F[15]}
+Created probe 98
+ncsim> probe -create -emptyok -database ams_database {cds_globals.\vdd! }
+Created probe 99
+ncsim> probe -create -emptyok -database ams_database {cds_globals.\gnd! }
+Created probe 100
+ncsim> 
+ncsim> run
+
+The CPU load for active processors is :
+        Spectre  0 (62.6 %)      1 (10.4 %)      2 (20.9 %)      3 (6.3 %)
+                 4 (10.9 %)      5 (3.1 %)       6 (5.7 %)       7 (3.1 %)
+        Other   
+Reading link: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file: 
+        /apps/vlsi_2018/cadence/INCISIVE152/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 198.97 ms, elapsed = 278.562 ms.
+Time accumulated: CPU = 1.50577 s, elapsed = 2.05805 s.
+Peak resident memory used = 302 Mbytes.
+
+
+Notice from spectre in
+        `project_g01__Mini_Frame_trial2_V01__extracted__0x10000001':`Mini_Frame_trial2_V01_tb.I13',
+        in
+        `project_g01__Mini_Frame_trial2_V01_tb__schematic__0x10000001':`Mini_Frame_trial2_V01_tb',
+        during hierarchy flattening.
+    Mini_Frame_trial2_V01_tb.I13.+2924: Terminals are not distinct.
+    Mini_Frame_trial2_V01_tb.I13.+2923: Terminals are not distinct.
+    Mini_Frame_trial2_V01_tb.I13.+2906: Terminals are not distinct.
+    Mini_Frame_trial2_V01_tb.I13.+2905: Terminals are not distinct.
+    Mini_Frame_trial2_V01_tb.I13.+2888: Terminals are not distinct.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+Time for EDB Visiting: CPU = 74.989 ms, elapsed = 75.6271 ms.
+Time accumulated: CPU = 1.58076 s, elapsed = 2.13385 s.
+Peak resident memory used = 321 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to the following 395 nodes:
+        Mini_Frame_trial2_V01_tb.I13.1635
+        Mini_Frame_trial2_V01_tb.I13.1636
+        Mini_Frame_trial2_V01_tb.I13.1637
+        Mini_Frame_trial2_V01_tb.I13.1638
+        Mini_Frame_trial2_V01_tb.I13.1639
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+    No DC path from node `Mini_Frame_trial2_V01_tb.I13.1593' to ground, Gmin
+        installed to provide path.
+    No DC path from node `Mini_Frame_trial2_V01_tb.I13.1594' to ground, Gmin
+        installed to provide path.
+    No DC path from node `Mini_Frame_trial2_V01_tb.I13.1595' to ground, Gmin
+        installed to provide path.
+    No DC path from node `Mini_Frame_trial2_V01_tb.I13.1635' to ground, Gmin
+        installed to provide path.
+    No DC path from node `Mini_Frame_trial2_V01_tb.I13.1636' to ground, Gmin
+        installed to provide path.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+Global user options:
+      addflowsuffix = yes
+        dotprobefmt = hier
+               temp = 27
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+             pivrel = 0.001
+     checklimitdest = psf
+             rawfmt = sst2
+               save = selected
+               tnom = 27
+              scale = 1
+             scalem = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 2259
+            bsim3v3 5666  
+          capacitor 7057  
+connectLib__E2L_2__module__0x10000001_behavioral 18    
+connectLib__L2E_2__module__0x10000001_behavioral 18    
+            vsource 1     
+
+Analysis and control statement inventory:
+               info 4     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 38    
+
+
+Notice from spectre.
+    641 notices suppressed.
+
+Time for parsing: CPU = 27.995 ms, elapsed = 39.017 ms.
+Time accumulated: CPU = 1.60975 s, elapsed = 2.17303 s.
+Peak resident memory used = 323 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 20 us)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is
+        recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 102.985 ms, elapsed = 103.781 ms.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 20 us
+    step = 20 ns
+    maxstep = 400 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   37      (voltage)
+
+    tran: time = 620 ns       (3.1 %), step = 320 ns        (1.6 %)
+                   1 A =00000000, B =00000000, Clk1 = 1, Clk2 = 1, F = 0000000000000000
+    tran: time = 1.566 us    (7.83 %), step = 280.7 ns      (1.4 %)
+                   2 A =00000000, B =00000000, Clk1 = 1, Clk2 = 0, F = 0000000000000000
+    tran: time = 2.888 us    (14.4 %), step = 400 ns          (2 %)
+PASS: A =   0, B =   0, Expected Product =     0, F =     0
+                   3 A =00000000, B =00000000, Clk1 = 0, Clk2 = 0, F = 0000000000000000
+
+Notice from spectre at time = 3.24659 us during transient analysis `tran'.
+    Found trapezoidal ringing on node Mini_Frame_trial2_V01_tb.I13.1662.
+Notice from spectre at time = 3.48826 us during transient analysis `tran'.
+    Found trapezoidal ringing on node Mini_Frame_trial2_V01_tb.I13.1662.
+Notice from spectre at time = 3.88826 us during transient analysis `tran'.
+    Found trapezoidal ringing on node Mini_Frame_trial2_V01_tb.I13.1662.
+
+    tran: time = 3.888 us    (19.4 %), step = 400 ns          (2 %)
+
+Notice from spectre at time = 4.28826 us during transient analysis `tran'.
+    Found trapezoidal ringing on node Mini_Frame_trial2_V01_tb.I13.1662.
+Notice from spectre at time = 4 us during transient analysis `tran'.
+    Found trapezoidal ringing on node Mini_Frame_trial2_V01_tb.I13.1662.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+                   4 A =00000000, B =00000001, Clk1 = 0, Clk2 = 1, F = 0000000000000000
+
+    tran: time = 4.55 us     (22.7 %), step = 272.6 ns     (1.36 %)
+                   5 A =00000000, B =00000001, Clk1 = 1, Clk2 = 1, F = 0000000000000000
+    tran: time = 5.603 us      (28 %), step = 300.8 ns      (1.5 %)
+PASS: A =   0, B =   1, Expected Product =     0, F =     0
+                   6 A =00000000, B =00000001, Clk1 = 1, Clk2 = 0, F = 0000000000000000
+    tran: time = 6.888 us    (34.4 %), step = 400 ns          (2 %)
+                   7 A =00000000, B =00000010, Clk1 = 0, Clk2 = 0, F = 0000000000000000
+    tran: time = 7.517 us    (37.6 %), step = 255.8 ns     (1.28 %)
+                   8 A =00000000, B =00000010, Clk1 = 0, Clk2 = 1, F = 0000000000000000
+    tran: time = 8.603 us      (43 %), step = 300.5 ns      (1.5 %)
+PASS: A =   0, B =   2, Expected Product =     0, F =     0
+                   9 A =00000000, B =00000010, Clk1 = 1, Clk2 = 1, F = 0000000000000000
+    tran: time = 9.581 us    (47.9 %), step = 289.6 ns     (1.45 %)
+                  10 A =00000000, B =00000011, Clk1 = 1, Clk2 = 0, F = 0000000000000000
+    tran: time = 10.52 us    (52.6 %), step = 255.3 ns     (1.28 %)
+                  11 A =00000000, B =00000011, Clk1 = 0, Clk2 = 0, F = 0000000000000000
+    tran: time = 11.89 us    (59.4 %), step = 400 ns          (2 %)
+PASS: A =   0, B =   3, Expected Product =     0, F =     0
+                  12 A =00000000, B =00000011, Clk1 = 0, Clk2 = 1, F = 0000000000000000
+    tran: time = 12.58 us    (62.9 %), step = 289.3 ns     (1.45 %)
+                  13 A =00000000, B =00000100, Clk1 = 1, Clk2 = 1, F = 0000000000000000
+    tran: time = 13.51 us    (67.6 %), step = 254.8 ns     (1.27 %)
+                  14 A =00000000, B =00000100, Clk1 = 1, Clk2 = 0, F = 0000000000000000
+    tran: time = 14.89 us    (74.4 %), step = 400 ns          (2 %)
+PASS: A =   0, B =   4, Expected Product =     0, F =     0
+                  15 A =00000000, B =00000100, Clk1 = 0, Clk2 = 0, F = 0000000000000000
+    tran: time = 15.89 us    (79.4 %), step = 400 ns          (2 %)
+                  16 A =00000000, B =00000101, Clk1 = 0, Clk2 = 1, F = 0000000000000000
+    tran: time = 16.9 us     (84.5 %), step = 400 ns          (2 %)
+                  17 A =00000000, B =00000101, Clk1 = 1, Clk2 = 1, F = 0000000000000000
+    tran: time = 17.6 us       (88 %), step = 300.8 ns      (1.5 %)
+PASS: A =   0, B =   5, Expected Product =     0, F =     0
+                  18 A =00000000, B =00000101, Clk1 = 1, Clk2 = 0, F = 0000000000000000
+    tran: time = 18.89 us    (94.4 %), step = 400 ns          (2 %)
+                  19 A =00000000, B =00000110, Clk1 = 0, Clk2 = 0, F = 0000000000000000
+    tran: time = 19.52 us    (97.6 %), step = 255.2 ns     (1.28 %)
+
+The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
+Simulation stopped via transient analysis stoptime at time 20 US
+Memory Usage - 38.6M program + 642.9M data = 681.5M total
+CPU Usage - 0.3s system + 11.0s user = 11.2s total (84.8% cpu)
+ncsim> exit
+Number of accepted tran steps =             519
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   Parasitics slow down simulation. To speed up, consider
+          add +postlayout on command line
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (16.5 %)      1 (82.2 %)      2 (4.8 %)       3 (1.5 %)
+                 4 (5.8 %)       6 (1.8 %)      
+        Other   
+Initial condition solution time: CPU = 103.984 ms, elapsed = 103.861 ms.
+
+**** AMSD: Mixed-Signal Activity Statistics ****
+Number of A-to-D events:                      36
+  Number of A-to-D events in IEs:             36
+Number of D-to-A events:                      85
+  Number of D-to-A events in IEs:             85
+Number of VHDL-AMS Breaks:                     0
+
+Intrinsic tran analysis time:    CPU = 9.52255 s, elapsed = 9.53073 s.
+Total time required for tran analysis `tran': CPU = 9.63854 s, elapsed =
+        9.64779 s.
+Time accumulated: CPU = 11.2513 s, elapsed = 11.8255 s.
+Peak resident memory used = 325 Mbytes.
+
+
+Notice from spectre.
+    27 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+Simulation complete via transient analysis stoptime at time 20 US
+
+Aggregate audit (7:32:50 PM, Sat Dec 1, 2018):
+Time used: CPU = 11.9 s, elapsed = 12.6 s, util. = 94.1%.
+Time spent in licensing: elapsed = 80 ms.
+Peak memory used = 326 Mbytes.
+Simulation started at: 7:32:38 PM, Sat Dec 1, 2018, ended at: 7:32:50 PM, Sat
+        Dec 1, 2018, with elapsed time (wall clock): 12.6 s.
+spectre completes with 0 errors, 0 warnings, and 19 notices.
+ncsim: Memory Usage - 38.6M program + 642.8M data = 681.4M total (681.6M Peak)
+ncsim: CPU Usage - 0.4s system + 11.5s user = 11.9s total (14.1s, 84.5% cpu)

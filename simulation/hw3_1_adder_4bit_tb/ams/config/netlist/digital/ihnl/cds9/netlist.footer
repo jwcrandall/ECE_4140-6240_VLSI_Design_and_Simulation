@@ -1,0 +1,27 @@
+
+hw3_1_4_Input_OR I43 ( .Out(Sum), .A(net20), .B(net19), .C(net18), 
+    .D(net17));
+
+hw3_1_2_Input_AND I38 ( .Out(net15), .A(B), .B(Cin));
+
+hw3_1_2_Input_AND I37 ( .Out(net34), .A(A), .B(Cin));
+
+hw3_1_2_Input_AND I36 ( .Out(net16), .A(A), .B(B));
+
+hw3_1_3_Input_OR I42 ( .Out(Cout), .A(net16), .B(net34), .C(net15));
+
+hw1_1_c_inverter I2 ( .VOUT(net14), .VIN(Cin));
+
+hw1_1_c_inverter I1 ( .VOUT(net11), .VIN(B));
+
+hw1_1_c_inverter I0 ( .VOUT(net8), .VIN(A));
+
+hw3_1_3_Input_AND I32 ( .Out(net20), .A(net8), .B(B), .C(net14));
+
+hw3_1_3_Input_AND I33 ( .Out(net19), .A(A), .B(net11), .C(net14));
+
+hw3_1_3_Input_AND I34 ( .Out(net18), .A(net8), .B(net11), .C(Cin));
+
+hw3_1_3_Input_AND I35 ( .Out(net17), .A(A), .B(B), .C(Cin));
+
+endmodule

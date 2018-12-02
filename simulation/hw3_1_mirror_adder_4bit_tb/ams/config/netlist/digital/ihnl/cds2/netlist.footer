@@ -1,0 +1,14 @@
+
+hw3_1_mirror_adder_1bit I3 ( .Cout(net30), .S(S), .A(A0), .B(B0), 
+    .Cin(Cin));
+
+hw3_1_mirror_adder_1bit I2 ( .Cout(net29), .S(S1), .A(A1), .B(B1), 
+    .Cin(net30));
+
+hw3_1_mirror_adder_1bit I1 ( .Cout(Cout), .S(S3), .A(A3), .B(B3), 
+    .Cin(net28));
+
+hw3_1_mirror_adder_1bit I0 ( .Cout(net28), .S(S2), .A(A2), .B(B2), 
+    .Cin(net29));
+
+endmodule

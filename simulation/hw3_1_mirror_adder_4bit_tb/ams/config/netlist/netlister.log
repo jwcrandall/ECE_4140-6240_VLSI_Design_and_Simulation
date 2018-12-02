@@ -1,0 +1,70 @@
+Begin Netlisting Nov 29 10:59:48 2018
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/seas/jwcrandall/cadence/simulation/hw3_1_mirror_adder_4bit_tb/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped
+table, set 
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the
+.simrc file 
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+WARNING (OSSHNL-159): The primitive,
+'ECE_6240_Digital/hw3_1_mirror_adder_4bit_tb_vdriver/functional', has been
+updated since the last netlisting session
+in this current run directory.
+Therefore, re-netlisting all cell views where
+this primitive is instantiated.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all
+stopping and 
+non-stopping cells.
+ 
+WARNING (VLOGNET-110): The cell
+'ECE_6240_Digital/hw3_1_mirror_adder_4bit_tb/schematic' has no ports. Make sure
+that this was the intended 
+design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+vdc                         spectre              *Stopping View*  
+hw3_1_mirror_adder_4bit_tb_vdriver   functional           *Stopping View*  
+pmos4                       spectre              *Stopping View*  
+nmos4                       spectre              *Stopping View*  
+hw3_1_mirror_adder_4bit_tb   schematic                             
+
+---------- End of netlist configuration information   ----------
+WARNING (OSSHNL-159): The primitive,
+'ECE_6240_Digital/hw3_1_mirror_adder_4bit_tb_vdriver/functional', has been
+updated since the last netlisting session
+in this current run directory.
+Therefore, re-netlisting all cell views where
+this primitive is instantiated.
+
+Running netlist assembly..
+End netlisting Nov 29 10:59:54 2018

@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "17.1.0.160.isr2"
-"date" "8:23:55 PM, Sat Nov 24, 2018"
+"date" "12:01:57 AM, Tue Nov 27, 2018"
 "design" "// Generated for: spectre"
 "analysis type" "info.subckts"
 "analysis name" "subckts"
@@ -21,51 +21,51 @@ VALUE
 "hw3_1_3_Input_OR" "subckt" (
 ""
 "A B C Out 0 vdd!"
-"I13.I42"
+"I15.I42"
 )
 "hw1_3_CMOS_3_Input_NAND" "subckt" (
 ""
 "A B C Out vdd! 0"
-"I13.I35.I0 I13.I34.I0 I13.I33.I0 I13.I32.I0"
+"I15.I32.I0 I15.I33.I0 I15.I34.I0 I15.I35.I0"
 )
-"hw1_3_CMOS_2_Input_NOR" "subckt" (
+"hw3_1_4_Input_OR" "subckt" (
 ""
-"A B Out 0 vdd!"
-"I13.I41.I0 I13.I40.I0 I13.I39.I0"
+"A B C D Out 0 vdd!"
+"I15.I43"
+)
+"hw3_1_4_Input_NOR" "subckt" (
+""
+"A B C D Out 0 vdd!"
+"I15.I43.I0"
 )
 "hw1_3_CMOS_2_Input_NAND" "subckt" (
 ""
 "A B Out vdd! 0"
-"I13.I38.I0 I13.I37.I0 I13.I36.I0"
+"I15.I38.I0 I15.I37.I0 I15.I36.I0"
 )
 "hw3_1_3_Input_AND" "subckt" (
 ""
 "A B C Out vdd! 0"
-"I13.I35 I13.I34 I13.I33 I13.I32"
+"I15.I32 I15.I33 I15.I34 I15.I35"
 )
 "hw1_1_c_inverter" "subckt" (
 ""
 "VIN VOUT vdd! 0"
-"I13.I41.I1 I13.I40.I1 I13.I39.I1 I13.I38.I1 I13.I37.I1 I13.I36.I1 I13.I42.I1 I13.I2 I13.I1 I13.I0 I13.I35.I1 I13.I34.I1 I13.I33.I1 I13.I32.I1"
+"I15.I43.I1 I15.I38.I1 I15.I37.I1 I15.I36.I1 I15.I42.I1 I15.I2 I15.I1 I15.I0 I15.I32.I1 I15.I33.I1 I15.I34.I1 I15.I35.I1"
 )
 "hw3_1_2_Input_AND" "subckt" (
 ""
 "A B Out vdd! 0"
-"I13.I38 I13.I37 I13.I36"
-)
-"hw3_1_2_Input_OR" "subckt" (
-""
-"A B Out 0 vdd!"
-"I13.I41 I13.I40 I13.I39"
+"I15.I38 I15.I37 I15.I36"
 )
 "hw3_1_adder_1bit" "subckt" (
 ""
 "A B Cin Cout Sum 0 vdd!"
-"I13"
+"I15"
 )
 "hw1_3_CMOS_3_Input_NOR" "subckt" (
 ""
 "A B C Out 0 vdd!"
-"I13.I42.I0"
+"I15.I42.I0"
 )
 END

@@ -1,0 +1,5 @@
+
+// Library name: ECE_6240_Digital
+// Cell name: hw3_1_mirror_adder_1bit
+// View name: schematic
+subckt hw3_1_mirror_adder_1bit A B Cin Cout S

@@ -1,14 +1,63 @@
-\o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 12/05/2017 23:54 (sjfhw305) $
-\o Sub version:		sub-version  s061 
-\o Arguments:		-cdslib /home/seas/jwcrandall/cadence/cds.lib -mpssession virtuoso5949 -mpshost linux03.cflab.seas.gwu.edu 
-\o Working Directory:	linux03.cflab.seas.gwu.edu:/home/seas/jwcrandall/cadence
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 07/19/2018 21:11 (sjfnl053) $
+\o Sub version:		sub-version  s221 
+\o Arguments:		-display localhost:10.0 -mpssession virtuoso15318 -mpshost linux02.cflab.seas.gwu.edu -namespace CDBA -cdslib /home/seas/jwcrandall/cadence/cds.lib 
+\o Working Directory:	linux02.cflab.seas.gwu.edu:/home/seas/jwcrandall/cadence
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
 \o Qt version: 		4.8.5
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "analogLib"
-\a nrResizeWindow(cdsLibEditor list(0 25 500 400))
+\a nrResizeWindow(cdsLibEditor list(0 1 500 400))
+\a nrResizeWindow(cdsLibEditor list(0 1 734 442))
+\a nrResizeWindow(cdsLibEditor list(0 1 854 519))
+\a nrListItemAction(cdsLibEditor->mainTable 19 1)
+\o Active cell: 19 1 "6218_Final_Project"
+\a nrListItemAction(cdsLibEditor->mainTable 23 1)
+\o Active cell: 23 1 "/home/seas/jwcrandall/cadence/ECE_6240_Digital"
+\a nrListItemAction(cdsLibEditor->mainTable 19 1)
+\o Active cell: 19 1 "6218_Final_Project"
+\a nrListItemRename(cdsLibEditor->mainTable, 19 1 "/home/seas/jwcrandall/cadence/6218_Final_Project")
+\o QUESTION (CLE-200): The directory "/home/seas/jwcrandall/cadence/6218_Final_Project" \ndoesn't exist. If other tools use this file, \nan error will occur unless you either create \nthe directory you have specified or change the \npath to an existing directory. \n\nDo you want to create a new library? 
+\a nrSetWindowVisibility(needCreateDialog "show")
+\a nrSetCurrentWindow(needCreateDialog)
+\a nrResizeWindow(needCreateDialog list(217 23 420 200))
+\a needCreateDialog->yesButton->value = t
+\a newLibraryDialog->filePathComboBox->value = "/home/seas/jwcrandall/cadence"
+\a newLibraryDialog->libraryName->value = "6218_Final_Project"
+\a newLibraryDialog->useMappedName->value = nil
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrListItemAction(cdsLibEditor->mainTable 20 1)
+\o Active cell: 20 1 "analog_ece6218"
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(161 23 531 513))
+\a newLibraryDialog->okButton->value = t
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 26 0)
+\o Active cell: 26 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 20 1)
+\o Active cell: 20 1 "analog_ece6218"
+\a nrListItemRename(cdsLibEditor->mainTable, 20 1 "/home/seas/jwcrandall/cadence/analog_ece6218")
+\o QUESTION (CLE-200): The directory "/home/seas/jwcrandall/cadence/analog_ece6218" \ndoesn't exist. If other tools use this file, \nan error will occur unless you either create \nthe directory you have specified or change the \npath to an existing directory. \n\nDo you want to create a new library? 
+\a nrSetWindowVisibility(needCreateDialog "show")
+\a nrSetCurrentWindow(needCreateDialog)
+\a nrResizeWindow(needCreateDialog list(217 23 420 200))
+\a needCreateDialog->yesButton->value = t
+\a newLibraryDialog->libraryName->value = "analog_ece6218"
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrListItemAction(cdsLibEditor->mainTable 21 0)
+\o Active cell: 21 0 "connectLib"
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(161 23 531 513))
+\a newLibraryDialog->okButton->value = t
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 26 0)
+\o Active cell: 26 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->fileSaveButton->value = t
 \a cdsLibEditor->fileExitButton->value = t
 \a nrSetWindowVisibility(cdsLibEditor "hide")
 \a exit(0)

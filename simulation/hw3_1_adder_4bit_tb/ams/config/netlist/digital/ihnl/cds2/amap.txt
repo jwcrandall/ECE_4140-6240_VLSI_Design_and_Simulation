@@ -1,3 +1,7 @@
-netMap,*hw1_3_CMOS_2_Input_NAND,*vdd!,*cds_globals.\vdd! 
-netMap,*hw1_3_CMOS_2_Input_NAND,*gnd!,*cds_globals.\gnd! 
-cellMap,*hw1_3_CMOS_2_Input_NAND,*hw1_3_CMOS_2_Input_NAND,*ECE_6240_Digial,*schematic
+instMap,*hw3_1_4_Input_OR,*I0,*I0
+instMaster,*hw3_1_4_Input_OR,*I0,*ECE_6240_Digital_hw3_1_4_Input_NOR_schematic
+instMap,*hw3_1_4_Input_OR,*I1,*I1
+instMaster,*hw3_1_4_Input_OR,*I1,*ECE_6240_Digital_hw1_1_c_inverter_schematic
+netMap,*hw3_1_4_Input_OR,*vdd!,*cds_globals.\vdd! 
+netMap,*hw3_1_4_Input_OR,*gnd!,*cds_globals.\gnd! 
+cellMap,*hw3_1_4_Input_OR,*hw3_1_4_Input_OR,*ECE_6240_Digital,*schematic

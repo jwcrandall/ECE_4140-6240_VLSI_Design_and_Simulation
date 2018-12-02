@@ -1,0 +1,9 @@
+Begin Incremental Netlisting Nov 30 12:31:48 2018
+WARNING (OSSHNL-176): Property bag for the cell 'hw3_2_dynamic_domino_cmos_3_tb'
+in library 'ECE_6240_Digital', has been modified or added
+since the last
+netlisting session. Therefore, re-netlisting this cell view and
+all cell views
+where this cell is instantiated.
+
+End netlisting Nov 30 12:31:48 2018

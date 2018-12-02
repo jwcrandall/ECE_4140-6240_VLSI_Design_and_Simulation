@@ -1,6 +1,6 @@
 
-// Library name: ECE_6240_Digial
-// Cell name: hw1_3_CMOS_2_Input_NOR
+// Library name: ECE_6240_Digital
+// Cell name: hw3_1_2_Input_AND
 // View name: schematic
 // Inherited view list: schematic
-subckt hw1_3_CMOS_2_Input_NOR
+subckt hw3_1_2_Input_AND

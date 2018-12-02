@@ -1,15 +1,15 @@
 hnlLastStopCellInfo = '(
                            ( "NCSU_Analog_Parts" "vdc" "spectre" "33" "1184248850" )
-                          ( "ECE_6240_Digial" "hw3_1_adder_4bit_tb_vdriver" "functional" "1542580081" "1542580081" )
-                          ( "NCSU_Analog_Parts" "pmos4" "spectre" "47" "1184248839" )
+                          ( "ECE_6240_Digital" "hw3_1_adder_4bit_tb_vdriver" "functional" "1543346726" "1543346726" )
                           ( "NCSU_Analog_Parts" "nmos4" "spectre" "47" "1184248838" )
+                          ( "NCSU_Analog_Parts" "pmos4" "spectre" "47" "1184248839" )
                        )
 hnlLastNetlistConfig = t
-hnlLastConfigFileVersion = 3
-hnlLastConfigFileTimeStamp = "1542344304"
+hnlLastConfigFileVersion = 4
+hnlLastConfigFileTimeStamp = "1542737749"
 hnlLastSupportNewConfig = t
 hnlLastConfigInfo = '( 
-( "ECE_6240_Digial" "hw3_1_adder_4bit_tb" "config" 3 "1542344304" )
+( "ECE_6240_Digital" "hw3_1_adder_4bit_tb" "config" 4 "1542737749" )
 ) 
 hnlLastMaxNameLength = 2000
 hnlLastNamePrefix = "hnl_"
@@ -1623,7 +1623,7 @@ hnlLastNetNameDifferentFrom = '( "instance" "parameter" )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( "net" )
 hnlLastLibInfo = '(
-                    ( "ECE_6240_Digial" "1539723942" )
+                    ( "ECE_6240_Digital" "1543335562" )
                   )
 hnlLastConstants = '(
                       ""

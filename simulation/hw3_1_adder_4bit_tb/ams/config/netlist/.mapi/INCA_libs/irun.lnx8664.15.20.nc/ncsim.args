@@ -18,7 +18,7 @@ DLCLAP
 -amsdlibdir
 /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/.mapi//INCA_libs/AMSD
 -XLSTIME
-1542580085
+1543347214
 -XLKEEP
 -XLMODE
 /home/seas/jwcrandall/cadence/simulation/hw3_1_adder_4bit_tb/ams/config/netlist/.mapi//INCA_libs/irun.lnx8664.15.20.nc

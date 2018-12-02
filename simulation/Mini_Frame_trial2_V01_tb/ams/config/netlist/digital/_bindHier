@@ -1,0 +1,8 @@
+("NCSU_Analog_Parts" "vdc" "spectre" "spectre") nil
+("NCSU_Analog_Parts" "nmos4" "spectre" "spectre") nil
+("project_g01" "Mini_Frame_trial2_V01_tb_vdriver" "functional" "functional") nil
+("NCSU_Analog_Parts" "cap" "spectre" "spectre") nil
+("NCSU_Analog_Parts" "pmos4" "spectre" "spectre") nil
+("project_g01" "Mini_Frame_trial2_V01" "extracted" "extracted") nil
+("NCSU_Analog_Parts" "pcapacitor" "spectre" "spectre") nil
+("project_g01" "Mini_Frame_trial2_V01_tb" "schematic" "schematic") nil

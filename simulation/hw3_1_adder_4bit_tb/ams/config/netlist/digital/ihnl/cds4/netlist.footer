@@ -1,2 +1,6 @@
 
+hw1_3_CMOS_2_Input_NAND I0 ( .Out(net7), .A(A), .B(B));
+
+hw1_1_c_inverter I1 ( .VOUT(Out), .VIN(net7));
+
 endmodule

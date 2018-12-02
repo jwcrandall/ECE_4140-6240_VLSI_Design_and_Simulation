@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "hw3_2_dynamic_domino_cmos_4_tb"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnda! vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/seas/jwcrandall/cadence/simulation/hw3_2_dynamic_domino_cmos_4_tb/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "ECE_6240_Digital/hw3_2_dynamic_domino_cmos_4_tb/schematic" "hw3_2_dynamic_domino_cmos_4_tb" )
+( "ECE_6240_Digital/hw3_2_dynamic_domino_cmos_4/schematic" "hw3_2_dynamic_domino_cmos_4" )
+( "ECE_6240_Digital/hw1_1_c_inverter/schematic" "hw1_1_c_inverter" )
+ )
+( "hw3_2_dynamic_domino_cmos_4_tb" "ihnl/cds2/map" )
+( "hw1_1_c_inverter" "ihnl/cds0/map" )
+( "hw3_2_dynamic_domino_cmos_4" "ihnl/cds1/map" )
+ )

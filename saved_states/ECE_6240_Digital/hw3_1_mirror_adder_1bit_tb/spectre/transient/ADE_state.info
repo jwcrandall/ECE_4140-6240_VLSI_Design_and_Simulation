@@ -1,0 +1,3 @@
+projectDir = '"./simulation"
+designInfo = '("ECE_6240_Digital" "hw3_1_mirror_adder_1bit_tb" "schematic" "spectre")
+descriptionText = "None"

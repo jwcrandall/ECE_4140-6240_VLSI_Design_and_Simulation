@@ -1,0 +1,10 @@
+
+hw3_1_mirror_adder_4bit_tb_vdriver I37 ( .A_data(A_data), 
+    .B_data(B_data), .c_in(Cin), .c_out(Cout), .sum(sum));
+
+hw3_1_mirror_adder_4bit I36 ( .Cout(Cout), .S0(sum[0]), .S1(sum[1]), 
+    .S2(sum[2]), .S3(sum[3]), .A0(A_data[0]), .A1(A_data[1]), 
+    .A2(A_data[2]), .A3(A_data[3]), .B0(B_data[0]), .B1(B_data[1]), 
+    .B2(B_data[2]), .B3(B_data[3]), .Cin(Cin));
+
+endmodule

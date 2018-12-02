@@ -1,0 +1,12 @@
+CADENCE IHNL04120
+$model
+project_g01/Mini_Frame_trial2_V01_tb/schematic project_g01/Mini_Frame_trial2_V01_tb/schematic/schematic/project_g01_Mini_Frame_trial2_V01_tb_config/1 Mini_Frame_trial2_V01_tb
+project_g01/Mini_Frame_trial2_V01/extracted project_g01/Mini_Frame_trial2_V01/extracted/extracted/project_g01_Mini_Frame_trial2_V01_tb_config/0 Mini_Frame_trial2_V01
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+vdd! cds_globals.\vdd! 
+$endnet
+$param
+p5vonly cds_globals.p5vonly
+$endparam

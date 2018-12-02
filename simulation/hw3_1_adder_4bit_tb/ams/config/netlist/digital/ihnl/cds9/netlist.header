@@ -1,0 +1,18 @@
+// Library - ECE_6240_Digital, Cell - hw3_1_adder_1bit, View -
+//schematic
+// LAST TIME SAVED: Nov 27 00:01:10 2018
+// NETLIST TIME: Nov 27 14:33:38 2018
+`timescale 1ns / 1ns 
+
+`worklib ECE_6240_Digital
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="ECE_6240_Digital", dfII_cell="hw3_1_adder_1bit", dfII_view="schematic", worklib_name="ECE_6240_Digital", view_name="schematic", last_save_time="Nov 27 00:01:10 2018" *)
+
+module hw3_1_adder_1bit (Cout, Sum, A, B, Cin);
+
+output  Cout, Sum;
+
+input  A, B, Cin;
+

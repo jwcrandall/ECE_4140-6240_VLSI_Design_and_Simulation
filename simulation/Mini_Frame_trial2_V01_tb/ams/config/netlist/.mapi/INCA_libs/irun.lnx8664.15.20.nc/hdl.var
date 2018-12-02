@@ -1,0 +1,5 @@
+define NCSIMRC	( /apps/vlsi_2018/cadence/INCISIVE152/tools/inca/files/ncsimrc, ~/.ncsimrc )
+include ./hdlrun.var
+define SNAPSHOT project_g01.Mini_Frame_trial2_V01_tb_vdriver:functional
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP ( + => worklib )

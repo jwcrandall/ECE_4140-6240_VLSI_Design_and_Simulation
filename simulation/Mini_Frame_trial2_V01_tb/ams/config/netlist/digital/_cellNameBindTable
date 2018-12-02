@@ -1,0 +1,7 @@
+("NCSU_Analog_Parts" "vdc" "spectre") "vsource"
+("NCSU_Analog_Parts" "nmos4" "spectre") "ami06N"
+("project_g01" "Mini_Frame_trial2_V01_tb_vdriver" "functional") "Mini_Frame_trial2_V01_tb_vdriver"
+("NCSU_Analog_Parts" "cap" "spectre") "capacitor"
+("NCSU_Analog_Parts" "pmos4" "spectre") "ami06P"
+("project_g01" "Mini_Frame_trial2_V01" "extracted") "Mini_Frame_trial2_V01"
+("NCSU_Analog_Parts" "pcapacitor" "spectre") "capacitor"

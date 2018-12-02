@@ -23,13 +23,13 @@
 -run -exit 
 -ncsimargs "+amsrawdir ../psf" 
  -simcompatible_ams spectre 
--name ECE_6240_Digial.hw3_1_adder_4bit_tb:config 
--amsconnrules ConnRules_18V_full_fast 
+-name ECE_6240_Digital.hw3_1_adder_4bit_tb:config 
+-amsconnrules ConnRules_5V_full_fast 
 +define+CDS_SELECT_CRS 
-+define+CONNRULES_18V_FULL_FAST  
++define+CONNRULES_5V_FULL_FAST  
 -allowredefinition 
 -amsbind 
--top ECE_6240_Digial.hw3_1_adder_4bit_tb:schematic 
+-top ECE_6240_Digital.hw3_1_adder_4bit_tb:schematic 
 -top cds_globals 
 ./netlist.vams 
 -f ./textInputs

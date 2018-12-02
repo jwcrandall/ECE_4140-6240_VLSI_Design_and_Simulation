@@ -1,0 +1,43 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "Mini_Frame_trial2_V01_tb"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  globalHierPrefix "cds_globals."
+  prefixHierarchyWithCV "YES"
+  netlistDir "/home/seas/jwcrandall/cadence/simulation/Mini_Frame_trial2_V01_tb/ams/config/netlist/digital"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+  slashCheck   "t"
+ )
+( defbus
+( "A" 7 0  "A" 7 0  )
+( "F" 15 0  "F" 15 0  )
+( "Clk1F" 15 0  "Clk1F" 15 0  )
+( "Clk2F" 15 0  "Clk2F" 15 0  )
+( "B" 7 0  "B" 7 0  )
+( "Clk2B" 7 0  "Clk2B" 7 0  )
+( "Clk2A" 7 0  "Clk2A" 7 0  )
+( "Clk1A" 7 0  "Clk1A" 7 0  )
+( "Clk1B" 7 0  "Clk1B" 7 0  )
+ )
+( net
+( "vdd!" "cds_globals.\\vdd! " )
+( "gnd!" "cds_globals.\\gnd! " )
+ )
+( model
+( "project_g01/Mini_Frame_trial2_V01/extracted" "Mini_Frame_trial2_V01" )
+( "project_g01/Mini_Frame_trial2_V01_tb/schematic" "Mini_Frame_trial2_V01_tb" )
+ )
+( param
+( "p5vonly" "cds_globals.p5vonly" )
+ )
+( "Mini_Frame_trial2_V01" "ihnl/cds0/map" )
+( "Mini_Frame_trial2_V01_tb" "ihnl/cds1/map" )
+ )

@@ -1,0 +1,3 @@
+"I36" ((("ECE_6240_Digital" "hw3_1_mirror_adder_4bit" "schematic" "schematic") ("ECE_6240_Digital" "hw3_1_mirror_adder_4bit_tb" "schematic" "schematic")))
+"V0" ((("NCSU_Analog_Parts" "vdc" "spectre" "spectre") ("ECE_6240_Digital" "hw3_1_mirror_adder_4bit_tb" "schematic" "schematic")))
+"I37" ((("ECE_6240_Digital" "hw3_1_mirror_adder_4bit_tb_vdriver" "functional" "functional") ("ECE_6240_Digital" "hw3_1_mirror_adder_4bit_tb" "schematic" "schematic")))

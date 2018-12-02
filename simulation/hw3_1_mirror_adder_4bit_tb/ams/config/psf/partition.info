@@ -1,0 +1,491 @@
+( global ( resolution_type basic ) )
+
+( net hw3_1_mirror_adder_4bit_tb.Cout hw3_1_mirror_adder_4bit_tb.Cout analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.Cout hw3_1_mirror_adder_4bit_tb.Cout analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.Cout hw3_1_mirror_adder_4bit_tb.Cout analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.I2.VOUT hw3_1_mirror_adder_4bit_tb.Cout analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.c_out hw3_1_mirror_adder_4bit_tb.Cout digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.Cin hw3_1_mirror_adder_4bit_tb.Cin analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.Cin hw3_1_mirror_adder_4bit_tb.Cin analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.Cin hw3_1_mirror_adder_4bit_tb.Cin analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.c_in hw3_1_mirror_adder_4bit_tb.Cin digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.B_data[3] hw3_1_mirror_adder_4bit_tb.B_data[3] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.B3 hw3_1_mirror_adder_4bit_tb.B_data[3] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.B hw3_1_mirror_adder_4bit_tb.B_data[3] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.B_data[3] hw3_1_mirror_adder_4bit_tb.B_data[3] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.B_data[2] hw3_1_mirror_adder_4bit_tb.B_data[2] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.B2 hw3_1_mirror_adder_4bit_tb.B_data[2] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.B hw3_1_mirror_adder_4bit_tb.B_data[2] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.B_data[2] hw3_1_mirror_adder_4bit_tb.B_data[2] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.B_data[1] hw3_1_mirror_adder_4bit_tb.B_data[1] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.B1 hw3_1_mirror_adder_4bit_tb.B_data[1] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.B hw3_1_mirror_adder_4bit_tb.B_data[1] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.B_data[1] hw3_1_mirror_adder_4bit_tb.B_data[1] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.B_data[0] hw3_1_mirror_adder_4bit_tb.B_data[0] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.B0 hw3_1_mirror_adder_4bit_tb.B_data[0] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.B hw3_1_mirror_adder_4bit_tb.B_data[0] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.B_data[0] hw3_1_mirror_adder_4bit_tb.B_data[0] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.A_data[3] hw3_1_mirror_adder_4bit_tb.A_data[3] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.A3 hw3_1_mirror_adder_4bit_tb.A_data[3] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.A hw3_1_mirror_adder_4bit_tb.A_data[3] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.A_data[3] hw3_1_mirror_adder_4bit_tb.A_data[3] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.A_data[2] hw3_1_mirror_adder_4bit_tb.A_data[2] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.A2 hw3_1_mirror_adder_4bit_tb.A_data[2] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.A hw3_1_mirror_adder_4bit_tb.A_data[2] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.A_data[2] hw3_1_mirror_adder_4bit_tb.A_data[2] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.A_data[1] hw3_1_mirror_adder_4bit_tb.A_data[1] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.A1 hw3_1_mirror_adder_4bit_tb.A_data[1] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.A hw3_1_mirror_adder_4bit_tb.A_data[1] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.A_data[1] hw3_1_mirror_adder_4bit_tb.A_data[1] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.A_data[0] hw3_1_mirror_adder_4bit_tb.A_data[0] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.A0 hw3_1_mirror_adder_4bit_tb.A_data[0] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.A hw3_1_mirror_adder_4bit_tb.A_data[0] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.A_data[0] hw3_1_mirror_adder_4bit_tb.A_data[0] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.sum[3] hw3_1_mirror_adder_4bit_tb.sum[3] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.S3 hw3_1_mirror_adder_4bit_tb.sum[3] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.S hw3_1_mirror_adder_4bit_tb.sum[3] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.I3.VOUT hw3_1_mirror_adder_4bit_tb.sum[3] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.sum[3] hw3_1_mirror_adder_4bit_tb.sum[3] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.sum[2] hw3_1_mirror_adder_4bit_tb.sum[2] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.S2 hw3_1_mirror_adder_4bit_tb.sum[2] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.S hw3_1_mirror_adder_4bit_tb.sum[2] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.I3.VOUT hw3_1_mirror_adder_4bit_tb.sum[2] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.sum[2] hw3_1_mirror_adder_4bit_tb.sum[2] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.sum[1] hw3_1_mirror_adder_4bit_tb.sum[1] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.S1 hw3_1_mirror_adder_4bit_tb.sum[1] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.S hw3_1_mirror_adder_4bit_tb.sum[1] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.I3.VOUT hw3_1_mirror_adder_4bit_tb.sum[1] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.sum[1] hw3_1_mirror_adder_4bit_tb.sum[1] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.sum[0] hw3_1_mirror_adder_4bit_tb.sum[0] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.S hw3_1_mirror_adder_4bit_tb.sum[0] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.S hw3_1_mirror_adder_4bit_tb.sum[0] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.I3.VOUT hw3_1_mirror_adder_4bit_tb.sum[0] analog/mixed electrical )
+( net hw3_1_mirror_adder_4bit_tb.I37.sum[0] hw3_1_mirror_adder_4bit_tb.sum[0] digital/mixed logic )
+
+( net hw3_1_mirror_adder_4bit_tb.I37.sum_full_expected hw3_1_mirror_adder_4bit_tb.I37.sum_full_expected digital logic )
+
+( net hw3_1_mirror_adder_4bit_tb.I37.i hw3_1_mirror_adder_4bit_tb.I37.i digital logic )
+
+( net hw3_1_mirror_adder_4bit_tb.I37.j hw3_1_mirror_adder_4bit_tb.I37.j digital logic )
+
+( net hw3_1_mirror_adder_4bit_tb.I37.k hw3_1_mirror_adder_4bit_tb.I37.k digital logic )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net32 hw3_1_mirror_adder_4bit_tb.I36.I3.net32 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.I3.VIN hw3_1_mirror_adder_4bit_tb.I36.I3.net32 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.net30 hw3_1_mirror_adder_4bit_tb.I36.net30 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.Cin hw3_1_mirror_adder_4bit_tb.I36.net30 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.Cout hw3_1_mirror_adder_4bit_tb.I36.net30 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.I2.VOUT hw3_1_mirror_adder_4bit_tb.I36.net30 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net10 hw3_1_mirror_adder_4bit_tb.I36.I3.net10 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.I2.VIN hw3_1_mirror_adder_4bit_tb.I36.I3.net10 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net35 hw3_1_mirror_adder_4bit_tb.I36.I3.net35 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net24 hw3_1_mirror_adder_4bit_tb.I36.I3.net24 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net11 hw3_1_mirror_adder_4bit_tb.I36.I3.net11 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net25 hw3_1_mirror_adder_4bit_tb.I36.I3.net25 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net26 hw3_1_mirror_adder_4bit_tb.I36.I3.net26 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net059 hw3_1_mirror_adder_4bit_tb.I36.I3.net059 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net022 hw3_1_mirror_adder_4bit_tb.I36.I3.net022 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net021 hw3_1_mirror_adder_4bit_tb.I36.I3.net021 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net23 hw3_1_mirror_adder_4bit_tb.I36.I3.net23 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I3.net9 hw3_1_mirror_adder_4bit_tb.I36.I3.net9 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net32 hw3_1_mirror_adder_4bit_tb.I36.I2.net32 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.I3.VIN hw3_1_mirror_adder_4bit_tb.I36.I2.net32 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.net29 hw3_1_mirror_adder_4bit_tb.I36.net29 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.Cin hw3_1_mirror_adder_4bit_tb.I36.net29 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.Cout hw3_1_mirror_adder_4bit_tb.I36.net29 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.I2.VOUT hw3_1_mirror_adder_4bit_tb.I36.net29 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net10 hw3_1_mirror_adder_4bit_tb.I36.I2.net10 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.I2.VIN hw3_1_mirror_adder_4bit_tb.I36.I2.net10 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net35 hw3_1_mirror_adder_4bit_tb.I36.I2.net35 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net24 hw3_1_mirror_adder_4bit_tb.I36.I2.net24 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net11 hw3_1_mirror_adder_4bit_tb.I36.I2.net11 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net25 hw3_1_mirror_adder_4bit_tb.I36.I2.net25 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net26 hw3_1_mirror_adder_4bit_tb.I36.I2.net26 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net059 hw3_1_mirror_adder_4bit_tb.I36.I2.net059 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net022 hw3_1_mirror_adder_4bit_tb.I36.I2.net022 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net021 hw3_1_mirror_adder_4bit_tb.I36.I2.net021 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net23 hw3_1_mirror_adder_4bit_tb.I36.I2.net23 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I2.net9 hw3_1_mirror_adder_4bit_tb.I36.I2.net9 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net32 hw3_1_mirror_adder_4bit_tb.I36.I1.net32 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.I3.VIN hw3_1_mirror_adder_4bit_tb.I36.I1.net32 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net10 hw3_1_mirror_adder_4bit_tb.I36.I1.net10 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.I2.VIN hw3_1_mirror_adder_4bit_tb.I36.I1.net10 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.net28 hw3_1_mirror_adder_4bit_tb.I36.net28 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.Cout hw3_1_mirror_adder_4bit_tb.I36.net28 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.I2.VOUT hw3_1_mirror_adder_4bit_tb.I36.net28 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.Cin hw3_1_mirror_adder_4bit_tb.I36.net28 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net35 hw3_1_mirror_adder_4bit_tb.I36.I1.net35 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net24 hw3_1_mirror_adder_4bit_tb.I36.I1.net24 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net11 hw3_1_mirror_adder_4bit_tb.I36.I1.net11 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net25 hw3_1_mirror_adder_4bit_tb.I36.I1.net25 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net26 hw3_1_mirror_adder_4bit_tb.I36.I1.net26 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net059 hw3_1_mirror_adder_4bit_tb.I36.I1.net059 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net022 hw3_1_mirror_adder_4bit_tb.I36.I1.net022 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net021 hw3_1_mirror_adder_4bit_tb.I36.I1.net021 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net23 hw3_1_mirror_adder_4bit_tb.I36.I1.net23 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I1.net9 hw3_1_mirror_adder_4bit_tb.I36.I1.net9 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net32 hw3_1_mirror_adder_4bit_tb.I36.I0.net32 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.I3.VIN hw3_1_mirror_adder_4bit_tb.I36.I0.net32 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net10 hw3_1_mirror_adder_4bit_tb.I36.I0.net10 analog electrical )
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.I2.VIN hw3_1_mirror_adder_4bit_tb.I36.I0.net10 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net35 hw3_1_mirror_adder_4bit_tb.I36.I0.net35 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net24 hw3_1_mirror_adder_4bit_tb.I36.I0.net24 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net11 hw3_1_mirror_adder_4bit_tb.I36.I0.net11 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net25 hw3_1_mirror_adder_4bit_tb.I36.I0.net25 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net26 hw3_1_mirror_adder_4bit_tb.I36.I0.net26 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net059 hw3_1_mirror_adder_4bit_tb.I36.I0.net059 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net022 hw3_1_mirror_adder_4bit_tb.I36.I0.net022 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net021 hw3_1_mirror_adder_4bit_tb.I36.I0.net021 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net23 hw3_1_mirror_adder_4bit_tb.I36.I0.net23 analog electrical )
+
+( net hw3_1_mirror_adder_4bit_tb.I36.I0.net9 hw3_1_mirror_adder_4bit_tb.I36.I0.net9 analog electrical )
+
+( net cds_globals.\gnd!  cds_globals.\gnd!  analog electrical )
+
+( net cds_globals.\vdd!  cds_globals.\vdd!  analog electrical )
+
+( connect
+   connectLib.L2E_2:module
+   hw3_1_mirror_adder_4bit_tb.A_data[3]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.A_data[3] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 5.000000000000000) (vlo 0) (tr 0.000000001000000) (tf 0.000000001000000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   hw3_1_mirror_adder_4bit_tb.A_data[2]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.A_data[2] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 5.000000000000000) (vlo 0) (tr 0.000000001000000) (tf 0.000000001000000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   hw3_1_mirror_adder_4bit_tb.A_data[1]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.A_data[1] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 5.000000000000000) (vlo 0) (tr 0.000000001000000) (tf 0.000000001000000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   hw3_1_mirror_adder_4bit_tb.A_data[0]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.A_data[0] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 5.000000000000000) (vlo 0) (tr 0.000000001000000) (tf 0.000000001000000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   hw3_1_mirror_adder_4bit_tb.B_data[3]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.B_data[3] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 5.000000000000000) (vlo 0) (tr 0.000000001000000) (tf 0.000000001000000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   hw3_1_mirror_adder_4bit_tb.B_data[2]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.B_data[2] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 5.000000000000000) (vlo 0) (tr 0.000000001000000) (tf 0.000000001000000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   hw3_1_mirror_adder_4bit_tb.B_data[1]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.B_data[1] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 5.000000000000000) (vlo 0) (tr 0.000000001000000) (tf 0.000000001000000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   hw3_1_mirror_adder_4bit_tb.B_data[0]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.B_data[0] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 5.000000000000000) (vlo 0) (tr 0.000000001000000) (tf 0.000000001000000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   hw3_1_mirror_adder_4bit_tb.Cin
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.c_in logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 5.000000000000000) (vlo 0) (tr 0.000000001000000) (tf 0.000000001000000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   hw3_1_mirror_adder_4bit_tb.Cout
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.c_out logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 5.000000000000000) (vthi 3.500000000000000) (vtlo 1.500000000000000) (tr 0.000000001000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   hw3_1_mirror_adder_4bit_tb.sum[3]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.sum[3] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 5.000000000000000) (vthi 3.500000000000000) (vtlo 1.500000000000000) (tr 0.000000001000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   hw3_1_mirror_adder_4bit_tb.sum[2]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.sum[2] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 5.000000000000000) (vthi 3.500000000000000) (vtlo 1.500000000000000) (tr 0.000000001000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   hw3_1_mirror_adder_4bit_tb.sum[1]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.sum[1] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 5.000000000000000) (vthi 3.500000000000000) (vtlo 1.500000000000000) (tr 0.000000001000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   hw3_1_mirror_adder_4bit_tb.sum[0]
+   electrical
+   analog
+   (
+    ( hw3_1_mirror_adder_4bit_tb.I37.sum[0] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 5.000000000000000) (vthi 3.500000000000000) (vtlo 1.500000000000000) (tr 0.000000001000000) )
+)
+(instance hw3_1_mirror_adder_4bit_tb.I37 digital)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.I3.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.I3.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.I3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.I2.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.I2.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.I2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P11 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P10 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P9 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P8 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P7 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P6 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P5 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P4 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P1 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N11 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N10 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N9 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N8 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N7 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N6 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N5 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N4 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N1 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.I3.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.I3.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.I3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.I2.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.I2.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.I2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P11 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P10 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P9 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P8 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P7 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P6 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P5 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P4 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P1 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N11 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N10 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N9 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N8 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N7 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N6 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N5 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N4 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N1 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.I3.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.I3.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.I3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.I2.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.I2.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.I2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P11 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P10 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P9 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P8 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P7 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P6 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P5 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P4 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P1 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N11 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N10 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N9 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N8 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N7 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N6 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N5 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N4 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N1 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I1 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.I3.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.I3.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.I3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.I2.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.I2.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.I2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P11 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P10 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P9 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P8 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P7 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P6 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P5 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P4 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P1 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.P0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N11 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N10 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N9 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N8 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N7 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N6 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N5 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N4 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N3 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N2 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N1 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0.N0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36.I0 analog)
+(instance hw3_1_mirror_adder_4bit_tb.I36 analog)
+(instance hw3_1_mirror_adder_4bit_tb.V0 analog)
+(instance hw3_1_mirror_adder_4bit_tb mixed)
+(instance cds_globals analog)
